@@ -12,6 +12,18 @@ Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
 Bundle 'msanders/snipmate.vim'
 
+" cool feature
+nnoremap ; :
+
+" change the mapleader from \ to ,
+let mapleader=","
+
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 filetype plugin indent on
 set number
 set ruler
@@ -52,9 +64,6 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " Command-T configuration
 let g:CommandTMaxHeight=20
-
-" ZoomWin configuration
-map <Leader><Leader> :ZoomWin<CR>
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>

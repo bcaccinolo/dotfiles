@@ -33,3 +33,8 @@
 .w3m/
 .xinitrc
 .xinitrc.old
+.htoprc
+.irb-history
+.pry_history
+.rediscli_history
+
