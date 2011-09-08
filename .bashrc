@@ -12,6 +12,7 @@ alias 'c'='cd ..'
 alias g='ack '
 alias st='git st'
 alias ci='git ci'
+alias push='git push'
 
 alias be='bundle exec '
 alias logd='tail -f log/development.log | grep -vE "SELECT |SHOW FIELDS|SQL "'
