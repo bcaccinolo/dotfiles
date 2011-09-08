@@ -1,0 +1,3 @@
+
+Remove .git in .vim
+find . | g .git | xargs rm -rf
