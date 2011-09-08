@@ -27,6 +27,7 @@
 .thumbnails/
 .twitter
 .viminfo
+.vimrc
 #.vim.old/
 #.vimrc.old
 .w3m/
