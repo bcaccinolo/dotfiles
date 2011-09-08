@@ -1,0 +1,114 @@
+imap À &Agrave;
+imap Á &Aacute;
+imap Â &Acirc;
+imap Ã &Atilde;
+imap Ä &Auml;
+imap Å &Aring;
+imap Æ &Aelig;
+imap à &agrave;
+imap á &aacute;
+imap â &acirc;
+imap ã &atilde;
+imap ä &auml;
+imap å &aring;
+imap æ &aelig;
+
+imap Ç &Ccedil;
+imap ç &ccedil;
+
+imap Ð &ETH;
+imap ð &eth;
+
+imap È &Egrave;
+imap É &Eacute;
+imap Ê &Ecirc;
+imap Ë &Euml;
+imap è &egrave;
+imap é &eacute;
+imap ê &ecirc;
+imap ë &euml;
+
+imap Ì &Igrave;
+imap Í &Iacute;
+imap Î &Icirc;
+imap Ï &Iuml;
+imap ì &igrave;
+imap í &iacute;
+imap î &icirc;
+imap ï &iuml;
+
+imap Ñ &Ntilde;
+imap ñ &ntilde;
+
+imap Ò &Ograve;
+imap Ó &Oacute;
+imap Ô &Ocirc;
+imap Õ &Otilde;
+imap Ö &Ouml;
+imap Ø &Oslash;
+imap Œ &OElig;
+imap ò &ograve;
+imap ó &oacute;
+imap ô &ocirc;
+imap õ &otilde;
+imap ö &ouml;
+imap ø &oslash;
+imap œ &oelig;
+
+imap Ù &Ugrave;
+imap Ú &Uacute;
+imap Û &Ucirc;
+imap Ü &Uuml;
+imap ù &ugrave;
+imap ú &uacute;
+imap û &ucirc;
+imap ü &uuml;
+
+imap Ý &Yacute;
+imap Ÿ &Yuml;
+imap ý &yacute;
+imap ÿ &yuml;
+
+imap ¢ &cent;
+imap £ &pound;
+imap ¥ &yen;
+imap € &euro;
+
+imap © &copy;
+imap ® &reg;
+
+imap ª &ordf;
+imap º &ordm;
+imap ¹ &sup1;
+imap ² &sup2;
+imap ³ &sup3;
+imap ¼ &frac14;
+imap ½ &frac12;
+imap ¾ &frac34;
+imap ÷ &divide;
+imap × &times;
+imap ± &plusmn;
+
+imap ¿ &iquest;
+imap ¡ &iexcl;
+imap ¤ &curren;
+imap ¦ &brvbar;
+imap § &sect;
+imap ¨ &uml;
+imap « &laquo;
+imap » &raquo;
+imap ¬ &not;
+imap ´ &acute;
+imap µ &micro;
+imap ¶ &para;
+imap · &middot;
+imap ¸ &cedil;
+imap þ &thorn;
+imap ß &szlig;
+imap ° &deg;
+
+imap ’ '
+
+imap <C-space> &nbsp;
+
+" vim: ft=vim
