@@ -15,6 +15,8 @@ alias ci='git ci'
 alias push='git push'
 alias dif='git diff'
 
+alias be='bundle exec'
+
 alias be='bundle exec '
 alias logd='tail -f log/development.log | grep -vE "SELECT |SHOW FIELDS|SQL "'
 alias logt='tail -f log/test.log | grep -vE "SELECT |SHOW FIELDS|SQL "'
