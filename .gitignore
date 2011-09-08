@@ -26,9 +26,7 @@
 .subversion/
 .thumbnails/
 .twitter
-.vim/
 .viminfo
-.vimrc
 #.vim.old/
 #.vimrc.old
 .w3m/
