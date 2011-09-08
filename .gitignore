@@ -28,6 +28,7 @@
 .twitter
 .viminfo
 .vimrc
+.vim/backup
 #.vim.old/
 #.vimrc.old
 .w3m/
