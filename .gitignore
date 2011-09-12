@@ -29,6 +29,7 @@
 .viminfo
 .vimrc
 .vim/backup
+.vim-bundles/
 #.vim.old/
 #.vimrc.old
 .w3m/
