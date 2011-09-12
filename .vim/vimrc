@@ -15,7 +15,7 @@ Bundle 'ddollar/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
 Bundle 'msanders/snipmate.vim'
-
+Bundle 'ervandew/supertab'
 so ~/.vim-bundles/supertab/plugin/supertab.vim
 
 let g:snippets_dir="~/.vim/snippets/"
