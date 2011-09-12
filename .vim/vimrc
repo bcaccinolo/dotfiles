@@ -1,4 +1,7 @@
 set nocompatible
+set mouse=a
+set clipboard=unnamed
+
 filetype off
 "source ~/.vim/bundles.vim
 
@@ -61,6 +64,8 @@ set noequalalways
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
+
+map <Leader>bd :Bclose<CR>
 
 " Command-T configuration
 let g:CommandTMaxHeight=20
@@ -146,24 +151,17 @@ set modelines=10
 
 " Default color scheme
 color desert
+" Default color scheme
+" color habilight
 
 " Directories for swp files
 set backupdir=~/.vim/backup,/tmp/
 set directory=~/.vim/backup,/tmp
 
-" Turn off jslint errors by default
-let g:JSLintHighlightErrorLine = 0
 
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
 
-" % to bounce from do to end etc.
-runtime! macros/matchit.vim
-
 " Show (partial) command in the status line
 set showcmd
 
-" Include user's local vim config
-if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
-endif
