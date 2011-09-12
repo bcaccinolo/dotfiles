@@ -1,5 +1,6 @@
+echo "local profile"
 
-. .bashrc
+# . .bashrc
 
 PATH=/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
 

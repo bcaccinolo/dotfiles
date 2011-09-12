@@ -1,3 +1,6 @@
+echo "local bash"
+. ~/.profile
+
 export HISTSIZE=10000
 
 alias www="cd /Library/WebServer/Documents/"
@@ -52,17 +55,8 @@ alias brs='bundle exec rails server'
 alias brsd='bundle exec rails server --debugger'
 alias brc='bundle exec rails console'
 
-# Brightbox
-alias data='ssh rails@data.billetto.dk'
-alias www1='ssh rails@billetto-002.vm.brightbox.net'
-alias www2='ssh rails@billetto-003.vm.brightbox.net'
-
-# EngineYard
-alias prod='ssh deploy@ec2-46-137-109-222.eu-west-1.compute.amazonaws.com'
-alias utility='ssh deploy@ec2-79-125-59-130.eu-west-1.compute.amazonaws.com'
-
 #PS1='[LOCAL]\u@\h:\w\$ \n>'
-#PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
-PS1='[LOCAL MACBOOK $(__git_ps1 "(%s)")]\u@\h:\w  \n→ '
+PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
+#PS1='[LOCAL MACBOOK $(__git_ps1 "(%s)")]\u@\h:\w  \n→ '
 
 
