@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/mnt/home/benoit/Developments/ruby/test_orga_orga2/config'
-let g:netrw_dirhist_2='/mnt/home/benoit/Developments/adenweb/openmedia/aweestate/vendor/plugins/nested_has_many_through'
-let g:netrw_dirhist_3='/mnt/home/benoit/.cruise/projects/awetraining/work/vendor/plugins/awe/lib/tasks'
-let g:netrw_dirhist_4='/mnt/home/benoit/.cruise/projects/aweestate/work/config/environments'
-let g:netrw_dirhist_5='/mnt/home/benoit/Developments/ruby/rails/test_session/config'
-let g:netrw_dirhist_6='/mnt/home/benoit/Developments/adenweb/projects/trunk/aweestate/vendor/plugins/openmedia/lib'
