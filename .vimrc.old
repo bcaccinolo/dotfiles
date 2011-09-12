@@ -209,9 +209,9 @@ if has("gui_running")
     endif
     au VimEnter * set lines=60 columns=120
     " enleve la toolbar
-    set guioptions-=T
+    "set guioptions-=T
     " enleve le menu
-    set guioptions-=m
+    "set guioptions-=m
 endif
 
 """"""""""""""""""""""""""""""
@@ -245,6 +245,7 @@ map Q gq
 """"""""""""""""""""""""""
 map ,source :source ~/.vimrc<CR>
 map ,vimrc :e ~/.vimrc<CR>
+map bb :BufExplorer<CR>
 
 map <F7> mzgg=G'z<CR>
 
