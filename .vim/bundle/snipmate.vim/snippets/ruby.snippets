@@ -502,3 +502,13 @@ snippet tas
 	task :${2:task_name => [:dependent, :tasks]} do
 		${3}
 	end
+snippet log
+	logger.warn "#{__FILE__}:#{__LINE__}\n#> ${1} #{${2}}"
+snippet rlog
+	::Rails.logger.warn "#{__FILE__}:#{__LINE__}\n#> ${1} #{${2}}"
+snippet yaml
+	YAML::dump ${1}
+snippet deb
+	debugger;
+snippet debug
+	require 'ruby-debug'; debugger;
