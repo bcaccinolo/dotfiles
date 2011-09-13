@@ -1,7 +1,5 @@
 echo "local profile"
 
-# . .bashrc
-
 PATH=/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # MacPorts Installer addition on 2010-03-09_at_11:38:16: adding an appropriate PATH variable for use with MacPorts.

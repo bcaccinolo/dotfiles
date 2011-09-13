@@ -1,5 +1,4 @@
 echo "local bash"
-. ~/.profile
 
 export HISTSIZE=10000
 
