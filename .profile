@@ -11,7 +11,7 @@ export EDITOR=vim
 
 # RVM configuration
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-rvm use ree-1.8.7-2011.03 1> /dev/null
+rvm use ruby-1.9.2-p290 1> /dev/null
 
 # MacPorts Bash shell command completion
 if [ -f /opt/local/etc/bash_completion.d/git-completion.sh ]; then
