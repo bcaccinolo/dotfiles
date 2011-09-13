@@ -3,12 +3,14 @@ set mouse=a
 set clipboard=unnamed
 
 filetype off
-"source ~/.vim/bundles.vim
 
-set rtp+=~/.vim/bundle/vundle/
-"call vundle#rc('/tmp/janus_bundles')
-"call vundle#rc('~/.vim/bundle/')
-call vundle#rc('~/.vim-bundles/')
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc('/tmp/janus_bundles')
+" call vundle#rc('~/.vim/bundle/')
+" call vundle#rc('~/.vim-bundles/')
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+
 Bundle 'gmarik/vundle'
 Bundle 'wycats/nerdtree'
 Bundle 'ddollar/nerdcommenter'
@@ -16,7 +18,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
 Bundle 'msanders/snipmate.vim'
 Bundle 'ervandew/supertab'
-so ~/.vim-bundles/supertab/plugin/supertab.vim
 
 let g:snippets_dir="~/.vim/snippets/"
 
