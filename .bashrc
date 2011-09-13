@@ -1,4 +1,17 @@
-echo "local bash"
+
+PATH=/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export SVN_EDITOR=vim
+export EDITOR=vim
+
+# RVM configuration
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+rvm use ruby-1.9.2-p290 1> /dev/null
+
+# MacPorts Bash shell command completion
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+  .  /usr/local/etc/bash_completion.d/git-completion.bash
+fi
 
 export HISTSIZE=10000
 
