@@ -1,31 +1,18 @@
-set nocompatible
-set mouse=a
-set clipboard=unnamed
 
-filetype off
+" Bundles configuration
+so ~/.vim/bundles.vim
 
-" set rtp+=~/.vim/bundle/vundle/
-" call vundle#rc('/tmp/janus_bundles')
-" call vundle#rc('~/.vim/bundle/')
-" call vundle#rc('~/.vim-bundles/')
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
+so ~/.vim/general.vim
 
-Bundle 'gmarik/vundle'
-Bundle 'wycats/nerdtree'
-Bundle 'ddollar/nerdcommenter'
-Bundle 'tpope/vim-surround'
-Bundle 'wincent/Command-T'
-Bundle 'msanders/snipmate.vim'
-Bundle 'ervandew/supertab'
-
-let g:snippets_dir="~/.vim/snippets/"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" SHORTCUTS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " cool feature
 nnoremap ; :
 
-" change the mapleader from \ to ,
-let mapleader=","
+" Tired of clearing highlighted searches by searching for “ldsfhjkhgakjks”?
+nmap <silent> ,/ :nohlsearch<CR>
 
 " Easy window navigation
 map <C-h> <C-w>h
@@ -33,52 +20,30 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-filetype plugin indent on
-set number
-set ruler
-syntax on
-
-" Set encoding
-set encoding=utf-8
-
-" Whitespace stuff
-set nowrap
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set list listchars=tab:\ \ ,trail:·
-
-" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
-" Tab completion
-set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
-
-" Status bar
-set laststatus=2
-
-" Without setting this, ZoomWin restores windows in a way that causes
-" equalalways behavior to be triggered the next time CommandT is used.
-" This is likely a bludgeon to solve some other issue, but it works
-set noequalalways
-
-" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
-
 map <Leader>bd :Bclose<CR>
 
-" Command-T configuration
-let g:CommandTMaxHeight=20
+" Opens an edit command with the path of the currently edited file filled in
+" Normal mode: <Leader>e
+map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
-" CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
-map <C-\> :tnext<CR>
+" Opens a tab edit command with the path of the currently edited file filled in
+" Normal mode: <Leader>t
+map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
+" Unimpaired configuration
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
+" reindent the entire file
+map <Leader>I gg=G``<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" SPECIFIC CONFIGS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Remember last location in file
 if has("autocmd")
@@ -101,7 +66,7 @@ endfunction
 au FileType make set noexpandtab
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}  set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
@@ -114,74 +79,4 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-
-
-" Opens an edit command with the path of the currently edited file filled in
-" Normal mode: <Leader>e
-map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-
-" Opens a tab edit command with the path of the currently edited file filled in
-" Normal mode: <Leader>t
-map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
-
-" Inserts the path of the currently edited file into a command
-" Command mode: Ctrl+P
-cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
-
-" Unimpaired configuration
-" Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
-" Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
-
-" Enable syntastic syntax checking
-let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
-
-" gist-vim defaults
-if has("mac")
-  let g:gist_clip_command = 'pbcopy'
-elseif has("unix")
-  let g:gist_clip_command = 'xclip -selection clipboard'
-endif
-let g:gist_detect_filetype = 1
-let g:gist_open_browser_after_post = 1
-
-" Use modeline overrides
-set modeline
-set modelines=10
-
-" Default color scheme
-color desert
-" Default color scheme
-" color habilight
-
-" Directories for swp files
-set backupdir=~/.vim/backup,/tmp/
-set directory=~/.vim/backup,/tmp
-
-
-" MacVIM shift+arrow-keys behavior (required in .vimrc)
-let macvim_hig_shift_movement = 1
-
-" Show (partial) command in the status line
-set showcmd
-
-
-
-set laststatus=2
-set statusline=
-set statusline+=%-3.3n\                      " buffer number
-set statusline+=%f\                          " file name
-set statusline+=%h%m%r%w                     " flags
-set statusline+=\[%{strlen(&ft)?&ft:'none'}, " filetype
-set statusline+=%{&encoding},                " encoding
-set statusline+=%{&fileformat}]              " file format
-set statusline+=%=                           " right align
-"set statusline+=0x%-8B\                      " current char
-set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 
