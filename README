@@ -3,5 +3,5 @@ Remove .git in .vim
 find . | g .git | xargs rm -rf
 
 For iTerm2
-ln -s ~/.iterm2rc ~/Library/Preferences/com.googlecode.iterm2.plist
+~/.iterm2rc = ~/Library/Preferences/com.googlecode.iterm2.plist
 
