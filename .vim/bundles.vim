@@ -45,7 +45,4 @@ Bundle 'wycats/nerdtree'
 " Bundle 'wgibbs/vim-irblack'
 " Bundle 'kchmck/vim-coffee-script'
 " Bundle 'scrooloose/syntastic'
-" Colors
-" Bundle 'mrtazz/molokai.vim'
-" Bundle 'janus_themes'
 
