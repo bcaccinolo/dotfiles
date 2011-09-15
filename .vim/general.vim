@@ -53,8 +53,8 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color desert
-" Default color scheme
+color morning
+" color desert
 " color habilight
 
 " Directories for swp files
