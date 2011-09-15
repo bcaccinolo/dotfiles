@@ -5,3 +5,10 @@ find . | g .git | xargs rm -rf
 For iTerm2
 ~/.iterm2rc = ~/Library/Preferences/com.googlecode.iterm2.plist
 
+in VIM 
+ * add the shortcut to C=L =>
+ * add the ,ft to flush 
+ * ,e > new tab
+ * ,< ,> tabNext tabPrevious
+ * snippets > javascript > console.log
+
