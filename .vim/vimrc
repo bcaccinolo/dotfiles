@@ -47,6 +47,12 @@ map <Leader>< :tabprevious<CR>
 " help with hash type in Ruby
 imap <C-l> <Space>=>
 
+" reload all buffers
+map <Leader>R :bufdo :e!<CR>
+
+" reload current buffer
+map <Leader>r :e!<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" SPECIFIC CONFIGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
