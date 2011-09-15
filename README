@@ -6,5 +6,5 @@ For iTerm2
 ~/.iterm2rc = ~/Library/Preferences/com.googlecode.iterm2.plist
 
 in VIM 
- * add the shortcut to C=L =>
-
+ * have bclose as a plugin
+ * install buf explorer
