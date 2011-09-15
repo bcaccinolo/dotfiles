@@ -1,8 +1,6 @@
 
-" Bundles configuration
-so ~/.vim/bundles.vim
-
 so ~/.vim/general.vim
+so ~/.vim/bundles.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" SHORTCUTS
