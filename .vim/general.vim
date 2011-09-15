@@ -52,10 +52,8 @@ set smartcase
 set modeline
 set modelines=10
 
-" Default color scheme
-color morning
-" color desert
-" color habilight
+" color scheme
+color desert
 
 " Directories for swp files
 set backupdir=~/.vim/backup,/tmp/
