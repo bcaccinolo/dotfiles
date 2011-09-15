@@ -48,5 +48,4 @@ Bundle 'wycats/nerdtree'
 " Colors
 " Bundle 'mrtazz/molokai.vim'
 " Bundle 'janus_themes'
-" Bundle "http://conque.googlecode.com/files/conque_1.1.tar.gz"
 
