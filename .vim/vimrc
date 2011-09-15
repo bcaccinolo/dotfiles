@@ -22,7 +22,7 @@ map <Leader>bd :Bclose<CR>
 
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
-map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+" map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " Opens a tab edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>t
@@ -30,14 +30,19 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 " Unimpaired configuration
 " Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
+" nmap <C-Up> [e
+" nmap <C-Down> ]e
 " Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
+" vmap <C-Up> [egv
+" vmap <C-Down> ]egv
 
 " reindent the entire file
-map <Leader>I gg=G``<cr>
+map <Leader>I gg=G``<CR>
+
+" Open a new tab
+map <Leader>e :tabnew<CR>
+map <Leader>> :tabnext<CR>
+map <Leader>< :tabprevious<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" SPECIFIC CONFIGS
@@ -46,7 +51,7 @@ map <Leader>I gg=G``<cr>
 " Remember last location in file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-    \| exe "normal g'\"" | endif
+        \| exe "normal g'\"" | endif
 endif
 
 function s:setupWrapping()

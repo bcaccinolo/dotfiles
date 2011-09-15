@@ -9,6 +9,7 @@ Bundle 'ervandew/supertab'
 
 Bundle 'wincent/Command-T'
   let g:CommandTMaxHeight=20
+  map <Leader>ft :CommandTFlush<CR>
 
 Bundle 'msanders/snipmate.vim'
   let g:snippets_dir="~/.vim/snippets/"
