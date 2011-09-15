@@ -45,7 +45,7 @@ map <Leader>> :tabnext<CR>
 map <Leader>< :tabprevious<CR>
 
 " help with hash type in Ruby
-imap <C-l> =>
+imap <C-l> <Space>=>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" SPECIFIC CONFIGS
