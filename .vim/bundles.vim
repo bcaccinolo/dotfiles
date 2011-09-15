@@ -1,4 +1,5 @@
 
+" Vundle confifg
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 

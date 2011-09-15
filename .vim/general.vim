@@ -1,9 +1,13 @@
 
-" !!! NOT COMMENTED NO EXPLANTION !!!
+
+" show line and column number
 set ruler
+
+" file type detection
 filetype off
 filetype plugin indent on
 
+" definition of the content of the status line
 set laststatus=2
 set statusline=
 set statusline+=%-3.3n\                      " buffer number
@@ -14,8 +18,6 @@ set statusline+=%{&encoding},                " encoding
 set statusline+=%{&fileformat}]              " file format
 set statusline+=%=                           " right align
 set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
-" !!! NOT COMMENTED NO EXPLANTION !!!
-
 
 " required for several plugins
 set nocompatible
@@ -81,3 +83,11 @@ set autoread
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" Remember last location in file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+        \| exe "normal g'\"" | endif
+endif
+
+" start vim splitted
+:vsplit
