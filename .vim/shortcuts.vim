@@ -41,7 +41,7 @@ map <Leader>> :tabnext<CR>
 map <Leader>< :tabprevious<CR>
 
 " help with hash type in Ruby
-imap <C-l> <Space>=>
+imap <C-l> <Space>=><Space>
 
 " reload all buffers
 map <Leader>R :bufdo :e!<CR>
