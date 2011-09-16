@@ -17,7 +17,7 @@ export HISTSIZE=10000
 
 alias www="cd /Library/WebServer/Documents/"
 
-alias ls='ls -G'
+alias ls='ls --color'
 alias la='ls -a'
 alias c='cd ..'
 alias cdapp='cd app'
