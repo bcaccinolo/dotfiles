@@ -14,8 +14,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-map <Leader>bd :Bclose<CR>
-
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
 " map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
