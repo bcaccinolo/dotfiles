@@ -1,5 +1,4 @@
 
-
 " show line and column number
 set ruler
 
@@ -27,6 +26,9 @@ syntax on
 
 " Set encoding
 set encoding=utf-8
+
+" long command history list
+set history=1000
 
 " have the mouse enabled all the time
 set mouse=a
@@ -91,3 +93,4 @@ endif
 
 " start vim splitted
 :vsplit
+
