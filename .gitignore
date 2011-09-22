@@ -39,6 +39,7 @@
 .irb-history
 .pry_history
 .rediscli_history
+.node_libraries/
 
 
 .eyrc
