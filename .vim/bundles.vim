@@ -19,6 +19,8 @@ Bundle 'wycats/nerdtree'
   let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
   map <Leader>n :NERDTreeToggle<CR>
 
+Bundle 'bcaccinolo/bclose'
+  map <Leader>bd :Bclose<CR>
 
 " Bundle 'tpope/vim-haml'
 " Bundle 'michaeljsmith/vim-indent-object'
