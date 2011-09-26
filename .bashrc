@@ -43,6 +43,7 @@ alias push='git push'
 alias pull='git pull'
 alias ci='git ci'
 alias co='git co'
+alias git-count='git shortlog -s -n'
 
 # now my git aliases work with git-completion
 complete -o bashdefault -o default -o nospace -F _gitk st
