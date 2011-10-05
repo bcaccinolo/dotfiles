@@ -22,6 +22,8 @@ Bundle 'wycats/nerdtree'
 Bundle 'bcaccinolo/bclose'
   map <Leader>bd :Bclose<CR>
 
+Bundle 'vim-scripts/bufexplorer.zip'
+
 " Bundle 'tpope/vim-haml'
 " Bundle 'michaeljsmith/vim-indent-object'
 " Bundle 'pangloss/vim-javascript'
