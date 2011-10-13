@@ -46,3 +46,6 @@ map <Leader>R :bufdo :e!<CR>
 
 " reload current buffer
 map <Leader>r :e!<CR>
+
+" q to split a line to 80 char long
+map Q 080lwbels<CR><ESC>
