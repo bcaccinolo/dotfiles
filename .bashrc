@@ -4,6 +4,8 @@ export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export SVN_EDITOR=vim
 export EDITOR=vim
 
+export NODE_PATH=/usr/local/lib/node_modules
+
 # RVM configuration
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 rvm use ruby-1.9.2-p290 1> /dev/null
@@ -17,6 +19,7 @@ export HISTSIZE=10000
 
 alias www="cd /Library/WebServer/Documents/"
 
+alias vi='vim'
 alias ls='ls -G'
 alias la='ls -a'
 alias c='cd ..'
