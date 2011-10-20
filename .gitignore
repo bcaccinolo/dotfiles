@@ -15,6 +15,7 @@
 .fonts.cache-1
 .gem/
 .gemrc
+.gitconfig
 .gvimrc
 .macports/
 .parallels_settings
@@ -30,8 +31,6 @@
 .vimrc
 .vim/backup
 .vim-bundles/
-#.vim.old/
-#.vimrc.old
 .w3m/
 .xinitrc
 .xinitrc.old
