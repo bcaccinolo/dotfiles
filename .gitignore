@@ -39,7 +39,6 @@
 .rediscli_history
 .node_libraries/
 .npm/
-
 .eyrc
 .eyrc.awu
 .eyrc.billetto
