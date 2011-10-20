@@ -40,7 +40,7 @@
 .pry_history
 .rediscli_history
 .node_libraries/
-
+.npm/
 
 .eyrc
 .eyrc.awu
