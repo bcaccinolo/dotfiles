@@ -19,6 +19,7 @@ Bundle 'wycats/nerdtree'
   let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
   map <Leader>n :NERDTreeToggle<CR>
 
+Bundle 'bcaccinolo/rspec-vim-folding'
 Bundle 'bcaccinolo/bclose'
   map <Leader>bd :Bclose<CR>
 

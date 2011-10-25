@@ -29,15 +29,13 @@ au FileType make set noexpandtab
 
 
 " to hide the code of method 
-function! FoldEndBlock()
-  let spec_idx = line('.') 
-  let ctx_idx  = search('end', 'n')
-  let cmd = (spec_idx).','.(ctx_idx).'fold'
-  exec cmd
-endfunction
+" function! FoldEndBlock()
+"   let spec_idx = line('.') 
+"   let ctx_idx  = search('end', 'n')
+"   let cmd = (spec_idx).','.(ctx_idx).'fold'
+"   exec cmd
+" endfunction
 
-nmap ff :call FoldEndBlock()<CR>
-nmap fo :foldopen! <CR>
-
-
+" nmap ff :call FoldEndBlock()<CR>
+" nmap fo :foldopen! <CR>
 
