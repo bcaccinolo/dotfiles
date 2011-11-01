@@ -25,6 +25,8 @@ Bundle 'bcaccinolo/bclose'
 
 Bundle 'vim-scripts/bufexplorer.zip'
 
+Bundle 'vim-scripts/DrawIt'
+
 " Bundle 'tpope/vim-haml'
 " Bundle 'michaeljsmith/vim-indent-object'
 " Bundle 'pangloss/vim-javascript'
