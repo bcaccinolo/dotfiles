@@ -44,7 +44,9 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set list listchars=tab:\ \ ,trail:·
+
+"" show non printable characters
+"set list listchars=tab:\ \ ,trail:·  
 
 " Searching
 set hlsearch

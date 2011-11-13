@@ -4,6 +4,8 @@ export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export SVN_EDITOR=vim
 export EDITOR=vim
 
+export NODE_PATH=/usr/local/lib/node_modules
+
 # RVM configuration
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 rvm use ruby-1.9.2-p290 1> /dev/null
@@ -17,6 +19,7 @@ export HISTSIZE=10000
 
 alias www="cd /Library/WebServer/Documents/"
 
+alias vi='vim'
 alias ls='ls -G'
 alias la='ls -a'
 alias c='cd ..'
@@ -43,6 +46,7 @@ alias push='git push'
 alias pull='git pull'
 alias ci='git ci'
 alias co='git co'
+alias git-count='git shortlog -s -n'
 
 # now my git aliases work with git-completion
 complete -o bashdefault -o default -o nospace -F _gitk st
@@ -69,6 +73,6 @@ alias brc='bundle exec rails console'
 
 # PS1='[LOCAL]\u@\h:\w\$ \n>'
 # PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
-PS1='[LOCAL $(__git_ps1 "(%s)")]\u@\h:\w  \n→ '
+PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]\u@\h:\w  \n→ '
 
 
