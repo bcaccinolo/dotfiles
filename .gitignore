@@ -30,8 +30,6 @@
 .vimrc
 .vim/backup
 .vim-bundles/
-#.vim.old/
-#.vimrc.old
 .w3m/
 .xinitrc
 .xinitrc.old
@@ -39,12 +37,13 @@
 .irb-history
 .pry_history
 .rediscli_history
-
-
+.node_libraries/
+.npm/
 .eyrc
 .eyrc.awu
 .eyrc.billetto
 .gdb_history
+.gitconfig
 .gitk
 .gvimrc.local
 .heroku/

@@ -1,6 +1,6 @@
 
 " Vundle confifg
-set rtp+=~/.vim/vundle.git/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
@@ -19,8 +19,13 @@ Bundle 'wycats/nerdtree'
   let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
   map <Leader>n :NERDTreeToggle<CR>
 
+Bundle 'bcaccinolo/rspec-vim-folding'
 Bundle 'bcaccinolo/bclose'
   map <Leader>bd :Bclose<CR>
+
+Bundle 'vim-scripts/bufexplorer.zip'
+
+Bundle 'vim-scripts/DrawIt'
 
 " Bundle 'tpope/vim-haml'
 " Bundle 'michaeljsmith/vim-indent-object'
