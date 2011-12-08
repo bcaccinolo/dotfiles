@@ -7,7 +7,6 @@ so ~/.vim/extra.vim
 " NOTES
 " :set ft=ruby to force the syntax coloration
 
-au WinLeave * set nocursorline nocursorcolumn
-au WinEnter * set cursorline 
-set cursorline 
-
+" au WinLeave * set nocursorline nocursorcolumn
+" au WinEnter * set cursorline 
+" set cursorline 
