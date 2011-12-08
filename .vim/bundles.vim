@@ -27,6 +27,10 @@ Bundle 'vim-scripts/bufexplorer.zip'
 
 Bundle 'vim-scripts/DrawIt'
 
+Bundle 'tpope/vim-endwise'
+
+Bundle 'tpope/vim-fugitive'
+
 " Bundle 'tpope/vim-haml'
 " Bundle 'michaeljsmith/vim-indent-object'
 " Bundle 'pangloss/vim-javascript'

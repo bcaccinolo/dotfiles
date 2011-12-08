@@ -1,5 +1,5 @@
 
-PATH=/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export SVN_EDITOR=vim
 export EDITOR=vim
@@ -24,14 +24,14 @@ alias ls='ls -G'
 alias la='ls -a'
 alias c='cd ..'
 alias cdapp='cd app'
-alias ll='ls -al'
+alias ll='ls -alh'
 
 alias tt='tree -C -L 1'
 alias tt2='tree -C -L 2'
 alias tt3='tree -C -L 3'
 
 alias g='ack '
-alias mm='mate .'
+alias ss='story '
 
 # git aliases
 alias st='git st'
@@ -76,3 +76,4 @@ alias brc='bundle exec rails console'
 PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]\u@\h:\w  \n→ '
 
 
+. .bashrc_pro
