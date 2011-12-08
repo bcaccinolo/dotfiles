@@ -64,6 +64,7 @@ color desert
 " Directories for swp files
 set backupdir=~/.vim/backup,/tmp/
 set directory=~/.vim/backup,/tmp
+set backupskip=/tmp/*,/private/tmp/* 
 
 " Show (partial) command in the status line
 set showcmd
