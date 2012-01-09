@@ -6,6 +6,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'ddollar/nerdcommenter'
 Bundle 'tpope/vim-surround'
+
 Bundle 'ervandew/supertab'
 
 Bundle 'wincent/Command-T'
@@ -29,7 +30,10 @@ Bundle 'vim-scripts/DrawIt'
 
 Bundle 'tpope/vim-endwise'
 
-Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+
+Bundle 'tsaleh/vim-matchit'
+
 
 " Bundle 'tpope/vim-haml'
 " Bundle 'michaeljsmith/vim-indent-object'
@@ -45,7 +49,6 @@ Bundle 'tpope/vim-fugitive'
 " Bundle 'ervandew/supertab'
 " Bundle 'tpope/vim-cucumber'
 " Bundle 'timcharper/textile.vim'
-" Bundle 'tpope/vim-rails'
 " Bundle 'taq/vim-rspec'
 " Bundle 'vim-scripts/ZoomWin'
 " Bundle 'msanders/snipmate.vim'
