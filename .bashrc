@@ -7,12 +7,21 @@ export EDITOR=vim
 export NODE_PATH=/usr/local/lib/node_modules
 
 # RVM configuration
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-rvm use ruby-1.9.2-p290 1> /dev/null
+if [ -s "$HOME/.rvm/scripts/rvm" ]; then
+  . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+  rvm use ruby-1.9.2-p290 1> /dev/null
+fi
 
 # MacPorts Bash shell command completion
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   .  /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
 fi
 
 export HISTSIZE=10000
@@ -78,7 +87,7 @@ alias ii='cd /Users/benoit/Developments/BooBoo/'
 
 # PS1='[LOCAL]\u@\h:\w\$ \n>'
 # PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
-PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]\u@\h:\w  \n→ '
-
+# PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]\u@\h:\w  \n→ '
+PS1='======================================================\n[XEN]\u@\h:\w  \n→ '
 
 . .bashrc_pro
