@@ -102,6 +102,14 @@
 .sudo_as_admin_successful
 .xsession-errors
 .xsession-errors.old
+.Tribler/
+.atea
+.bash_profile
+.cmus/
+.ctrlp_cache/
+.ievms/
+.links/
+.one9/
+.tmux.conf
+.vimlogs/
 
-
-                        :crypted_password => key.encrypt("admin"),
