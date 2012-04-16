@@ -64,12 +64,17 @@ complete -o bashdefault -o default -o nospace -F _gitk co
 
 # Billetto
 alias be="bundle exec"
+alias boo='cd /Users/benoit/Developments/Boo/boo'
 alias bb='cd /Users/benoit/Developments/Billetto/billetto/'
 alias bb2='cd /Users/benoit/Developments/Billetto/billetto2/'
-alias au='cd /Users/benoit/Developments/Artworkersunited/awu/'
-alias brs='bundle exec rails server'
-alias brsd='bundle exec rails server --debugger'
-alias brc='bundle exec rails console'
+alias bb3='cd /Users/benoit/Developments/Billetto/billetto3/'
+alias bbd='cd /Users/benoit/Developments/Billetto/Billetto_Doc/'
+alias au='cd /Users/benoit/Developments/Artworkersunited/artworkersunited/'
+alias brs='rails server'
+alias brsd='rails server --debugger'
+alias brc='rails console'
+
+alias ii='cd /Users/benoit/Developments/BooBoo/'
 
 # PS1='[LOCAL]\u@\h:\w\$ \n>'
 # PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
