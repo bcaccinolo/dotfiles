@@ -71,23 +71,27 @@ complete -o bashdefault -o default -o nospace -F _gitk co
 
 # stories and story to list my pivotal stories
 
-# Billetto
+# Commands
 alias be="bundle exec"
+alias brs='rails server'
+alias brsd='rails server --debugger'
+alias brc='rails console'
+
+# Projects
 alias boo='cd /Users/benoit/Developments/Boo/boo'
 alias bb='cd /Users/benoit/Developments/Billetto/billetto/'
 alias bb2='cd /Users/benoit/Developments/Billetto/billetto2/'
 alias bb3='cd /Users/benoit/Developments/Billetto/billetto3/'
 alias bbd='cd /Users/benoit/Developments/Billetto/Billetto_Doc/'
 alias au='cd /Users/benoit/Developments/Artworkersunited/artworkersunited/'
-alias brs='rails server'
-alias brsd='rails server --debugger'
-alias brc='rails console'
+alias ts='cd /Users/benoit/Developments/Billetto/TicketScanner/'
+
 
 alias ii='cd /Users/benoit/Developments/BooBoo/'
 
 # PS1='[LOCAL]\u@\h:\w\$ \n>'
 # PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
-# PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]\u@\h:\w  \n→ '
-PS1='======================================================\n[XEN]\u@\h:\w  \n→ '
+PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
+# PS1='======================================================\n[XEN]\u@\h:\w  \n→ '
 
 . .bashrc_pro
