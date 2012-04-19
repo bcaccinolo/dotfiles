@@ -49,3 +49,11 @@ map <Leader>r :e!<CR>
 
 " q to split a line to 80 char long
 map Q 080lwbels<CR><ESC>
+
+" to scroll through buffers
+map <C-b> :bnext<CR>
+
+map <F10> 10j
+map <F11> 10k
+
+
