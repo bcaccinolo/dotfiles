@@ -58,8 +58,9 @@ set smartcase
 set modeline
 set modelines=10
 
-" color scheme
-color desert
+" color desert
+" color default
+" colorscheme solarized
 
 " Directories for swp files
 set backupdir=~/.vim/backup,/tmp/
@@ -94,6 +95,4 @@ if has("autocmd")
         \| exe "normal g'\"" | endif
 endif
 
-" start vim splitted
-:vsplit
 
