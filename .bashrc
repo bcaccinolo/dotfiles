@@ -65,6 +65,7 @@ complete -o bashdefault -o default -o nospace -F _gitk co
 # Billetto
 alias be="bundle exec"
 alias bb='cd /Users/benoit/Developments/Billetto/billetto/'
+alias boo='cd /Users/benoit/Developments/Boo/boo/'
 alias bb2='cd /Users/benoit/Developments/Billetto/billetto2/'
 alias au='cd /Users/benoit/Developments/Artworkersunited/awu/'
 alias brs='bundle exec rails server'
