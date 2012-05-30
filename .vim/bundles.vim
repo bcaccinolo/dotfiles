@@ -13,7 +13,7 @@ Bundle 'ervandew/supertab'
 Bundle 'wincent/Command-T'
   let g:CommandTMaxHeight=20
   let g:CommandTMatchWindowReverse=1
-  map <Leader>ft  :CommandTFlush<CR>
+  map <Leader>ff  :CommandTFlush<CR>
   map <leader>t   :CommandTFlush<cr>\|:CommandT <cr>
   " Rails specific 
   map <leader>fa  :CommandTFlush<cr>\|:CommandT app<cr>
