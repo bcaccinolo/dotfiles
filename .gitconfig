@@ -38,6 +38,3 @@
   changed = green
   untracked = cyan
 
-[github]
-	user = bcaccinolo
-	token = 72fbcbcfa75f37ad15565733ab3a43b8
