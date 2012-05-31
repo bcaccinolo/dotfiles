@@ -11,7 +11,7 @@
 
 [user]
 	name = Caccinolo Benoit
-  email = benoit.caccinolo@gmail.com
+# email = XXXX
 
 [core]
 #  pager = ""
@@ -40,4 +40,4 @@
 
 [github]
 	user = bcaccinolo
-	token = 72fbcbcfa75f37ad15565733ab3a43b8
+#	token = XXXX
