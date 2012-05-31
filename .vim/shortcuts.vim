@@ -53,7 +53,7 @@ map Q 080lwbels<CR><ESC>
 " to scroll through buffers
 map <C-b> :bnext<CR>
 
-map <F10> 10j
-map <F11> 10k
+map <F9> 10j
+map <F10> 10k
 
 
