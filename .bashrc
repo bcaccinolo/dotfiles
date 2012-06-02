@@ -78,17 +78,12 @@ alias brsd='rails server --debugger'
 alias brc='rails console'
 
 # Projects
-alias boo='cd /Users/benoit/Developments/Boo/boo'
 alias bb='cd /Users/benoit/Developments/Billetto/billetto/'
-alias boo='cd /Users/benoit/Developments/Boo/boo/'
 alias bb2='cd /Users/benoit/Developments/Billetto/billetto2/'
 alias bb3='cd /Users/benoit/Developments/Billetto/billetto3/'
 alias bbd='cd /Users/benoit/Developments/Billetto/Billetto_Doc/'
 alias au='cd /Users/benoit/Developments/Artworkersunited/artworkersunited/'
 alias ts='cd /Users/benoit/Developments/Billetto/TicketScanner/'
-
-
-alias ii='cd /Users/benoit/Developments/BooBoo/'
 
 # PS1='[LOCAL]\u@\h:\w\$ \n>'
 # PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
