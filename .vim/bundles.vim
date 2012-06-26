@@ -53,7 +53,7 @@ color solarized
 
 " Bundle 'scrooloose/syntastic'
 
-" Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rails'
 
 " Bundle 'michaeljsmith/vim-indent-object'
 " Bundle 'vim-scripts/taglist.vim'

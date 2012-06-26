@@ -9,7 +9,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 # RVM configuration
 if [ -s "$HOME/.rvm/scripts/rvm" ]; then
   . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-  rvm use ruby-1.9.2-p290 1> /dev/null
+  rvm use ruby-1.9.2-p320 1> /dev/null
 fi
 
 # MacPorts Bash shell command completion
@@ -95,3 +95,5 @@ PS1='======================================================\n[LOCAL $(__git_ps1 
 # PS1='======================================================\n[XEN]\u@\h:\w  \n→ '
 
 . .bashrc_pro
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
