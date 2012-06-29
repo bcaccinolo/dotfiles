@@ -33,6 +33,8 @@ alias ls='ls -G'
 alias la='ls -a'
 alias c='cd ..'
 alias cdapp='cd app'
+alias cdmodel='cd app/models'
+alias cdcontroller='cd app/controllers'
 alias ll='ls -alh'
 
 alias tt='tree -C -L 1'
