@@ -9,7 +9,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 # RVM configuration
 if [ -s "$HOME/.rvm/scripts/rvm" ]; then
   . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-  rvm use ruby-1.9.2-p320 1> /dev/null
+  rvm use ruby-1.9.2-p290 1> /dev/null
 fi
 
 # MacPorts Bash shell command completion
@@ -34,6 +34,7 @@ alias la='ls -a'
 alias c='cd ..'
 alias cdapp='cd app'
 alias cdmodel='cd app/models'
+alias cdviews='cd app/views'
 alias cdcontroller='cd app/controllers'
 alias ll='ls -alh'
 
