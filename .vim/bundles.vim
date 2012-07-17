@@ -3,6 +3,7 @@
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" git clone https://github.com/gmarik/vundle.git
 Bundle 'gmarik/vundle'
 
 Bundle 'ddollar/nerdcommenter'
