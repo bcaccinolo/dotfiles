@@ -34,6 +34,7 @@ Bundle 'msanders/snipmate.vim'
 
 Bundle 'wycats/nerdtree'
   let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+  let NERDTreeShowBookmarks=1
   map <Leader>n :NERDTreeToggle<CR>
 
 Bundle 'bcaccinolo/rspec-vim-folding'
