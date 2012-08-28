@@ -3,6 +3,7 @@
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" git clone https://github.com/gmarik/vundle.git
 Bundle 'gmarik/vundle'
 
 Bundle 'ddollar/nerdcommenter'
@@ -33,6 +34,7 @@ Bundle 'msanders/snipmate.vim'
 
 Bundle 'wycats/nerdtree'
   let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+  let NERDTreeShowBookmarks=1
   map <Leader>n :NERDTreeToggle<CR>
 
 Bundle 'bcaccinolo/rspec-vim-folding'
@@ -53,7 +55,7 @@ color solarized
 
 " Bundle 'scrooloose/syntastic'
 
-" Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rails'
 
 " Bundle 'michaeljsmith/vim-indent-object'
 " Bundle 'vim-scripts/taglist.vim'
