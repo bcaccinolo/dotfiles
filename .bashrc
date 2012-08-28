@@ -9,7 +9,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 # RVM configuration
 if [ -s "$HOME/.rvm/scripts/rvm" ]; then
   . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-  rvm use ruby-1.9.2-p290 1> /dev/null
+  rvm use ruby-1.9.3-p194 1> /dev/null
 fi
 
 # MacPorts Bash shell command completion
@@ -33,6 +33,9 @@ alias ls='ls -G'
 alias la='ls -a'
 alias c='cd ..'
 alias cdapp='cd app'
+alias cdmodel='cd app/models'
+alias cdviews='cd app/views'
+alias cdcontroller='cd app/controllers'
 alias ll='ls -alh'
 
 alias tt='tree -C -L 1'
@@ -78,6 +81,7 @@ alias brsd='rails server --debugger'
 alias brc='rails console'
 
 # Projects
+alias boo='cd /Users/benoit/Developments/BooBoo/'
 alias bb='cd /Users/benoit/Developments/Billetto/billetto/'
 alias bb2='cd /Users/benoit/Developments/Billetto/billetto2/'
 alias bb3='cd /Users/benoit/Developments/Billetto/billetto3/'
@@ -91,3 +95,5 @@ PS1='======================================================\n[LOCAL $(__git_ps1 
 # PS1='======================================================\n[XEN]\u@\h:\w  \n→ '
 
 . .bashrc_pro
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
