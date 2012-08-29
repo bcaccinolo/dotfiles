@@ -22,8 +22,8 @@ Bundle 'wincent/Command-T'
   map <leader>fm  :CommandTFlush<cr>\|:CommandT app/models<cr>
   map <leader>fv  :CommandTFlush<cr>\|:CommandT app/views<cr>
   map <leader>fh  :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-  map <leader>fs  :CommandTFlush<cr>\|:CommandT app/stylesheets<cr>
-  map <leader>fj  :CommandTFlush<cr>\|:CommandT public/javascripts<cr>
+  map <leader>fs  :CommandTFlush<cr>\|:CommandT app/assets/stylesheets<cr>
+  map <leader>fj  :CommandTFlush<cr>\|:CommandT app/assets/javascripts<cr>
   map <leader>fl  :CommandTFlush<cr>\|:CommandT lib<cr>
   map <leader>ft  :CommandTFlush<cr>\|:CommandT spec<cr>
   map <leader>fcc :CommandTFlush<cr>\|:CommandT config<cr>
