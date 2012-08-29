@@ -9,7 +9,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 # RVM configuration
 if [ -s "$HOME/.rvm/scripts/rvm" ]; then
   . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-  rvm use ruby-1.9.2-p290 1> /dev/null
+  rvm use ruby-1.9.3-p194 1> /dev/null
 fi
 
 # MacPorts Bash shell command completion
@@ -59,6 +59,7 @@ alias pull='git pull'
 alias ci='git ci'
 alias co='git co'
 alias git-count='git shortlog -s -n'
+alias eydeploy='ey deploy -e eventmaker_clone_ruby_1_9_2'
 
 # now my git aliases work with git-completion
 complete -o bashdefault -o default -o nospace -F _gitk st
@@ -73,9 +74,9 @@ complete -o bashdefault -o default -o nospace -F _gitk ci
 complete -o bashdefault -o default -o nospace -F _gitk co
 
 # stories and story to list my pivotal stories
-
 # Commands
-alias be="bundle exec"
+alias b='bundle'
+alias be='bundle exec'
 alias brs='rails server'
 alias brsd='rails server --debugger'
 alias brc='rails console'
