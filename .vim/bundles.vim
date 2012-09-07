@@ -1,5 +1,4 @@
-
-" Vundle confifg
+" Vundle config
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -37,8 +36,6 @@ Bundle 'wycats/nerdtree'
   let NERDTreeShowBookmarks=1
   map <Leader>n :NERDTreeToggle<CR>
 
-Bundle 'bcaccinolo/rspec-vim-folding'
-
 Bundle 'bcaccinolo/bclose'
   map <Leader>bd :Bclose<CR>
 
@@ -48,25 +45,8 @@ Bundle 'vim-scripts/DrawIt'
 
 Bundle 'tpope/vim-endwise'
 
-Bundle 'tsaleh/vim-matchit'
-
 Bundle 'altercation/vim-colors-solarized'
 color solarized
 
-" Bundle 'scrooloose/syntastic'
-
-Bundle 'tpope/vim-rails'
-
-" Bundle 'michaeljsmith/vim-indent-object'
-" Bundle 'vim-scripts/taglist.vim'
-" Bundle 'tpope/vim-vividchalk'
-" Bundle 'altercation/vim-colors-solarized'
-" Bundle 'tpope/vim-markdown'
-" Bundle 'tsaleh/vim-align'
-" Bundle 'tpope/vim-unimpaired'
-" Bundle 'vim-scripts/searchfold.vim'
-" Bundle 'tpope/vim-endwise'
-" Bundle 'wgibbs/vim-irblack'
-" Bundle 'kchmck/vim-coffee-script'
-" Bundle 'scrooloose/syntastic'
+" Bundle 'bcaccinolo/rspec-vim-folding'
 
