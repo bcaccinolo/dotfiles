@@ -1,4 +1,8 @@
 
+# encoding unification
+export LC_ALL=en_US.utf-8 
+export LANG="$LC_ALL" 
+
 PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export SVN_EDITOR=vim
@@ -15,6 +19,11 @@ fi
 # MacPorts Bash shell command completion
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   .  /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 # enable programmable completion features (you don't need to enable
