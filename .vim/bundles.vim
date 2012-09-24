@@ -31,7 +31,8 @@ Bundle 'wincent/Command-T'
 Bundle 'msanders/snipmate.vim'
   let g:snippets_dir="~/.vim/snippets/"
 
-Bundle 'wycats/nerdtree'
+Bundle 'scrooloose/nerdtree'
+  let g:NERDTreeDirArrows=0
   let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
   let NERDTreeShowBookmarks=1
   map <Leader>n :NERDTreeToggle<CR>
