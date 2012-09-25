@@ -5,6 +5,8 @@ call vundle#rc()
 " git clone https://github.com/gmarik/vundle.git
 Bundle 'gmarik/vundle'
 
+Bundle 'Lokaltog/vim-powerline'
+
 Bundle 'ddollar/nerdcommenter'
 Bundle 'tpope/vim-surround'
 
