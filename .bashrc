@@ -55,8 +55,10 @@ alias g='ack '
 alias ss='story '
 
 # git aliases
+alias master='co master'
 alias st='git st'
 alias br='git br'
+alias bre='git bre'
 alias lg='git lg'
 alias lgg='git log'
 alias lgo='git log --oneline --decorate'
@@ -69,7 +71,6 @@ alias ci='git ci'
 alias cipm=' ci . -m '
 alias co='git co'
 alias git-count='git shortlog -s -n'
-alias eydeploy='ey deploy -e eventmaker_clone_ruby_1_9_2'
 
 # now my git aliases work with git-completion
 complete -o bashdefault -o default -o nospace -F _gitk st
