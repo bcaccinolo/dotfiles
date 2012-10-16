@@ -1,4 +1,8 @@
 
+# encoding unification
+export LC_ALL=en_US.utf-8 
+export LANG="$LC_ALL" 
+
 PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export SVN_EDITOR=vim
@@ -15,6 +19,11 @@ fi
 # MacPorts Bash shell command completion
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   .  /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -46,8 +55,10 @@ alias g='ack '
 alias ss='story '
 
 # git aliases
+alias master='co master'
 alias st='git st'
 alias br='git br'
+alias bre='git bre'
 alias lg='git lg'
 alias lgg='git log'
 alias lgo='git log --oneline --decorate'
@@ -57,6 +68,7 @@ alias difc='git df --cached'
 alias push='git push'
 alias pull='git pull'
 alias ci='git ci'
+alias cipm=' ci . -m '
 alias co='git co'
 alias git-count='git shortlog -s -n'
 
@@ -73,9 +85,9 @@ complete -o bashdefault -o default -o nospace -F _gitk ci
 complete -o bashdefault -o default -o nospace -F _gitk co
 
 # stories and story to list my pivotal stories
-
 # Commands
-alias be="bundle exec"
+alias b='bundle'
+alias be='bundle exec'
 alias brs='rails server'
 alias brsd='rails server --debugger'
 alias brc='rails console'
@@ -88,12 +100,14 @@ alias bb3='cd /Users/benoit/Developments/Billetto/billetto3/'
 alias bbd='cd /Users/benoit/Developments/Billetto/Billetto_Doc/'
 alias au='cd /Users/benoit/Developments/Artworkersunited/artworkersunited/'
 alias ts='cd /Users/benoit/Developments/Billetto/TicketScanner/'
+alias ii='cd /Users/benoit/Developments/BooBoo/'
 
-# PS1='[LOCAL]\u@\h:\w\$ \n>'
-# PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
+# fun
+alias ff='bash /Users/benoit/Developments/fuck_you.sh' 
+
 PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
-# PS1='======================================================\n[XEN]\u@\h:\w  \n→ '
 
 . .bashrc_pro
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
