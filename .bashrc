@@ -66,11 +66,15 @@ alias dif='git df'
 alias difw='git diff --word-diff'
 alias difc='git df --cached'
 alias push='git push'
+alias p='git push'
 alias pull='git pull'
 alias ci='git ci'
 alias cipm=' ci . -m '
 alias co='git co'
 alias git-count='git shortlog -s -n'
+alias zc='zeus console '
+alias zs='zeus server '
+alias zd='zeus dbconsole '
 
 # now my git aliases work with git-completion
 complete -o bashdefault -o default -o nospace -F _gitk st
