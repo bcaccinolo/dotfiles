@@ -52,6 +52,7 @@ alias tt2='tree -C -L 2'
 alias tt3='tree -C -L 3'
 
 alias g='ack '
+alias gf='ack -g ' # to search file names
 alias ss='story '
 
 # git aliases
