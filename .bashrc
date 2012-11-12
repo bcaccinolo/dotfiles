@@ -1,4 +1,8 @@
 
+# encoding unification
+export LC_ALL=en_US.utf-8 
+export LANG="$LC_ALL" 
+
 PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export SVN_EDITOR=vim
@@ -15,6 +19,11 @@ fi
 # MacPorts Bash shell command completion
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   .  /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -43,11 +52,14 @@ alias tt2='tree -C -L 2'
 alias tt3='tree -C -L 3'
 
 alias g='ack '
+alias gf='ack -g ' # to search file names
 alias ss='story '
 
 # git aliases
+alias master='co master'
 alias st='git st'
 alias br='git br'
+alias bre='git bre'
 alias lg='git lg'
 alias lgg='git log'
 alias lgo='git log --oneline --decorate'
@@ -55,11 +67,15 @@ alias dif='git df'
 alias difw='git diff --word-diff'
 alias difc='git df --cached'
 alias push='git push'
+alias p='git push'
 alias pull='git pull'
 alias ci='git ci'
+alias cipm=' ci . -m '
 alias co='git co'
 alias git-count='git shortlog -s -n'
-alias eydeploy='ey deploy -e eventmaker_clone_ruby_1_9_2'
+alias zc='zeus console '
+alias zs='zeus server '
+alias zd='zeus dbconsole '
 
 # now my git aliases work with git-completion
 complete -o bashdefault -o default -o nospace -F _gitk st
@@ -89,6 +105,9 @@ alias bb3='cd /Users/benoit/Developments/Billetto/billetto3/'
 alias bbd='cd /Users/benoit/Developments/Billetto/Billetto_Doc/'
 alias au='cd /Users/benoit/Developments/Artworkersunited/artworkersunited/'
 alias ts='cd /Users/benoit/Developments/Billetto/TicketScanner/'
+
+# fun
+alias ff='bash /Users/benoit/Developments/fuck_you.sh' 
 
 
 alias ii='cd /Users/benoit/Developments/BooBoo/'
