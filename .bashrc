@@ -93,6 +93,15 @@ alias ts='cd /Users/benoit/Developments/Billetto/TicketScanner/'
 
 alias ii='cd /Users/benoit/Developments/BooBoo/'
 
+
+__git_ps1 () 
+{ 
+    local b="$(git symbolic-ref HEAD 2>/dev/null)";
+    if [ -n "$b" ]; then
+        printf " (%s)" "${b##refs/heads/}";
+    fi
+}
+
 # PS1='[LOCAL]\u@\h:\w\$ \n>'
 # PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
 PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
