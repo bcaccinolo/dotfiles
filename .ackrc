@@ -8,4 +8,5 @@
 # --pager=less -r
 
 --type-add=ruby=.haml,.rake
+--type-add=css=.scss
 
