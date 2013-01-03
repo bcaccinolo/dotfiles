@@ -5,6 +5,7 @@ export LANG="$LC_ALL"
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export PATH=$PATH:/usr/local/share/npm/bin
 export SVN_EDITOR=vim
 export EDITOR=vim
 
@@ -38,6 +39,7 @@ export HISTSIZE=10000
 alias www="cd /Library/WebServer/Documents/"
 
 alias vi='vim'
+alias f='ls -G'
 alias ls='ls -G'
 alias la='ls -a'
 alias c='cd ..'
