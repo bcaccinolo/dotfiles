@@ -70,6 +70,7 @@ alias difw='git diff --word-diff'
 alias difc='git df --cached'
 alias push='git push'
 alias p='git push'
+alias pu='git pull'
 alias pull='git pull'
 alias ci='git ci'
 alias cipm=' ci . -m '
@@ -131,3 +132,6 @@ PS1='======================================================\n[LOCAL $(__git_ps1 
 . .bashrc_pro
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+bb
+
