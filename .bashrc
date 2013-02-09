@@ -133,5 +133,3 @@ PS1='======================================================\n[LOCAL $(__git_ps1 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-bb
-
