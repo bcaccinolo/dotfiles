@@ -101,8 +101,8 @@ alias brsd='rails server --debugger'
 alias brc='rails console'
 
 # Projects
-alias oo='cd /Users/benoit/Developments/BooBoo/'
-alias blog='cd /Users/benoit/Developments/BooBooBlog/'
+alias oo='cd /Users/benoit/Developments/booboo/'
+alias blog='cd /Users/benoit/Developments/boobooblog/'
 alias 66='ssh benoit@130.185.130.213'
 alias bb='cd /Users/benoit/Developments/Billetto/billetto/'
 alias bb2='cd /Users/benoit/Developments/Billetto/billetto2/'
