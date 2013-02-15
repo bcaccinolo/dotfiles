@@ -133,4 +133,5 @@ PS1='======================================================\n[LOCAL $(__git_ps1 
 . .bashrc_pro
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/pear/bin
 
