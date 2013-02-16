@@ -38,6 +38,10 @@ map <Leader>e :tabnew<CR>
 map <Leader>> :tabnext<CR>
 map <Leader>< :tabprevious<CR>
 
+" Buffer easy navigation
+:nnoremap <Leader>1 :bprevious<CR>
+:nnoremap <Leader>2 :bnext<CR>
+
 " help with hash type in Ruby
 imap <C-l> <Space>=><Space>
 
