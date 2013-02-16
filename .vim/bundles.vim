@@ -39,7 +39,7 @@ Bundle 'scrooloose/nerdtree'
   map <Leader>n :NERDTreeToggle<CR>
 
 Bundle 'altercation/vim-colors-solarized'
-  color solarized
+  " color solarized
 
 Bundle 'bcaccinolo/bclose'
   map <Leader>bd :Bclose<CR>
