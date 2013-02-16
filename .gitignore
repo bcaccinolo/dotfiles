@@ -112,3 +112,6 @@
 .one9/
 .tmux.conf
 .vimlogs/
+.erlang.cookie
+.oces/
+
