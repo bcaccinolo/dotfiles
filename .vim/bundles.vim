@@ -4,10 +4,14 @@ call vundle#rc()
 
 " git clone https://github.com/gmarik/vundle.git
 Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'ddollar/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
+Bundle 'vim-scripts/bufexplorer.zip'
+Bundle 'vim-scripts/DrawIt'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'tpope/vim-endwise'
+
 Bundle 'wincent/Command-T'
   let g:CommandTMaxHeight=20
   let g:CommandTMatchWindowReverse=1
@@ -25,19 +29,20 @@ Bundle 'wincent/Command-T'
   map <leader>ft  :CommandTFlush<cr>\|:CommandT spec<cr>
   map <leader>fcc :CommandTFlush<cr>\|:CommandT config<cr>
   map <leader>fo  :CommandTFlush<cr>\|:CommandT config/locales<cr>
+
 Bundle 'msanders/snipmate.vim'
   let g:snippets_dir="~/.vim/snippets/"
+
 Bundle 'scrooloose/nerdtree'
   let g:NERDTreeDirArrows=0
   let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
   map <Leader>n :NERDTreeToggle<CR>
-Bundle 'vim-scripts/bufexplorer.zip'
-Bundle 'vim-scripts/DrawIt'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'tpope/vim-endwise'
+
 Bundle 'altercation/vim-colors-solarized'
   color solarized
+
 Bundle 'bcaccinolo/bclose'
   map <Leader>bd :Bclose<CR>
+
 " Bundle 'bcaccinolo/rspec-vim-folding'
 

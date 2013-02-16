@@ -5,6 +5,7 @@ export LANG="$LC_ALL"
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export PATH=$PATH:/usr/local/share/npm/bin
 export SVN_EDITOR=vim
 export EDITOR=vim
 
@@ -38,6 +39,7 @@ export HISTSIZE=10000
 alias www="cd /Library/WebServer/Documents/"
 
 alias vi='vim'
+alias f='ls -G'
 alias ls='ls -G'
 alias la='ls -a'
 alias c='cd ..'
@@ -52,6 +54,7 @@ alias tt2='tree -C -L 2'
 alias tt3='tree -C -L 3'
 
 alias g='ack '
+alias gf='ack -g ' # to search file names
 alias ss='story '
 
 # git aliases
@@ -66,11 +69,16 @@ alias dif='git df'
 alias difw='git diff --word-diff'
 alias difc='git df --cached'
 alias push='git push'
+alias p='git push'
+alias pu='git pull'
 alias pull='git pull'
 alias ci='git ci'
 alias cipm=' ci . -m '
 alias co='git co'
 alias git-count='git shortlog -s -n'
+alias zc='zeus console '
+alias zs='zeus server '
+alias zd='zeus dbconsole '
 
 # now my git aliases work with git-completion
 complete -o bashdefault -o default -o nospace -F _gitk st
@@ -93,7 +101,8 @@ alias brsd='rails server --debugger'
 alias brc='rails console'
 
 # Projects
-alias boo='cd /Users/benoit/Developments/BooBoo/'
+alias oo='cd /Users/benoit/Developments/booboo/'
+alias blog='cd /Users/benoit/Developments/boobooblog/'
 alias bb='cd /Users/benoit/Developments/Billetto/billetto/'
 alias bb2='cd /Users/benoit/Developments/Billetto/billetto2/'
 alias bb3='cd /Users/benoit/Developments/Billetto/billetto3/'
@@ -105,9 +114,21 @@ alias ii='cd /Users/benoit/Developments/BooBoo/'
 # fun
 alias ff='bash /Users/benoit/Developments/fuck_you.sh' 
 
+
+__git_ps1 () 
+{ 
+    local b="$(git symbolic-ref HEAD 2>/dev/null)";
+    if [ -n "$b" ]; then
+        printf "(%s)" "${b##refs/heads/}";
+    fi
+}
+
+# PS1='[LOCAL]\u@\h:\w\$ \n>'
+# PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
 PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
 
 . .bashrc_pro
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/pear/bin
 
