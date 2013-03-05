@@ -110,6 +110,7 @@ alias bbd='cd /Users/benoit/Developments/Billetto/Billetto_Doc/'
 alias au='cd /Users/benoit/Developments/Artworkersunited/artworkersunited/'
 alias ts='cd /Users/benoit/Developments/Billetto/TicketScanner/'
 alias ii='cd /Users/benoit/Developments/BooBoo/'
+alias hh='cd /Users/benoit/Developments/hitweb.rb/'
 
 # fun
 alias ff='bash /Users/benoit/Developments/fuck_you.sh' 
