@@ -76,6 +76,8 @@ alias ci='git ci'
 alias cipm=' ci . -m '
 alias co='git co'
 alias git-count='git shortlog -s -n'
+
+alias z='zeus '
 alias zc='zeus console '
 alias zs='zeus server '
 alias zd='zeus dbconsole '
