@@ -7,6 +7,6 @@
 # Use "less -r" as my pager
 # --pager=less -r
 
---type-add=ruby=.haml,.rake
+--type-add=ruby=.haml,.rake,.ru
 --type-add=css=.scss
 
