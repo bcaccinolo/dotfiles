@@ -57,4 +57,6 @@ map Q 080lwbels<CR><ESC>
 map <F9> 10j
 map <F10> 10k
 
+map <C-w><F9>  :resize +7<CR>
+map <C-w><F10> :resize -7<CR>
 
