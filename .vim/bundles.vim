@@ -51,3 +51,4 @@ Bundle 'bcaccinolo/bclose'
 
 Bundle 'gagoar/StripWhiteSpaces'
 Bundle 'vim-scripts/ack.vim'
+
