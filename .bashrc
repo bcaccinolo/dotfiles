@@ -127,8 +127,11 @@ __git_ps1 ()
 # PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
 PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
 
-. .bashrc_pro
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/pear/bin
+
+[[ -s /Users/benoit/.nvm/nvm.sh ]] && . /Users/benoit/.nvm/nvm.sh # This loads NVM
+
+. .bashrc_pro
+
 

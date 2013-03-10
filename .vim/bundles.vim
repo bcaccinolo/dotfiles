@@ -46,3 +46,4 @@ Bundle 'bcaccinolo/bclose'
 
 " Bundle 'bcaccinolo/rspec-vim-folding'
 
+Bundle 'vim-scripts/ack.vim'
