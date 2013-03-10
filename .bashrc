@@ -76,6 +76,8 @@ alias ci='git ci'
 alias cipm=' ci . -m '
 alias co='git co'
 alias git-count='git shortlog -s -n'
+
+alias z='zeus '
 alias zc='zeus console '
 alias zs='zeus server '
 alias zd='zeus dbconsole '
@@ -110,6 +112,7 @@ alias bbd='cd /Users/benoit/Developments/Billetto/Billetto_Doc/'
 alias au='cd /Users/benoit/Developments/Artworkersunited/artworkersunited/'
 alias ts='cd /Users/benoit/Developments/Billetto/TicketScanner/'
 alias ii='cd /Users/benoit/Developments/BooBoo/'
+alias hh='cd /Users/benoit/Developments/hitweb.rb/'
 
 # fun
 alias ff='bash /Users/benoit/Developments/fuck_you.sh' 
@@ -133,5 +136,4 @@ PATH=$PATH:$HOME/pear/bin
 [[ -s /Users/benoit/.nvm/nvm.sh ]] && . /Users/benoit/.nvm/nvm.sh # This loads NVM
 
 . .bashrc_pro
-
 

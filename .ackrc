@@ -3,10 +3,13 @@
 
 # Always color, even if piping to a another program
 # --color
+# Colors
+--color-filename=bold red
+--color-lineno=bold magenta
 
 # Use "less -r" as my pager
 # --pager=less -r
 
---type-add=ruby=.haml,.rake
+--type-add=ruby=.haml,.rake,.ru
 --type-add=css=.scss
 
