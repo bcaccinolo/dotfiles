@@ -50,3 +50,5 @@ Bundle 'bcaccinolo/bclose'
 " Bundle 'bcaccinolo/rspec-vim-folding'
 
 Bundle 'gagoar/StripWhiteSpaces'
+Bundle 'vim-scripts/ack.vim'
+
