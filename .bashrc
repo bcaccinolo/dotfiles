@@ -1,7 +1,7 @@
 
 # encoding unification
-export LC_ALL=en_US.utf-8 
-export LANG="$LC_ALL" 
+export LC_ALL=en_US.utf-8
+export LANG="$LC_ALL"
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
@@ -65,7 +65,7 @@ alias bre='git bre'
 alias lg='git lg'
 alias lgg='git log'
 alias lgo='git log --oneline --decorate'
-alias dif='git df'
+alias dif='git df --ignore-space-change '
 alias difw='git diff --word-diff'
 alias difc='git df --cached'
 alias push='git push'
@@ -115,11 +115,11 @@ alias ii='cd /Users/benoit/Developments/BooBoo/'
 alias hh='cd /Users/benoit/Developments/hitweb.rb/'
 
 # fun
-alias ff='bash /Users/benoit/Developments/fuck_you.sh' 
+alias ff='bash /Users/benoit/Developments/fuck_you.sh'
 
 
-__git_ps1 () 
-{ 
+__git_ps1 ()
+{
     local b="$(git symbolic-ref HEAD 2>/dev/null)";
     if [ -n "$b" ]; then
         printf "(%s)" "${b##refs/heads/}";
