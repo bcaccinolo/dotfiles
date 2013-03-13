@@ -60,3 +60,12 @@ map <F10> 10k
 map <C-w><F9>  :resize +7<CR>
 map <C-w><F10> :resize -7<CR>
 
+" navigate through search results
+map <F7> :cn<CR>
+map <F8> :cprevious<CR>
+
+" CHEAT SHEET :)
+"
+" Close all other windows than the one focused:  CTRL-W o (or CTRL-W CTRL-O), which does the same thing as :only in even fewer keystrokes
+"
+
