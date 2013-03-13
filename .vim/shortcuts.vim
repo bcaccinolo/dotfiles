@@ -68,4 +68,8 @@ map <F8> :cprevious<CR>
 "
 " Close all other windows than the one focused:  CTRL-W o (or CTRL-W CTRL-O), which does the same thing as :only in even fewer keystrokes
 "
-
+" Search and replace from cursor position: :.,$s/A/B/gc
+"  . means from cursor position
+"  $ means to the end of file
+"
+" D : delete from cursor to end of line
