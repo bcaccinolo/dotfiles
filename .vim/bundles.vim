@@ -17,7 +17,7 @@ Bundle 'wincent/Command-T'
   let g:CommandTMatchWindowReverse=1
   map <Leader>ff  :CommandTFlush<CR>
   map <leader>t   :CommandTFlush<cr>\|:CommandT <cr>
-  " Rails specific 
+  " Rails specific
   map <leader>fa  :CommandTFlush<cr>\|:CommandT app<cr>
   map <leader>fc  :CommandTFlush<cr>\|:CommandT app/controllers<cr>
   map <leader>fm  :CommandTFlush<cr>\|:CommandT app/models<cr>
@@ -51,4 +51,5 @@ Bundle 'bcaccinolo/bclose'
 
 Bundle 'gagoar/StripWhiteSpaces'
 Bundle 'vim-scripts/ack.vim'
-
+Bundle 'majutsushi/tagbar'
+  nmap <F12> :TagbarToggle<CR>
