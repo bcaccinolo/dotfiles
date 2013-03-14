@@ -64,6 +64,17 @@ map <C-w><F10> :resize -7<CR>
 map <F7> :cn<CR>
 map <F8> :cprevious<CR>
 
+" move through wrapped lines
+nnoremap j gj
+nnoremap k gk
+
+" Better comand-line editing
+" remapping command-line mode
+cnoremap <C-j> <t_kd>
+cnoremap <C-k> <t_ku>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+
 " CHEAT SHEET :)
 "
 " Close all other windows than the one focused:  CTRL-W o (or CTRL-W CTRL-O), which does the same thing as :only in even fewer keystrokes
