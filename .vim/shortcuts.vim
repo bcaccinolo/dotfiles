@@ -84,3 +84,6 @@ cnoremap <C-e> <End>
 "  $ means to the end of file
 "
 " D : delete from cursor to end of line
+"
+" Create an empty buffer in splitted view: CTRL-W n
+"
