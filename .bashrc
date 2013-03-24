@@ -116,6 +116,7 @@ alias hh='cd /Users/benoit/Developments/hitweb.rb/'
 
 # fun
 alias ff='bash /Users/benoit/Developments/fuck_you.sh'
+alias tt='cd /Users/benoit/Developments/Javascript/backbone/examples/todos'
 
 
 __git_ps1 ()

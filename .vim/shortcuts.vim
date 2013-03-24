@@ -42,6 +42,9 @@ map <Leader>< :tabprevious<CR>
 :nnoremap <Leader>1 :bprevious<CR>
 :nnoremap <Leader>2 :bnext<CR>
 
+:nnoremap <Leader>11 :colorscheme default<CR>
+:nnoremap <Leader>22 :colorscheme torte<CR>
+
 " help with hash type in Ruby
 imap <C-l> <Space>=><Space>
 
