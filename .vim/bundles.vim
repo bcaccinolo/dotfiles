@@ -53,3 +53,13 @@ Bundle 'gagoar/StripWhiteSpaces'
 Bundle 'vim-scripts/ack.vim'
 Bundle 'majutsushi/tagbar'
   nmap <F12> :TagbarToggle<CR>
+  let g:tagbar_sort = 0
+  let g:tagbar_compact = 1
+
+Bundle 'mutewinter/taskpaper.vim'
+augroup taskpaper
+     au! BufRead,BufNewFile *.taskpaper   setfiletype taskpaper
+     au FileType taskpaper setlocal noexpandtab
+augroup END
+
+Bundle 'Lokaltog/vim-easymotion'

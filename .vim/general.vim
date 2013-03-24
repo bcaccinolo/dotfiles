@@ -46,7 +46,7 @@ set softtabstop=2
 set expandtab
 
 "" show non printable characters
-"set list listchars=tab:\ \ ,trail:·  
+"set list listchars=tab:\ \ ,trail:·
 
 " Searching
 set hlsearch
@@ -64,7 +64,7 @@ colorscheme default
 " Directories for swp files
 set backupdir=~/.vim/backup,/tmp/
 set directory=~/.vim/backup,/tmp
-set backupskip=/tmp/*,/private/tmp/* 
+set backupskip=/tmp/*,/private/tmp/*
 
 " Show (partial) command in the status line
 set showcmd
@@ -94,4 +94,5 @@ if has("autocmd")
         \| exe "normal g'\"" | endif
 endif
 
+set cursorline
 
