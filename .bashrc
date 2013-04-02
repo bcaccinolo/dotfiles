@@ -136,5 +136,5 @@ PATH=$PATH:$HOME/pear/bin
 
 [[ -s /Users/benoit/.nvm/nvm.sh ]] && . /Users/benoit/.nvm/nvm.sh # This loads NVM
 
-. .bashrc_pro
+. ~/.bashrc_pro
 
