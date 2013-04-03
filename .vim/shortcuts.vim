@@ -43,7 +43,7 @@ map <Leader>< :tabprevious<CR>
 :nnoremap <Leader>2 :bnext<CR>
 
 :nnoremap <Leader>11 :colorscheme default<CR>
-:nnoremap <Leader>22 :colorscheme torte<CR>
+:nnoremap <Leader>22 :colorscheme darkblue<CR>
 
 " help with hash type in Ruby
 imap <C-l> <Space>=><Space>
@@ -64,8 +64,8 @@ map <C-w><F9>  :resize +7<CR>
 map <C-w><F10> :resize -7<CR>
 
 " navigate through search results
-map <F7> :cn<CR>
-map <F8> :cprevious<CR>
+map <F8> :cn<CR>
+map <F7> :cprevious<CR>
 
 " move through wrapped lines
 nnoremap j gj
