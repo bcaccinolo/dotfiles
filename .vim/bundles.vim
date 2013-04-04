@@ -38,28 +38,21 @@ Bundle 'scrooloose/nerdtree'
   let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
   map <Leader>n :NERDTreeToggle<CR>
 
-Bundle 'altercation/vim-colors-solarized'
-  " syntax enable
-  " set background=light
-  " let g:solarized_termcolors=256
-  " colorscheme solarized
 
 Bundle 'bcaccinolo/bclose'
   map <Leader>bd :Bclose<CR>
 
 " Bundle 'bcaccinolo/rspec-vim-folding'
 
-Bundle 'gagoar/StripWhiteSpaces'
+" Bundle 'gagoar/StripWhiteSpaces'
+
 Bundle 'vim-scripts/ack.vim'
+
 Bundle 'majutsushi/tagbar'
   nmap <F12> :TagbarToggle<CR>
   let g:tagbar_sort = 0
   let g:tagbar_compact = 1
 
-Bundle 'mutewinter/taskpaper.vim'
-augroup taskpaper
-     au! BufRead,BufNewFile *.taskpaper   setfiletype taskpaper
-     au FileType taskpaper setlocal noexpandtab
-augroup END
 
 Bundle 'Lokaltog/vim-easymotion'
+
