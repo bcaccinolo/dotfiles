@@ -56,3 +56,12 @@ Bundle 'majutsushi/tagbar'
 
 Bundle 'Lokaltog/vim-easymotion'
 
+" Some themes
+Bundle 'croaker/mustang-vim'
+Bundle 'jpo/vim-railscasts-theme'
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'sickill/vim-monokai'
+
+" color desert
+" colorscheme default
+colorscheme Monokai
