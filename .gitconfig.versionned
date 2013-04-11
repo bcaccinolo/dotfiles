@@ -4,17 +4,13 @@
   br = branch
   co = checkout
   df = diff
-  lg = log  --decorate=short --stat 
+  lg = log  --decorate=short --stat
   who = shortlog -s --
   undo = reset --hard
   cp = cherry-pick
 
-[user]
-	name = Caccinolo Benoit
-# email = XXXX
-
 [core]
-#  pager = ""
+	pager = less -r
 
 [color]
   branch = auto
@@ -38,6 +34,6 @@
   changed = green
   untracked = cyan
 
-[github]
-	user = bcaccinolo
-#	token = XXXX
+[push]
+	default = simple
+
