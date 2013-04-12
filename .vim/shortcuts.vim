@@ -90,3 +90,6 @@ cnoremap <C-e> <End>
 "
 " Create an empty buffer in splitted view: CTRL-W n
 "
+" 'ctrl-d'     scroll forward half screen
+" 'ctrl-u'     scroll backward half screen
+"
