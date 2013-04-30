@@ -64,4 +64,6 @@ Bundle 'sickill/vim-monokai'
 
 " color desert
 " colorscheme default
-colorscheme Monokai
+" colorscheme Monokai
+" colorscheme Tomorrow-Night-Bright
+colorscheme railscasts

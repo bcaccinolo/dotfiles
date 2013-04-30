@@ -78,6 +78,18 @@ cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
+" Deactivation of the arrows for fun and profit
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
+map <S-k> <Nop>
+
 " CHEAT SHEET :)
 "
 " Close all other windows than the one focused:  CTRL-W o (or CTRL-W CTRL-O), which does the same thing as :only in even fewer keystrokes
@@ -92,4 +104,4 @@ cnoremap <C-e> <End>
 "
 " 'ctrl-d'     scroll forward half screen
 " 'ctrl-u'     scroll backward half screen
-"
+
