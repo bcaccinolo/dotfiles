@@ -14,25 +14,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" Opens an edit command with the path of the currently edited file filled in
-" Normal mode: <Leader>e
-" map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-
-" Opens a tab edit command with the path of the currently edited file filled in
-" Normal mode: <Leader>t
-map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
-
-" Unimpaired configuration
-" Bubble single lines
-" nmap <C-Up> [e
-" nmap <C-Down> ]e
-" Bubble multiple lines
-" vmap <C-Up> [egv
-" vmap <C-Down> ]egv
-
-" reindent the entire file
-map <Leader>I gg=G``<CR>
-
 " Open a new tab
 map <Leader>e :tabnew<CR>
 map <Leader>> :tabnext<CR>
@@ -102,6 +83,6 @@ map <S-k> <Nop>
 "
 " Create an empty buffer in splitted view: CTRL-W n
 "
-" 'ctrl-d'     scroll forward half screen
-" 'ctrl-u'     scroll backward half screen
+" ctrl-d     scroll forward half screen
+" ctrl-u     scroll backward half screen
 
