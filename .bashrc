@@ -58,7 +58,7 @@ alias gf='ack -g ' # to search file names
 alias ss='story '
 
 # git aliases
-alias master='co master'
+alias master='co master; pull'
 alias st='git st'
 alias br='git br'
 alias bre='git bre'
