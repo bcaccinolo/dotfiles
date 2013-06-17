@@ -36,7 +36,6 @@
 .xinitrc
 .xinitrc.old
 .htoprc
-.irb-history
 .pry_history
 .rediscli_history
 .node_libraries/
@@ -52,7 +51,6 @@
 .hushlogin
 .huslogin
 .irb_history
-.irbrc
 .janus.rake
 .lesshst
 .m2/
@@ -78,7 +76,7 @@
 .dropbox/
 .dvdcss/
 
-.profile 
+.profile
 .bash_logout
 .cache/
 
