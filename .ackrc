@@ -13,3 +13,9 @@
 --type-add=ruby=.haml,.rake,.ru
 --type-add=css=.scss
 
+# ignore log files
+--type-set=log:ext:log
+--nolog
+
+
+
