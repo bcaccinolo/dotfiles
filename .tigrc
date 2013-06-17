@@ -1,3 +1,4 @@
 set show-date = short
 set author-width = 10
+set wrap-lines = yes
 
