@@ -106,9 +106,9 @@
 .ctrlp_cache/
 .ievms/
 .links/
-.one9/
 .tmux.conf
 .vimlogs/
-.erlang.cookie
 .oces/
+.ghc/
+.irb-history
 
