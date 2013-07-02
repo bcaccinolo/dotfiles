@@ -14,7 +14,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 # RVM configuration
 if [ -s "$HOME/.rvm/scripts/rvm" ]; then
   . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-  rvm use ruby-1.9.3-p194 1> /dev/null
+  rvm use ruby-1.9.3-p429 1> /dev/null
 fi
 
 # MacPorts Bash shell command completion
@@ -78,9 +78,10 @@ alias co='git co'
 alias git-count='git shortlog -s -n'
 
 alias z='zeus '
-alias zc='zeus console '
-alias zs='zeus server '
-alias zd='zeus dbconsole '
+alias zc='z console '
+alias zs='z server '
+alias zd='z dbconsole '
+alias zz='rm -rf .zeus.sock ; z start '
 
 # now my git aliases work with git-completion
 complete -o bashdefault -o default -o nospace -F _gitk st
