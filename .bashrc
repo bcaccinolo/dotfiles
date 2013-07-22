@@ -14,7 +14,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 # RVM configuration
 if [ -s "$HOME/.rvm/scripts/rvm" ]; then
   . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-  rvm use ruby-1.9.3-p429 1> /dev/null
+  rvm use ruby-1.9.3-p448 1> /dev/null
 fi
 
 # MacPorts Bash shell command completion
