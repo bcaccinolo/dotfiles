@@ -3,6 +3,8 @@
 
 
 .weechat/logs
+.weechat/weechat.log
+
 .bashrc_pro
 .irssi/
 .CFUserTextEncoding
