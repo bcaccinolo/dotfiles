@@ -45,7 +45,6 @@ Bundle 'bcaccinolo/bclose'
 " Bundle 'bcaccinolo/rspec-vim-folding'
 
 Bundle 'gagoar/StripWhiteSpaces'
-
 Bundle 'vim-scripts/ack.vim'
 
 Bundle 'majutsushi/tagbar'
@@ -54,16 +53,12 @@ Bundle 'majutsushi/tagbar'
   let g:tagbar_compact = 1
 
 
-Bundle 'Lokaltog/vim-easymotion'
+" Bundle 'Lokaltog/vim-easymotion'
 
-" Some themes
-Bundle 'croaker/mustang-vim'
+" Themes
+" Bundle 'croaker/mustang-vim'
+" Bundle 'chriskempson/vim-tomorrow-theme'
+" Bundle 'sickill/vim-monokai'
 Bundle 'jpo/vim-railscasts-theme'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'sickill/vim-monokai'
-
-" color desert
-" colorscheme default
-" colorscheme Monokai
-" colorscheme Tomorrow-Night-Bright
 colorscheme railscasts
+
