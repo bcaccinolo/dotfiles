@@ -11,6 +11,10 @@ Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/DrawIt'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'tpope/vim-endwise'
+Bundle 'gagoar/StripWhiteSpaces'
+Bundle 'vim-scripts/ack.vim'
+" Bundle 'bcaccinolo/rspec-vim-folding'
+" Bundle 'Lokaltog/vim-easymotion'
 
 Bundle 'kien/ctrlp.vim'
   let g:ctrlp_map = '<leader>t'
@@ -39,17 +43,10 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'bcaccinolo/bclose'
   map <Leader>bd :Bclose<CR>
 
-" Bundle 'bcaccinolo/rspec-vim-folding'
-
-Bundle 'gagoar/StripWhiteSpaces'
-Bundle 'vim-scripts/ack.vim'
-
 Bundle 'majutsushi/tagbar'
   nmap <F12> :TagbarToggle<CR>
   let g:tagbar_sort = 0
   let g:tagbar_compact = 1
-
-" Bundle 'Lokaltog/vim-easymotion'
 
 " Themes
 " Bundle 'croaker/mustang-vim'
