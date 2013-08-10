@@ -128,8 +128,6 @@ __git_ps1 ()
     fi
 }
 
-# PS1='[LOCAL]\u@\h:\w\$ \n>'
-# PS1='[LOCAL MACBOOK ]\u@imotor:\w\$ \n→ '
 PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
