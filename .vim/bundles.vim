@@ -5,12 +5,16 @@ call vundle#rc()
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle/
 Bundle 'gmarik/vundle'
 Bundle 'ddollar/nerdcommenter'
+  map <leader>ff :NERDTreeFind<cr>
+
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/DrawIt'
-Bundle 'tsaleh/vim-matchit'
+" Bundle 'tsaleh/vim-matchit'
+silent! runtime macros/matchit.vim
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
 
 Bundle 'kien/ctrlp.vim'
   let g:ctrlp_map = '<leader>t'
