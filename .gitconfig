@@ -1,0 +1,47 @@
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log  --decorate=short --stat
+  who = shortlog -s --
+  undo = reset --hard
+  cp = cherry-pick
+
+[user]
+  name = bcaccinolo
+  email = benoit.caccinolo@gmail.com
+
+[core]
+	pager = less -r
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  log = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = blue
+  remote = green
+
+[color "diff"]
+  meta = magenta bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[push]
+	default = simple
+
+[tig]
+ show-date = short
+ author-width = 10
+
