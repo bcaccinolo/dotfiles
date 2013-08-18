@@ -1,4 +1,6 @@
 # PRO GMAIL
+#
+# vi: ft=muttrc
 
 # Change the following six lines to match your Gmail account details
 set imap_user = "bc@billetto.dk"
