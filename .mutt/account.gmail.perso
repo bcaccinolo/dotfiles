@@ -11,14 +11,17 @@ source ~/.mutt/account.gmail.pwd
 
 # Basic config, you can leave this as is
 set folder = "imaps://imap.gmail.com:993"
-set spoolfile = "+INBOX"
+set spoolfile = "imaps://imap.gmail.com:993/INBOX"
+set postponed = "imaps://imap.gmail.com:993/[GMail]/Drafts"
+set trash = "imaps://imap.gmail.com:993/[Gmail]/Trash"
+# record is not necessary cause Gmail saves the mails automatically
+# set record = "imaps://imap.gmail.com:993/[GMail]/Sent Mail"
+
 set imap_check_subscribed
 set hostname = gmail.com
 set mail_check = 120
 set timeout = 300
 set imap_keepalive = 300
-set postponed = "+[GMail]/Drafts"
-set record = "+[GMail]/Sent Mail"
 set header_cache=~/.mutt/cache/perso_headers
 set message_cachedir=~/.mutt/cache/perso_bodies
 set certificate_file=~/.mutt/certificates

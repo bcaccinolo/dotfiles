@@ -1,6 +1,9 @@
 
+source ~/.mutt/colors3
+
 # Change the following line to a different editor you prefer.
 set editor = "vim"
+set pager_stop  # don't go to next message automatically
 
 ignore "Authentication-Results:"
 ignore "DomainKey-Signature:"
@@ -15,8 +18,9 @@ bind editor ^T complete
 bind editor <space> noop
 
 # Gmail-style keyboard shortcuts
-macro index,pager y "<enter-command>unset trash\n <delete-message>" "Gmail archive message"
-macro index,pager d "<enter-command>set trash=\"imaps://imap.googlemail.com/[GMail]/Bin\"\n <delete-message>" "Gmail delete message"
+macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
+# macro index,pager d "<save-message>=[Gmail]/Trash<enter><refresh>" "Trash"
+
 macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index,pager ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
 macro index,pager gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
@@ -30,48 +34,26 @@ source ~/.mutt/account.gmail.perso
 macro index <F11> '<sync-mailbox><enter-command>source ~/.mutt/account.gmail.perso<enter><change-folder>!<enter>'
 macro index <F12> '<sync-mailbox><enter-command>source ~/.mutt/account.gmail.pro<enter><change-folder>!<enter>'
 
-source ~/.mutt/colors3
 
-
-# set sort = 'threads'
 set sort = 'reverse-last-date-received'
-set sort_aux = 'reverse-last-date-received'
+set sort_aux = 'threads'
 set auto_tag = yes
 
+# Index Key Bindings ---------------------------------
+bind index gg       first-entry
+bind index G        last-entry
+bind index,pager R  group-reply
 
+# Sidebar Patch --------------------------------------
+set sidebar_delim   = '│'
+set sidebar_visible = yes
+set sidebar_width   = 24
+color sidebar_new color221 color233
+# color sidebar_new yellow default
 
-
-
-# set up the sidebar, default not visible
-set sidebar_width=40
-set sidebar_visible=yes
-set sidebar_delim='|'
-set sidebar_sort=yes
-
-# which mailboxes to list in the sidebar
-mailboxes =inbox =ml
-
-# color of folders with new mail
-color sidebar_new yellow default
-
-# ctrl-n, ctrl-p to select next, prev folder
-# ctrl-o to open selected folder
-bind index CP sidebar-prev
-bind index CN sidebar-next
-bind index CO sidebar-open
-bind pager CP sidebar-prev
-bind pager CN sidebar-next
-bind pager CO sidebar-open
-
-# I don’t need these. just for documentation purposes. See below.
-# sidebar-scroll-up
-# sidebar-scroll-down
-
-# b toggles sidebar visibility
-macro index b ‘<enter-command>toggle sidebar_visible<enter>’
-macro pager b ‘<enter-command>toggle sidebar_visible<enter>’
-
-# Remap bounce-message function to “B”
-bind index B bounce-message
+# Sidebar Navigation ---------------------------------
+bind index,pager <down>   sidebar-next
+bind index,pager <up>     sidebar-prev
+bind index,pager <right>  sidebar-open
 
 
