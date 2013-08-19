@@ -33,6 +33,12 @@ macro index <F12> '<sync-mailbox><enter-command>source ~/.mutt/account.gmail.pro
 source ~/.mutt/colors3
 
 
+# set sort = 'threads'
+set sort = 'reverse-last-date-received'
+set sort_aux = 'reverse-last-date-received'
+set auto_tag = yes
+
+
 
 
 

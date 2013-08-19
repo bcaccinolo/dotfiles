@@ -24,7 +24,5 @@ set message_cachedir=~/.mutt/cache/pro_bodies
 set certificate_file=~/.mutt/certificates
 set move = no
 set include
-set sort = 'threads'
-set sort_aux = 'reverse-last-date-received'
-set auto_tag = yes
+
 
