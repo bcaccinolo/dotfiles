@@ -21,15 +21,9 @@ color message    white         default
 color search     brightwhite   magenta
 color bold       brightyellow  default
 
-# Color definitions when on a mono screen
-mono bold      bold
-mono underline underline
-mono indicator reverse
-mono error     bold
 
 # Colors for items in the reader
 color header brightyellow default "^(From|Subject):"
 color header brightcyan   default ^To:
 color header brightcyan   default ^Cc:
-mono  header bold                 "^(From|Subject):"
 
