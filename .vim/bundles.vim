@@ -57,5 +57,6 @@ Bundle 'majutsushi/tagbar'
 " Bundle 'chriskempson/vim-tomorrow-theme'
 " Bundle 'sickill/vim-monokai'
 Bundle 'jpo/vim-railscasts-theme'
-colorscheme railscasts
+" colorscheme railscasts
+colorscheme desert
 
