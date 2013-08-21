@@ -1,6 +1,10 @@
 /*
 !.*
 
+.muttrc
+.mutt/*.pwd
+.mutt/cache/
+.mutt/certificates
 
 .weechat/logs
 .weechat/weechat.log

@@ -1,0 +1,25 @@
+#
+# Colour settings for mutt.
+#
+# vi: ft=muttrc
+
+color attachment	green		default
+color error 		red 		default
+color hdrdefault 	cyan 		default
+color header 		red		default 	"^From:"
+color header 		magenta		default   	"^Subject: "
+color header 		blue		default   	"^(To|Cc)"
+color index 		red 		default		'~n 1-'
+color indicator		black 		yellow
+color normal		default		default
+color quoted 		blue		default
+color signature 	cyan 		default
+color status 		brightgreen 	blue
+color tree 		red 		default
+color tilde		cyan		default
+
+# diffs (tries to match git diff --color defaults)
+color body 		red 		default 	'^-.*'
+color body 		green		default 	'^\+.*'
+color body 		cyan		default 	'^@.*'
+color body 		yellow 		default 	'^Modified: .*'

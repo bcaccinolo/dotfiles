@@ -9,6 +9,10 @@
   undo = reset --hard
   cp = cherry-pick
 
+[user]
+  name = bcaccinolo
+  email = benoit.caccinolo@gmail.com
+
 [core]
 	pager = less -r
 
@@ -36,4 +40,8 @@
 
 [push]
 	default = simple
+
+[tig]
+ show-date = short
+ author-width = 10
 
