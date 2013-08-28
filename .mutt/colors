@@ -33,3 +33,9 @@ color header brightcyan   default ^To:
 color header brightcyan   default ^Cc:
 mono  header bold                 "^(From|Subject):"
 
+color index yellow      default ~F      # important messages  ! flag -
+color index blue        default ~N      # new messages    N flag - command "N"
+color index brightwhite default ~U      # unread messages
+color index red         default ~D      # deleted messages      D flag - commands "d"/"u"
+
+
