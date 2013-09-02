@@ -10,7 +10,11 @@ color quoted	   green         default
 color quoted1    yellow        default
 color quoted2    red           default
 color signature  cyan          default
-color indicator  brightyellow  red
+# color indicator  yellow  blue
+# color indicator default color193
+# color indicator default cyan
+color indicator  color108 color236
+
 color error      brightred     default
 color status	   brightwhite   blue
 color tree	     brightmagenta default

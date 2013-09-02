@@ -9,6 +9,7 @@ ignore "Authentication-Results:"
 ignore "DomainKey-Signature:"
 ignore "DKIM-Signature:"
 ignore "X-Mailer:"
+ignore "X-Google-DKIM-Signature:"
 
 hdr_order Date From To Cc
 alternative_order text/plain text/html *
