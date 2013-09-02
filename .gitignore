@@ -5,6 +5,10 @@
 .mutt/*.pwd
 .mutt/cache/
 .mutt/certificates
+.goobook_cache
+.goobook_cache_pro
+.goobookrc.perso
+.goobookrc.pro
 
 .weechat/logs
 .weechat/weechat.log
