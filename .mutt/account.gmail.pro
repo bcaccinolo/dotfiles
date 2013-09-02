@@ -27,7 +27,7 @@ set certificate_file=~/.mutt/certificates
 set move = no
 set include
 
+# easy_install -U goobook
 unset query_command
 set query_command="goobook -c ~/.goobookrc.pro query '%s'"
-
 
