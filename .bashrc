@@ -84,7 +84,7 @@ alias zs='z server '
 alias zd='z dbconsole '
 alias zz='rm -rf .zeus.sock ; z start '
 
-alias mutt='cd ~ ; mutt'
+alias mutt='cd ~/Downloads/ ; mutt'
 
 # now my git aliases work with git-completion
 complete -o bashdefault -o default -o nospace -F _gitk st
