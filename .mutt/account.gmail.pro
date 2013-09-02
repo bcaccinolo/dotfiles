@@ -19,7 +19,8 @@ set timeout = 300
 set imap_keepalive = 300
 set postponed = "+[GMail]/Drafts"
 set record = "+[GMail]/Sent Mail"
-set trash = "+[Gmail]/Bin"
+unset trash
+# set trash = "+[Gmail]/Bin"
 set header_cache=~/.mutt/cache/pro_headers
 set message_cachedir=~/.mutt/cache/pro_bodies
 set certificate_file=~/.mutt/certificates

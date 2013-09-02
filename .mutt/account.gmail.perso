@@ -13,7 +13,8 @@ source ~/.mutt/account.gmail.pwd
 set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+INBOX"
 set postponed = "+[GMail]/Drafts"
-set trash = "+[Gmail]/Trash"
+unset trash
+# set trash = "+[Gmail]/Trash"
 # record is not necessary cause Gmail saves the mails automatically
 # set record = "imaps://imap.gmail.com:993/[GMail]/Sent Mail"
 
@@ -27,5 +28,4 @@ set message_cachedir=~/.mutt/cache/perso_bodies
 set certificate_file=~/.mutt/certificates
 set move = no
 set include
-
 
