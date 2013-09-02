@@ -4,7 +4,7 @@
 
 # Change the following six lines to match your Gmail account details
 set imap_user = "bc@billetto.dk"
-set smtp_url = "smtp://bc@smtp.gmail.com:587/"
+set smtp_url = "smtps://bc@billetto.dk@@smtp.gmail.com:465/"
 set from = "bc@billetto.dk"
 
 source ~/.mutt/account.gmail.pwd
@@ -26,5 +26,8 @@ set message_cachedir=~/.mutt/cache/pro_bodies
 set certificate_file=~/.mutt/certificates
 set move = no
 set include
+
+unset query_command
+set query_command="goobook -c ~/.goobookrc.pro query '%s'"
 
 

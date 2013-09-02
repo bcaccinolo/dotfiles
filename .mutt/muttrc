@@ -10,6 +10,7 @@ ignore "DomainKey-Signature:"
 ignore "DKIM-Signature:"
 ignore "X-Mailer:"
 ignore "X-Google-DKIM-Signature:"
+ignore "DKIM-Signature:"
 
 hdr_order Date From To Cc
 alternative_order text/plain text/html *
@@ -66,5 +67,4 @@ macro index     .o      "l(~N|~O)\n"                    # shows all new and old 
 macro index     .a      "l~A\n"                         # shows all messages (resets the limit fiter)
 macro index     .t      "l~d<1d\n"                      # shows today's messages
 macro index     .y      "l~d<2d ~d>1d\n"                # shows yesterday's messages
-
 
