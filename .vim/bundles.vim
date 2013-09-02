@@ -7,6 +7,17 @@ Bundle 'gmarik/vundle'
 Bundle 'ddollar/nerdcommenter'
   map <leader>ff :NERDTreeFind<cr>
 
+" VIM: Hard Mode
+" Hard Mode is a plugin which disables the arrow keys, the hjkl keys, the page up/down
+" keys, and a handful of other keys which allow one to rely on character-wise navigation
+" The philosophy behind Hard Mode is that you'll never master Vim's advanced motion
+" and search functionality if you can fall back on the anti-pattern of fumbling around
+" your code with the arrow keys.
+Bundle 'wikitopian/hardmode'
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+
+
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 Bundle 'vim-scripts/bufexplorer.zip'

@@ -9,6 +9,8 @@
 .weechat/logs
 .weechat/weechat.log
 
+.elinks/
+
 .rnd
 .bashrc_pro
 .irssi/
