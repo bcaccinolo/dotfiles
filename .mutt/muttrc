@@ -57,4 +57,5 @@ bind index,pager <down>   sidebar-next
 bind index,pager <up>     sidebar-prev
 bind index,pager <right>  sidebar-open
 
+set index_format = "%4C %Z %{%b %d %R} %-25.25L %s"
 
