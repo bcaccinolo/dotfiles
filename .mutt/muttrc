@@ -19,6 +19,11 @@ bind editor <Tab> complete-query
 bind editor ^T complete
 bind editor <space> noop
 
+bind generic ]    half-down         # scroll down 1/2 page
+bind generic [    half-up           # scroll up 1/2 page
+bind pager ]      half-up                 # move up one-half page
+bind pager [     half-down              # move down one-half page
+
 # Gmail-style keyboard shortcuts
 macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
 # macro index,pager d "<save-message>=[Gmail]/Trash<enter><refresh>" "Trash"
