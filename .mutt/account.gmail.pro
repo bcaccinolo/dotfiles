@@ -30,4 +30,7 @@ set include
 # easy_install -U goobook
 unset query_command
 set query_command="goobook -c ~/.goobookrc.pro query '%s'"
-
+# Add contacts to google
+macro index,pager a "goobook -c ~/.goobookrc.pro add" "add the sender address to Google contacts"
+# Reload goobook db
+macro index,pager gr "!goobook -c ~/.goobookrc.pro reload\n" "Goobook reload"
