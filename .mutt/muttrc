@@ -24,7 +24,7 @@ macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
 # macro index,pager d "<save-message>=[Gmail]/Trash<enter><refresh>" "Trash"
 
 macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
-macro index,pager ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+# macro index,pager ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
 macro index,pager gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
 macro index,pager gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
 
