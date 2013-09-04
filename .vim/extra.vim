@@ -16,25 +16,25 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}  set ft=
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
+au BufRead,BufNewFile *.{ex,exs} set ft=elixir
+
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
 
 " au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
-au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+"au FileType python set softtabstop=4 tabstop=4 shiftwidth=4
+au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
+
+au BufNewFile,BufRead *.js set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
 
 " make uses real tabs
 au FileType make set noexpandtab
 
-" to hide the code of method 
-" function! FoldEndBlock()
-"   let spec_idx = line('.') 
-"   let ctx_idx  = search('end', 'n')
-"   let cmd = (spec_idx).','.(ctx_idx).'fold'
-"   exec cmd
-" endfunction
+" add jbuilder syntax highlighting
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
-" nmap ff :call FoldEndBlock()<CR>
-" nmap fo :foldopen! <CR>
+" add ruby syntax highlighting to cap files
+au BufNewFile,BufRead *.cap set ft=ruby
 

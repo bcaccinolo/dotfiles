@@ -10,7 +10,7 @@
   cp = cherry-pick
 
 [core]
-	pager = less -r
+  pager = less -r
 
 [color]
   branch = auto
@@ -35,7 +35,7 @@
   untracked = cyan
 
 [push]
-	default = simple
+  default = simple
 
 [tig]
  show-date = short

@@ -4,6 +4,13 @@ so ~/.vim/bundles.vim
 so ~/.vim/shortcuts.vim
 so ~/.vim/extra.vim
 
+"colorscheme peachpuff
+colorscheme molokai
+"colorscheme one
+"set background=dark
+
+set guicursor+=a:blinkon0
+
 " NOTES
 " :set ft=ruby to force the syntax coloration
 

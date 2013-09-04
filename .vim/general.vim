@@ -21,6 +21,9 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 " required for several plugins
 set nocompatible
 
+" never add  the BOM character
+set nobomb
+
 " enable syntax highlighting
 syntax on
 
@@ -91,5 +94,7 @@ if has("autocmd")
         \| exe "normal g'\"" | endif
 endif
 
-set cursorline
+"set cursorline
 
+" always start commit message at the first line
+autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])

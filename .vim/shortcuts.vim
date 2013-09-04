@@ -8,6 +8,14 @@ nnoremap ; :
 " Tired of clearing highlighted searches by searching for “ldsfhjkhgakjks”?
 nmap <silent> ,/ :nohlsearch<CR>
 
+" Avoid the <ESC> key
+inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap kk <Esc>
+inoremap jj <Esc>
+inoremap df <Esc>
+inoremap fd <Esc>
+
 " Easy window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -23,8 +31,14 @@ map <Leader>< :tabprevious<CR>
 :nnoremap <Leader>1 :bprevious<CR>
 :nnoremap <Leader>2 :bnext<CR>
 
-:nnoremap <Leader>11 :colorscheme default<CR>
-:nnoremap <Leader>22 :colorscheme darkblue<CR>
+:nnoremap <Leader>11 :colorscheme monokai<CR>
+:nnoremap <Leader>22 :colorscheme jellybeans<CR>
+:nnoremap <Leader>33 :colorscheme evening<CR>
+:nnoremap <Leader>44 :colorscheme desert<CR>
+:nnoremap <Leader>55 :colorscheme solarized<CR>
+:nnoremap <Leader>66 :colorscheme slate<CR>
+:nnoremap <Leader>77 :colorscheme railscasts<CR>
+:nnoremap <Leader>88 :colorscheme pencil<CR>
 
 " help with hash type in Ruby
 imap <C-l> <Space>=><Space>
@@ -56,30 +70,33 @@ nnoremap k gk
 " remapping command-line mode
 cnoremap <C-j> <t_kd>
 cnoremap <C-k> <t_ku>
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
-
-" Deactivation of the arrows for fun and profit
-" noremap  <Up> ""
-" noremap! <Up> <Esc>
-" noremap  <Down> ""
-" noremap! <Down> <Esc>
-" noremap  <Left> ""
-" noremap! <Left> <Esc>
-" noremap  <Right> ""
-" noremap! <Right> <Esc>
 
 map <S-k> <Nop>
 
+" format JSON
+nmap =j :%!python -m json.tool<CR>
+
+" CTAGS
+"
+" Ctrl+] to jump to tag when over a word
+" Ctrl+T to pop back
+" :ta for tags
+"
+nmap =t :!ctags -R --extra=f .<cr>
+" open tag in a new tab
+nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
+
 " CHEAT SHEET :)
 "
-" Close all other windows than the one focused:  CTRL-W o (or CTRL-W CTRL-O), which does the same thing as :only in even fewer keystrokes
+" select word under cursor: viw
+" change word under cursor: ciw
 "
 " Search and replace from cursor position: :.,$s/A/B/gc
 "  . means from cursor position
 "  $ means to the end of file
 "
 " D : delete from cursor to end of line
+" C : change from cursor to end of line
 "
 " Create an empty buffer in splitted view: CTRL-W n
 "
@@ -92,4 +109,16 @@ map <S-k> <Nop>
 " H to jump as ‘h’igh as possible (first line of the window)
 " M to jump to the ‘m’iddle of the window
 " L to jump as ‘l’ow as possible (last line being displayed)
+"
+" zz center the screen
+"
+" COPY Registers
+"
+" to copy line in reg 1 : "1yy
+"
+" use d f y to delete until 'y' included
+" use d t y to delete until 'y' NOT included
+"
+"
+" C-t open in new tab with nerdtree
 "

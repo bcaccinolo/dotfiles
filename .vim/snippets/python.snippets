@@ -84,3 +84,10 @@ snippet ifmain
 # __magic__
 snippet _
 	__${1:init}__${2}
+
+snippet pry
+	import ipdb; ipdb.set_trace()
+snippet ipdb
+	import ipdb; ipdb.set_trace()
+snippet puts
+	import sys; sys.stderr.write("\n${1}\n")

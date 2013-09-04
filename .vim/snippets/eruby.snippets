@@ -1,0 +1,14 @@
+snippet log
+	::Rails.logger.warn "#{__FILE__}:#{__LINE__}\n#> ${1} #{${2}}"
+snippet info
+	logger.info "#{__FILE__}:#{__LINE__}\n#> ${1} #{${2}}"
+snippet rlog
+	::Rails.logger.warn "#{__FILE__}:#{__LINE__}\n#> ${1} #{${2}}"
+snippet yaml
+	YAML::dump ${1}
+snippet pry
+	require 'pry'; binding.pry;
+snippet >>
+	<%= ${1} %> ${2}
+snippet >>>
+	<% ${1} %> ${2}

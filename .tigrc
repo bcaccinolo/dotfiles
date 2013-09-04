@@ -1,4 +1,15 @@
-set show-date = short
-set author-width = 10
-set wrap-lines = yes
+set mouse = true
+set vertical-split = false
+set line-graphics = utf-8
+
+bind status P !git push origin
+
+# color cursor			white	default	bold
+
+# source : https://raw.githubusercontent.com/jonas/tig/master/tigrc
+
+
+set main-view	= line-number:no,interval=5 id:no date author:abbreviated commit-title:yes,graph,refs,overflow=no
+
+
 
