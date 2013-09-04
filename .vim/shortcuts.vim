@@ -85,4 +85,11 @@ map <S-k> <Nop>
 "
 " ctrl-d     scroll forward half screen
 " ctrl-u     scroll backward half screen
-
+"
+" ctrl-o     move the last cursor position
+" ctrl-i     move the forward cursor position
+"
+" H to jump as ‘h’igh as possible (first line of the window)
+" M to jump to the ‘m’iddle of the window
+" L to jump as ‘l’ow as possible (last line being displayed)
+"
