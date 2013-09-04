@@ -5,12 +5,24 @@ source ~/.mutt/colors
 set editor = "vim"
 set pager_stop  # don't go to next message automatically
 
-ignore "Authentication-Results:"
-ignore "DomainKey-Signature:"
-ignore "DKIM-Signature:"
-ignore "X-Mailer:"
-ignore "X-Google-DKIM-Signature:"
-ignore "DKIM-Signature:"
+
+#
+# setting the order of the headers displayed
+ignore *
+unhdr_order *
+unignore  Date: From: Reply-To: Mail-Followup-To: To: Cc: Subject:
+hdr_order Date: From: Reply-To: Mail-Followup-To: To: Cc: Subject:
+# unignore  User-Agent: X-Mailer: X-Newsreader: Message-Id:
+# hdr_order User-Agent: X-Mailer: X-Newsreader: Message-Id:
+# unignore  X-Signatur X-Spam-Status:
+# hdr_order X-Signatur X-Spam-Status:
+
+# ignore "Authentication-Results:"
+# ignore "DomainKey-Signature:"
+# ignore "DKIM-Signature:"
+# ignore "X-Mailer:"
+# ignore "X-Google-DKIM-Signature:"
+# ignore "DKIM-Signature:"
 
 hdr_order Date From To Cc
 alternative_order text/plain text/html *
