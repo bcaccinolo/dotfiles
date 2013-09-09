@@ -89,3 +89,5 @@ macro index     .y      "l~d<2d ~d>1d\n"                # shows yesterday's mess
 #Ask before quitting, but default to yes
 set quit=ask-yes
 
+# wrapping lines
+set wrapmargin=`echo $(( $(tput cols) - 100 ))`
