@@ -76,7 +76,7 @@ bind index,pager <up>     sidebar-prev
 bind index,pager <right>  sidebar-open
 
 # set index_format = "%4C %Z %{%b %d %R} %-25.25L %s"
-set index_format = " %Z %{%b %d %R} %-25.25L %s"
+set index_format = "%4C %Z %{%b %d %R} %-25.25L %s"
 
 macro index     .i      "l((~N|~O|~F)!~D)|(~d<1w!~Q)\n" # shows the new/old/flagged but undeleted messages, and those that arrived
                                                         # in the last week but have not yet been replied to. ... i.e. what I should look at first.
