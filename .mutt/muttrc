@@ -90,6 +90,6 @@ macro index     .y      "l~d<2d ~d>1d\n"                # shows yesterday's mess
 set quit=ask-yes
 
 # wrapping lines
-set wrapmargin=`echo $(( $(tput cols) - 100 ))`
+set wrapmargin=`echo $(( $(tput cols) - 120 ))`
 
 set signature="~/.signature"
