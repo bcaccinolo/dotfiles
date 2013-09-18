@@ -17,8 +17,8 @@ set hostname = gmail.com
 set mail_check = 120
 set timeout = 300
 set imap_keepalive = 300
-set postponed = "+[GMail]/Drafts"
-set record = "+[GMail]/Sent Mail"
+# set postponed = "+[GMail]/Drafts"
+# set record = "+[GMail]/Sent Mail"
 unset trash
 # set trash = "+[Gmail]/Bin"
 set header_cache=~/.mutt/cache/pro_headers
