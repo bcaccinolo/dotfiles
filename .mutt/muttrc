@@ -64,10 +64,11 @@ bind index G        last-entry
 bind index,pager R  group-reply
 
 # Sidebar Patch --------------------------------------
-set sidebar_delim   = '│'
 set sidebar_visible = yes
 set sidebar_width   = 24
-color sidebar_new color221 color233
+set sidebar_shortpath
+
+# color sidebar_new color221 color233
 # color sidebar_new yellow default
 
 # Sidebar Navigation ---------------------------------
