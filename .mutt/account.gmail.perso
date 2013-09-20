@@ -34,3 +34,4 @@ set query_command="goobook -c ~/.goobookrc.perso query '%s'"
 # Reload goobook db
 macro index,pager gr "!goobook -c ~/.goobookrc.perso reload\n" "Goobook reload"
 
+macro index,pager a "<pipe-message>goobook -c ~/.goobookrc.perso add<return>" "add sender to google contacts"
