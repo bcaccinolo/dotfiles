@@ -17,8 +17,8 @@ set hostname = gmail.com
 set mail_check = 120
 set timeout = 300
 set imap_keepalive = 300
-set postponed = "+[GMail]/Drafts"
-set record = "+[GMail]/Sent Mail"
+# set postponed = "+[GMail]/Drafts"
+# set record = "+[GMail]/Sent Mail"
 unset trash
 # set trash = "+[Gmail]/Bin"
 set header_cache=~/.mutt/cache/pro_headers
@@ -32,3 +32,6 @@ unset query_command
 set query_command="goobook -c ~/.goobookrc.pro query '%s'"
 # Reload goobook db
 macro index,pager gr "!goobook -c ~/.goobookrc.pro reload\n" "Goobook reload"
+
+macro index,pager a "<pipe-message>goobook -c ~/.goobookrc.pro add<return>" "add sender to google contacts"
+
