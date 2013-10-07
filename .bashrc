@@ -38,7 +38,8 @@ export HISTSIZE=10000
 
 alias www="cd /Library/WebServer/Documents/"
 
-alias vi='vim'
+alias vi='/usr/local/bin/vim'
+alias vim='cowsay use vi not vim'
 alias f='ls -G'
 alias ls='ls -G'
 alias la='ls -a'
@@ -59,6 +60,7 @@ alias ss='story '
 
 # git aliases
 alias master='co master; pull'
+alias staging='co staging; pull'
 alias st='git st'
 alias br='git br'
 alias bre='git bre'
@@ -82,7 +84,7 @@ alias z='zeus '
 alias zc='z console '
 alias zs='z server '
 alias zd='z dbconsole '
-alias zz='rm -rf .zeus.sock ; z start '
+alias zz='reset; rm -rf .zeus.sock ; z start '
 
 alias mutt='cd ~/Downloads/ ; mutt'
 
