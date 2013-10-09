@@ -102,7 +102,7 @@ complete -o bashdefault -o default -o nospace -F _gitk co
 
 # stories and story to list my pivotal stories
 # Commands
-alias b='bundle'
+alias b='reset; bundle'
 alias be='bundle exec'
 alias brs='rails server'
 alias brsd='rails server --debugger'
