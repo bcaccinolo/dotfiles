@@ -13,7 +13,8 @@
 .weechat/logs
 .weechat/weechat.log
 
-.elinks/
+.cpan/
+.pip/
 
 .rnd
 .bashrc_pro
