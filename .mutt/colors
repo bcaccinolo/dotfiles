@@ -13,7 +13,7 @@ color signature  cyan          default
 # color indicator  yellow  blue
 # color indicator default color193
 # color indicator default cyan
-color indicator  color108 color236
+# color indicator  color108 color236
 
 color error      brightred     default
 color status	   brightwhite   blue

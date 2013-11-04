@@ -12,7 +12,7 @@ source ~/.mutt/account.gmail.pwd
 # Basic config, you can leave this as is
 set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+INBOX"
-unset trash
+# unset trash
 # set trash = "+[Gmail]/Trash"
 # record is not necessary cause Gmail saves the mails automatically
 # set record = "imaps://imap.gmail.com:993/[GMail]/Sent Mail"

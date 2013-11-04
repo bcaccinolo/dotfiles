@@ -64,17 +64,14 @@ bind index G        last-entry
 bind index,pager R  group-reply
 
 # Sidebar Patch --------------------------------------
-set sidebar_visible = yes
-set sidebar_width   = 24
-set sidebar_shortpath
-
-# color sidebar_new color221 color233
-# color sidebar_new yellow default
+# set sidebar_visible = yes
+# set sidebar_width   = 24
+# set sidebar_shortpath
 
 # Sidebar Navigation ---------------------------------
-bind index,pager <down>   sidebar-next
-bind index,pager <up>     sidebar-prev
-bind index,pager <right>  sidebar-open
+# bind index,pager <down>   sidebar-next
+# bind index,pager <up>     sidebar-prev
+# bind index,pager <right>  sidebar-open
 
 # set index_format = "%4C %Z %{%b %d %R} %-25.25L %s"
 set index_format = "%4C %Z %{%b %d %R} %-25.25L %s"
