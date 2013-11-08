@@ -28,7 +28,7 @@ set certificate_file=~/.mutt/certificates
 set move = no
 set include
 
-# easy_install -U goobook
+# pip install goobook
 unset query_command
 set query_command="goobook -c ~/.goobookrc.perso query '%s'"
 # Reload goobook db
