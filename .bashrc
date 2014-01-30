@@ -36,8 +36,7 @@ fi
 export HISTSIZE=10000
 
 alias notes='vi ~/Documents/NOTES.txt'
-alias vi='/usr/local/bin/vim'
-alias vim='cowsay use vi not vim'
+alias vi='/usr/local/bin/vim -w ~/.vimlog "$@" '
 alias f='ls -G'
 alias ls='ls -G'
 alias l='ls -1'
