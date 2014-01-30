@@ -1,4 +1,3 @@
-
 # encoding unification
 export LC_ALL=en_US.utf-8
 export LANG="$LC_ALL"
@@ -36,8 +35,7 @@ fi
 
 export HISTSIZE=10000
 
-alias www="cd /Library/WebServer/Documents/"
-
+alias notes='vi ~/Documents/NOTES.txt'
 alias vi='/usr/local/bin/vim'
 alias vim='cowsay use vi not vim'
 alias f='ls -G'
@@ -143,3 +141,5 @@ PATH=$PATH:$HOME/pear/bin
 
 . ~/.bashrc_pro
 
+# OPAM configuration
+. /Users/benoit/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true

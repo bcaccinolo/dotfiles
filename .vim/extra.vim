@@ -27,9 +27,12 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 " make uses real tabs
 au FileType make set noexpandtab
 
-" to hide the code of method 
+" add jbuilder syntax highlighting
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+
+" to hide the code of method
 " function! FoldEndBlock()
-"   let spec_idx = line('.') 
+"   let spec_idx = line('.')
 "   let ctx_idx  = search('end', 'n')
 "   let cmd = (spec_idx).','.(ctx_idx).'fold'
 "   exec cmd
