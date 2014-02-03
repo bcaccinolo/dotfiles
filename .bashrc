@@ -2,9 +2,12 @@
 export LC_ALL=en_US.utf-8
 export LANG="$LC_ALL"
 
-PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin
-export PATH=$PATH:/usr/local/share/npm/bin
+#PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
+#export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+#export PATH=$PATH:/usr/local/share/npm/bin
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#PATH=$PATH:$HOME/pear/bin
+
 export SVN_EDITOR=vim
 export EDITOR=vim
 
@@ -133,12 +136,8 @@ __git_ps1 ()
 
 PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/pear/bin
-
 [[ -s /Users/benoit/.nvm/nvm.sh ]] && . /Users/benoit/.nvm/nvm.sh # This loads NVM
 
-. ~/.bashrc_pro
+# Local professional settings
+# . ~/.bashrc_pro
 
-# OPAM configuration
-. /Users/benoit/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
