@@ -17,5 +17,5 @@
 --type-set=log:ext:log
 --nolog
 
-
-
+# ignore python .virtualenv
+--ignore-dir=.virtualenv
