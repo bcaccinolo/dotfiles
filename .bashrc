@@ -39,7 +39,7 @@ fi
 export HISTSIZE=10000
 
 alias notes='vi ~/Documents/NOTES.txt'
-alias vi='vim -w ~/.vimlog "$@" '
+alias vim='vim -w ~/.vimlog "$@" '
 alias f='ls -G'
 alias ls='ls -G'
 alias l='ls -1'
@@ -110,11 +110,8 @@ alias brsd='rails server --debugger'
 alias brc='rails console'
 
 # Projects
-alias oo='cd /Users/benoit/Developments/podio/api/'
-
-# fun
-alias ff='bash /Users/benoit/Developments/fuck_you.sh'
-alias tt='cd /Users/benoit/Developments/Javascript/backbone/examples/todos'
+alias ap='cd /Users/benoit/Developments/podio/api/'
+alias fr='cd /Users/benoit/Developments/podio/frontend-rails/'
 
 
 __git_ps1 ()
