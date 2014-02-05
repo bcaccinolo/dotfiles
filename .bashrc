@@ -19,12 +19,6 @@ if [ -s "$HOME/.rvm/scripts/rvm" ]; then
   rvm use ruby-1.9.3-p448 1> /dev/null
 fi
 
-# MacPorts Bash shell command completion
-if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-  .  /usr/local/etc/bash_completion.d/git-completion.bash
-fi
-
-
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
