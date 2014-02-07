@@ -34,6 +34,7 @@ export HISTSIZE=10000
 
 alias notes='vi ~/Documents/NOTES.txt'
 alias vim='vim -w ~/.vimlog "$@" '
+alias vi='vim'
 alias f='ls -G'
 alias ls='ls -G'
 alias l='ls -1'
