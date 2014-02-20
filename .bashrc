@@ -32,6 +32,7 @@ fi
 
 export HISTSIZE=10000
 
+alias fp='find .'
 alias notes='vi ~/Documents/NOTES.txt'
 alias vim='vim -w ~/.vimlog "$@" '
 alias vi='vim'
@@ -76,11 +77,15 @@ alias co='git co'
 alias git-count='git shortlog -s -n'
 alias tag='git tag -l | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n'
 
+# rails aliases
 alias z='zeus '
 alias zc='z console '
 alias zs='z server '
 alias zd='z dbconsole '
 alias zz='reset; rm -rf .zeus.sock ; z start '
+
+# python aliases
+alias ns='PODIO_ENV=test_local nosetests '
 
 alias mutt='cd ~/Downloads/ ; mutt'
 
@@ -105,8 +110,10 @@ alias brsd='rails server --debugger'
 alias brc='rails console'
 
 # Projects
-alias ap='cd /Users/benoit/Developments/podio/api/'
+alias ap='cd /Users/benoit/Developments/podio/api/src/hoist/'
+alias ap2='cd /Users/benoit/Developments/podio2/api/src/hoist/'
 alias fr='cd /Users/benoit/Developments/podio/frontend-rails/'
+alias fr2='cd /Users/benoit/Developments/podio2/frontend-rails/'
 
 
 __git_ps1 ()
@@ -123,4 +130,6 @@ PS1='======================================================\n[LOCAL $(__git_ps1 
 
 # Local professional settings
 # . ~/.bashrc_pro
+
+export BC_ENV_ARGS=~/.bcrc
 

@@ -13,8 +13,8 @@ Bundle 'ddollar/nerdcommenter'
 " The philosophy behind Hard Mode is that you'll never master Vim's advanced motion
 " and search functionality if you can fall back on the anti-pattern of fumbling around
 " your code with the arrow keys.
-" Bundle 'wikitopian/hardmode'
-" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+Bundle 'wikitopian/hardmode'
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 " nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 
@@ -32,14 +32,16 @@ Bundle 'vim-scripts/ack.vim'
 silent! runtime macros/matchit.vim
 
 Bundle 'kien/ctrlp.vim'
+  set wildignore+=*.pyc
   let g:ctrlp_map = '<leader>t'
   map <leader>b :CtrlPBuffer<cr>
+  " Python specific
+  map <leader>fh  :CtrlPClearCache<cr>\|:CtrlP src/hoist<cr>
   " Rails specific
   map <leader>fa  :CtrlPClearCache<cr>\|:CtrlP app<cr>
   map <leader>fc  :CtrlPClearCache<cr>\|:CtrlP app/controllers<cr>
   map <leader>fm  :CtrlPClearCache<cr>\|:CtrlP app/models<cr>
   map <leader>fv  :CtrlPClearCache<cr>\|:CtrlP app/views<cr>
-  map <leader>fh  :CtrlPClearCache<cr>\|:CtrlP app/helpers<cr>
   map <leader>fs  :CtrlPClearCache<cr>\|:CtrlP app/assets/stylesheets<cr>
   map <leader>fj  :CtrlPClearCache<cr>\|:CtrlP app/assets/javascripts<cr>
   map <leader>fl  :CtrlPClearCache<cr>\|:CtrlP lib<cr>
@@ -64,10 +66,22 @@ Bundle 'majutsushi/tagbar'
   let g:tagbar_compact = 1
 
 " Themes
-" Bundle 'croaker/mustang-vim'
-" Bundle 'chriskempson/vim-tomorrow-theme'
-" Bundle 'sickill/vim-monokai'
+Bundle 'croaker/mustang-vim'
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'sickill/vim-monokai'
 Bundle 'jpo/vim-railscasts-theme'
+Bundle 'Lokaltog/vim-distinguished'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'ricardovaleriano/vim-github-theme'
+colorscheme github
 " colorscheme railscasts
-colorscheme desert
+" colorscheme desert
+
+Bundle 'klen/python-mode'
+let g:pymode_virtualenv = 1
+let g:pymode_run = 0
+let g:pymode_folding = 0
+let g:pymode_breakpoint = 0
+let g:pymode_lint_checkers = ['pyflakes', 'mccabe']
+
 

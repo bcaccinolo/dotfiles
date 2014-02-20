@@ -4,7 +4,7 @@ so ~/.vim/bundles.vim
 so ~/.vim/shortcuts.vim
 so ~/.vim/extra.vim
 
-so ~/.vim/hardmode.vim
+" so ~/.vim/hardmode.vim
 
 " NOTES
 " :set ft=ruby to force the syntax coloration
