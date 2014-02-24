@@ -72,7 +72,10 @@ Bundle 'sickill/vim-monokai'
 Bundle 'jpo/vim-railscasts-theme'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'nanotech/jellybeans.vim'
+" 450+ themes
+" Bundle 'flazz/vim-colorschemes'
 Bundle 'ricardovaleriano/vim-github-theme'
+" Bundle 'endel/vim-github-colorscheme'
 colorscheme github
 " colorscheme railscasts
 " colorscheme desert
@@ -83,5 +86,4 @@ let g:pymode_run = 0
 let g:pymode_folding = 0
 let g:pymode_breakpoint = 0
 let g:pymode_lint_checkers = ['pyflakes', 'mccabe']
-
 

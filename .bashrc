@@ -32,6 +32,7 @@ fi
 
 export HISTSIZE=10000
 
+alias translatefr='translate {=fr} '
 alias fp='find .'
 alias notes='vi ~/Documents/NOTES.txt'
 alias vim='vim -w ~/.vimlog "$@" '
