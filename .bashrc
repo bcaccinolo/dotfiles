@@ -85,8 +85,6 @@ alias zs='z server '
 alias zd='z dbconsole '
 alias zz='reset; rm -rf .zeus.sock ; z start '
 
-# python aliases
-alias ns='PODIO_ENV=test_local nosetests '
 
 alias mutt='cd ~/Downloads/ ; mutt'
 
@@ -110,12 +108,6 @@ alias brs='rails server'
 alias brsd='rails server --debugger'
 alias brc='rails console'
 
-# Projects
-alias ap='cd /Users/benoit/Developments/podio/api/src/hoist/'
-alias ap2='cd /Users/benoit/Developments/podio2/api/src/hoist/'
-alias fr='cd /Users/benoit/Developments/podio/frontend-rails/'
-alias fr2='cd /Users/benoit/Developments/podio2/frontend-rails/'
-
 
 __git_ps1 ()
 {
@@ -130,7 +122,7 @@ PS1='======================================================\n[LOCAL $(__git_ps1 
 [[ -s /Users/benoit/.nvm/nvm.sh ]] && . /Users/benoit/.nvm/nvm.sh # This loads NVM
 
 # Local professional settings
-# . ~/.bashrc_pro
+. ~/.bashrc_pro
 
 export BC_ENV_ARGS=~/.bcrc
 
