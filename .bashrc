@@ -68,12 +68,8 @@ alias lgo='git log --oneline --decorate'
 alias dif='git df --ignore-space-change '
 alias difw='git diff --word-diff'
 alias difc='git df --cached'
-alias push='git push'
-alias p='git push'
-alias pu='git pull'
 alias pull='git pull'
 alias ci='git ci'
-alias cipm=' ci . -m '
 alias co='git co'
 alias git-count='git shortlog -s -n'
 alias tag='git tag -l | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n'
@@ -117,7 +113,9 @@ __git_ps1 ()
     fi
 }
 
-PS1='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
+
+PS1_BASE='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
+PS1=$PS1_BASE
 
 [[ -s /Users/benoit/.nvm/nvm.sh ]] && . /Users/benoit/.nvm/nvm.sh # This loads NVM
 
@@ -126,3 +124,6 @@ PS1='======================================================\n[LOCAL $(__git_ps1 
 
 export BC_ENV_ARGS=~/.bcrc
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
