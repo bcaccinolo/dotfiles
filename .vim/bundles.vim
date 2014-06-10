@@ -19,7 +19,7 @@ autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 
 Bundle 'tpope/vim-surround'
-Bundle 'ervandew/supertab'
+
 Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/DrawIt'
 Bundle 'tpope/vim-endwise'
@@ -47,7 +47,7 @@ Bundle 'kien/ctrlp.vim'
   map <leader>fl  :CtrlPClearCache<cr>\|:CtrlP lib<cr>
   map <leader>ft  :CtrlPClearCache<cr>\|:CtrlP spec<cr>
   map <leader>fcc :CtrlPClearCache<cr>\|:CtrlP config<cr>
-  map <leader>fo  :CtrlPClearCache<cr>\|:CtrlP config/locales<cr>
+  map <leader>fp  :CtrlPClearCache<cr>\|:CtrlP vendor/podio<cr>
 
 Bundle 'msanders/snipmate.vim'
   let g:snippets_dir="~/.vim/snippets/"
@@ -86,4 +86,16 @@ let g:pymode_run = 0
 let g:pymode_folding = 0
 let g:pymode_breakpoint = 0
 let g:pymode_lint_checkers = ['pyflakes', 'mccabe']
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_autoimport = 0
+
+Bundle 'ervandew/supertab'
+let g:SuperTabNoCompleteAfter =  ['^', ',', '\s']
+
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-notes'
+
+Bundle 'fisadev/vim-isort'
+" let g:vim_isort_map = '<C-i>'
+noremap <C-i> :Isort<CR>
 

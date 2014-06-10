@@ -56,6 +56,8 @@ alias g='ack '
 alias gf='ack -g ' # to search file names
 alias ss='story '
 
+alias rr='reset'
+
 # git aliases
 alias master='co master; pull'
 alias staging='co staging; pull'
