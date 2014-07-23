@@ -48,6 +48,7 @@ Bundle 'kien/ctrlp.vim'
   map <leader>ft  :CtrlPClearCache<cr>\|:CtrlP spec<cr>
   map <leader>fcc :CtrlPClearCache<cr>\|:CtrlP config<cr>
   map <leader>fp  :CtrlPClearCache<cr>\|:CtrlP vendor/podio<cr>
+  map <leader>tt  :CtrlPTag<cr>
 
 Bundle 'msanders/snipmate.vim'
   let g:snippets_dir="~/.vim/snippets/"

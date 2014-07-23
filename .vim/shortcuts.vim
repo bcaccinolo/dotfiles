@@ -88,3 +88,8 @@ nmap =t :!ctags -R .<cr>
 " M to jump to the ‘m’iddle of the window
 " L to jump as ‘l’ow as possible (last line being displayed)
 "
+"
+" Ctrl+] to jump to tag when over a word
+" Ctrl+T to pop back
+" :ta for tags
+"
