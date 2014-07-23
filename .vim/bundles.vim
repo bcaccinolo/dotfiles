@@ -96,6 +96,5 @@ Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-notes'
 
 Bundle 'fisadev/vim-isort'
-" let g:vim_isort_map = '<C-i>'
 noremap <C-i> :Isort<CR>
 

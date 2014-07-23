@@ -23,8 +23,9 @@ map <Leader>< :tabprevious<CR>
 :nnoremap <Leader>1 :bprevious<CR>
 :nnoremap <Leader>2 :bnext<CR>
 
-:nnoremap <Leader>11 :colorscheme default<CR>
+:nnoremap <Leader>11 :colorscheme github<CR>
 :nnoremap <Leader>22 :colorscheme darkblue<CR>
+:nnoremap <Leader>33 :colorscheme default<CR>
 
 " help with hash type in Ruby
 imap <C-l> <Space>=><Space>
@@ -56,20 +57,14 @@ nnoremap k gk
 " remapping command-line mode
 cnoremap <C-j> <t_kd>
 cnoremap <C-k> <t_ku>
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
-
-" Deactivation of the arrows for fun and profit
-" noremap  <Up> ""
-" noremap! <Up> <Esc>
-" noremap  <Down> ""
-" noremap! <Down> <Esc>
-" noremap  <Left> ""
-" noremap! <Left> <Esc>
-" noremap  <Right> ""
-" noremap! <Right> <Esc>
 
 map <S-k> <Nop>
+
+" format JSON
+nmap =j :%!python -m json.tool<CR>
+
+nmap =t :!ctags -R .<cr>
+
 
 " CHEAT SHEET :)
 "

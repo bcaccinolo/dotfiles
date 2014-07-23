@@ -1,4 +1,3 @@
-set show-date = short
-set author-width = 10
-set wrap-lines = yes
+set mouse = true
+set vertical-split = false
 
