@@ -63,8 +63,7 @@ map <S-k> <Nop>
 " format JSON
 nmap =j :%!python -m json.tool<CR>
 
-nmap =t :!ctags -R .<cr>
-
+nmap =t :!ctags -R --extra=f .<cr>
 
 " CHEAT SHEET :)
 "
