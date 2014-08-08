@@ -35,7 +35,6 @@ export HISTSIZE=10000
 alias translatefr='translate {=fr} '
 alias fp='find .'
 alias notes='vi ~/Documents/NOTES.txt'
-alias vim='vim -w ~/.vimlog "$@" '
 alias vi='vim'
 alias f='ls -G'
 alias ls='ls -G'
@@ -60,7 +59,6 @@ alias rr='reset'
 
 # git aliases
 alias master='co master; pull'
-alias staging='co staging; pull'
 alias st='git st'
 alias br='git br'
 alias bre='git bre'

@@ -1,3 +1,6 @@
 set mouse = true
 set vertical-split = false
 
+bind status P !git push origin
+
+
