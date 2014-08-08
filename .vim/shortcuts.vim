@@ -26,6 +26,8 @@ map <Leader>< :tabprevious<CR>
 :nnoremap <Leader>11 :colorscheme github<CR>
 :nnoremap <Leader>22 :colorscheme darkblue<CR>
 :nnoremap <Leader>33 :colorscheme default<CR>
+:nnoremap <Leader>44 :colorscheme Tomorrow-Night-Bright<CR>
+:nnoremap <Leader>55 :colorscheme monokai<CR>
 
 " help with hash type in Ruby
 imap <C-l> <Space>=><Space>
@@ -64,16 +66,17 @@ map <S-k> <Nop>
 nmap =j :%!python -m json.tool<CR>
 
 nmap =t :!ctags -R --extra=f .<cr>
+" open tag in a new tab
+nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
 
 " CHEAT SHEET :)
-"
-" Close all other windows than the one focused:  CTRL-W o (or CTRL-W CTRL-O), which does the same thing as :only in even fewer keystrokes
 "
 " Search and replace from cursor position: :.,$s/A/B/gc
 "  . means from cursor position
 "  $ means to the end of file
 "
 " D : delete from cursor to end of line
+" C : change from cursor to end of line
 "
 " Create an empty buffer in splitted view: CTRL-W n
 "
@@ -87,6 +90,12 @@ nmap =t :!ctags -R --extra=f .<cr>
 " M to jump to the ‘m’iddle of the window
 " L to jump as ‘l’ow as possible (last line being displayed)
 "
+" COPY Registers
+"
+" to copy line in reg 1 : "1yy
+"
+"
+" CTAGS
 "
 " Ctrl+] to jump to tag when over a word
 " Ctrl+T to pop back

@@ -13,8 +13,8 @@ Bundle 'ddollar/nerdcommenter'
 " The philosophy behind Hard Mode is that you'll never master Vim's advanced motion
 " and search functionality if you can fall back on the anti-pattern of fumbling around
 " your code with the arrow keys.
-Bundle 'wikitopian/hardmode'
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+" Bundle 'wikitopian/hardmode'
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 " nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 
