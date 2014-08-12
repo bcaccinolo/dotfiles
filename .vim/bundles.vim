@@ -77,8 +77,8 @@ Bundle 'nanotech/jellybeans.vim'
 " Bundle 'flazz/vim-colorschemes'
 Bundle 'ricardovaleriano/vim-github-theme'
 " Bundle 'endel/vim-github-colorscheme'
-colorscheme github
-" colorscheme railscasts
+" colorscheme github
+colorscheme Tomorrow-Night-Bright
 " colorscheme desert
 
 Bundle 'klen/python-mode'
