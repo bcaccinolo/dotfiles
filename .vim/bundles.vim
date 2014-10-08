@@ -68,18 +68,12 @@ Bundle 'majutsushi/tagbar'
 
 " Themes
 Bundle 'croaker/mustang-vim'
-Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'sickill/vim-monokai'
 Bundle 'jpo/vim-railscasts-theme'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'nanotech/jellybeans.vim'
-" 450+ themes
-" Bundle 'flazz/vim-colorschemes'
 Bundle 'ricardovaleriano/vim-github-theme'
-" Bundle 'endel/vim-github-colorscheme'
-" colorscheme github
-colorscheme Tomorrow-Night-Bright
-" colorscheme desert
+colorscheme jellybeans
 
 Bundle 'klen/python-mode'
 let g:pymode_virtualenv = 1

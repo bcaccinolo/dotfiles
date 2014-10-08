@@ -93,3 +93,5 @@ endif
 
 set cursorline
 
+" always start commit message at the first line
+autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])

@@ -65,6 +65,12 @@ map <S-k> <Nop>
 " format JSON
 nmap =j :%!python -m json.tool<CR>
 
+" CTAGS
+"
+" Ctrl+] to jump to tag when over a word
+" Ctrl+T to pop back
+" :ta for tags
+"
 nmap =t :!ctags -R --extra=f .<cr>
 " open tag in a new tab
 nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
@@ -94,10 +100,4 @@ nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
 "
 " to copy line in reg 1 : "1yy
 "
-"
-" CTAGS
-"
-" Ctrl+] to jump to tag when over a word
-" Ctrl+T to pop back
-" :ta for tags
 "
