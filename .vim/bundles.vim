@@ -21,7 +21,11 @@ Bundle 'ddollar/nerdcommenter'
 Bundle 'tpope/vim-surround'
 
 Bundle 'vim-scripts/bufexplorer.zip'
-Bundle 'vim-scripts/DrawIt'
+
+" Bundle 'vim-scripts/DrawIt'
+" Use Shift + hkjl for drawing
+Bundle 'notalex/DrawIt'
+
 Bundle 'tpope/vim-endwise'
 Bundle 'gagoar/StripWhiteSpaces'
 Bundle 'vim-scripts/ack.vim'
@@ -73,7 +77,8 @@ Bundle 'jpo/vim-railscasts-theme'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'ricardovaleriano/vim-github-theme'
-colorscheme jellybeans
+" colorscheme jellybeans
+colorscheme railscasts
 
 Bundle 'klen/python-mode'
 let g:pymode_virtualenv = 1

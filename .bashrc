@@ -126,7 +126,12 @@ export BC_ENV_ARGS=~/.bcrc
 
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="~/.composer/vendor/bin:/usr/local/heroku/bin:$PATH"
 
 PERL_MB_OPT="--install_base \"/Users/benoit/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/benoit/perl5"; export PERL_MM_OPT;
+
+
+
+
+
