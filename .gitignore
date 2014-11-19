@@ -13,15 +13,13 @@
 .weechat/logs
 .weechat/weechat.log
 
-.cpan/
-.pip/
+.pgpass
+.psql_history
+.rbenv/
 
-.rnd
 .bashrc_pro
-.irssi/
 .CFUserTextEncoding
 .DS_Store
-.DownloadManager/
 .Trash/
 .Xauthority
 .adobe/
@@ -93,7 +91,6 @@
 .dvdcss/
 
 .profile
-.bash_logout
 .cache/
 
 .ICEauthority
@@ -103,9 +100,6 @@
 .gconf/
 .gconfd/
 .gksu.lock
-.gnome2/
-.gstreamer-0.10/
-.gtk-bookmarks
 .local/
 .mozilla/
 .profile
@@ -113,18 +107,12 @@
 .pulse/
 .recently-used.xbel
 .sudo_as_admin_successful
-.xsession-errors
-.xsession-errors.old
-.Tribler/
-.atea
 .bash_profile
 .cmus/
 .ctrlp_cache/
 .ievms/
 .links/
 .tmux.conf
-.vimlogs/
-.oces/
 .ghc/
 .irb-history
 

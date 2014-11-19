@@ -2,12 +2,6 @@
 export LC_ALL=en_US.utf-8
 export LANG="$LC_ALL"
 
-#PATH=/usr/local/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin
-#export PATH=$PATH:/opt/local/bin:/opt/local/sbin
-#export PATH=$PATH:/usr/local/share/npm/bin
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-#PATH=$PATH:$HOME/pear/bin
-
 export SVN_EDITOR=vim
 export EDITOR=vim
 
@@ -81,7 +75,6 @@ alias zs='z server '
 alias zd='z dbconsole '
 alias zz='reset; rm -rf .zeus.sock ; z start '
 
-
 alias mutt='cd ~/Downloads/ ; mutt'
 
 # now my git aliases work with git-completion
@@ -119,19 +112,13 @@ PS1=$PS1_BASE
 
 [[ -s /Users/benoit/.nvm/nvm.sh ]] && . /Users/benoit/.nvm/nvm.sh # This loads NVM
 
-# Local professional settings
-. ~/.bashrc_pro
-
 export BC_ENV_ARGS=~/.bcrc
-
 
 ### Added by the Heroku Toolbelt
 export PATH="~/.composer/vendor/bin:/usr/local/heroku/bin:$PATH"
 
-PERL_MB_OPT="--install_base \"/Users/benoit/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/benoit/perl5"; export PERL_MM_OPT;
+### rbenv shims path
+export PATH="~/.rbenv/shims:$PATH"
 
-
-
-
-
+# Local professional settings
+. ~/.bashrc_pro
