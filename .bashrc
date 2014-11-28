@@ -7,21 +7,8 @@ export EDITOR=vim
 
 export NODE_PATH=/usr/local/lib/node_modules
 
-# RVM configuration
-if [ -s "$HOME/.rvm/scripts/rvm" ]; then
-  . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-  rvm use ruby-1.9.3-p448 1> /dev/null
-fi
-
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
-fi
-
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
 fi
 
 export HISTSIZE=10000
@@ -78,16 +65,7 @@ alias zz='reset; rm -rf .zeus.sock ; z start '
 alias mutt='cd ~/Downloads/ ; mutt'
 
 # now my git aliases work with git-completion
-complete -o bashdefault -o default -o nospace -F _gitk st
-complete -o bashdefault -o default -o nospace -F _gitk br
-complete -o bashdefault -o default -o nospace -F _gitk lg
-complete -o bashdefault -o default -o nospace -F _gitk lgg
-complete -o bashdefault -o default -o nospace -F _gitk dif
-complete -o bashdefault -o default -o nospace -F _gitk difc
-complete -o bashdefault -o default -o nospace -F _gitk push
-complete -o bashdefault -o default -o nospace -F _gitk pull
-complete -o bashdefault -o default -o nospace -F _gitk ci
-complete -o bashdefault -o default -o nospace -F _gitk co
+__git_complete co _git_checkout
 
 # stories and story to list my pivotal stories
 # Commands
