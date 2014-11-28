@@ -503,7 +503,7 @@ snippet tas
 		${3}
 	end
 snippet log
-	logger.warn "#{__FILE__}:#{__LINE__}\n#> ${1} #{${2}}"
+	::Rails.logger.warn "#{__FILE__}:#{__LINE__}\n#> ${1} #{${2}}"
 snippet info
 	logger.info "#{__FILE__}:#{__LINE__}\n#> ${1} #{${2}}"
 snippet rlog
