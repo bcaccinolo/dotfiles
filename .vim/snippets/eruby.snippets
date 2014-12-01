@@ -6,9 +6,7 @@ snippet rlog
 	::Rails.logger.warn "#{__FILE__}:#{__LINE__}\n#> ${1} #{${2}}"
 snippet yaml
 	YAML::dump ${1}
-snippet deb
-	debugger;
-snippet debug
-	require 'ruby-debug'; debugger;
 snippet pry
 	require 'pry'; binding.pry;
+snippet >>
+	<%= ${1} %>
