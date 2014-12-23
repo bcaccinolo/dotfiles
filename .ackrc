@@ -19,3 +19,6 @@
 
 # ignore python .virtualenv
 --ignore-dir=.virtualenv
+
+# ignore tags file
+--ignore-file=is:tags

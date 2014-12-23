@@ -49,11 +49,13 @@ alias lgo='git log --oneline --decorate'
 alias dif='git df --ignore-space-change '
 alias difw='git diff --word-diff'
 alias difc='git df --cached'
-alias pull='git pull'
+alias pull='git pull --rebase'
+alias push='git push'
 alias ci='git ci'
 alias co='git co'
 alias git-count='git shortlog -s -n'
 alias tag='git tag -l | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n'
+alias cipm='git ci . -m '
 
 # rails aliases
 alias z='zeus '
@@ -64,8 +66,11 @@ alias zz='reset; rm -rf .zeus.sock ; z start '
 
 alias mutt='cd ~/Downloads/ ; mutt'
 
+alias update_tags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
+
 # now my git aliases work with git-completion
 __git_complete co _git_checkout
+__git_complete br _git_checkout
 
 # stories and story to list my pivotal stories
 # Commands
