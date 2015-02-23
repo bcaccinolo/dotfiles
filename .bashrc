@@ -15,7 +15,7 @@ export HISTSIZE=10000
 
 alias translatefr='translate {=fr} '
 alias fp='find .'
-alias notes='vi ~/Documents/NOTES.txt'
+alias notes='cd /Users/benoit/Documents; vi ~/Documents/NOTES.txt'
 alias vi='vim'
 alias f='ls -G'
 alias ls='ls -G'
@@ -97,11 +97,13 @@ PS1=$PS1_BASE
 
 export BC_ENV_ARGS=~/.bcrc
 
-### Added by the Heroku Toolbelt
-export PATH="~/.composer/vendor/bin:/usr/local/heroku/bin:$PATH"
-
 ### rbenv shims path
 export PATH="~/.rbenv/shims:$PATH"
 
 # Local professional settings
 . ~/.bashrc_pro
+
+eval "$(rbenv init -)"
+
+
+

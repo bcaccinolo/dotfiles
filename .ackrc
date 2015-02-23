@@ -19,6 +19,7 @@
 
 # ignore python .virtualenv
 --ignore-dir=.virtualenv
+--ignore-dir=tmp
 
 # ignore tags file
 --ignore-file=is:tags

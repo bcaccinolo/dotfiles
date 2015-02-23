@@ -21,6 +21,9 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 " required for several plugins
 set nocompatible
 
+" never add  the BOM character
+set nobomb
+
 " enable syntax highlighting
 syntax on
 
