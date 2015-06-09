@@ -77,6 +77,9 @@ nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
 
 " CHEAT SHEET :)
 "
+" select word under cursor: viw
+" change word under cursor: ciw
+"
 " Search and replace from cursor position: :.,$s/A/B/gc
 "  . means from cursor position
 "  $ means to the end of file
