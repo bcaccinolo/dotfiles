@@ -3,6 +3,6 @@ set vertical-split = false
 
 bind status P !git push origin
 
-color cursor			white	default	bold
+# color cursor			white	default	bold
 
 # source : https://raw.githubusercontent.com/jonas/tig/master/tigrc
