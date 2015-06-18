@@ -37,6 +37,7 @@ alias gf='ack -g ' # to search file names
 alias ss='story '
 
 alias rr='reset'
+alias imjc='cd ~/Desktop/imjc/ ; links index.html'
 
 # git aliases
 alias master='co master; pull'
