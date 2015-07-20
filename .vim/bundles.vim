@@ -28,6 +28,7 @@ Bundle 'kien/ctrlp.vim'
   map <leader>fc  :CtrlPClearCache<cr>\|:CtrlP app/controllers<cr>
   map <leader>fm  :CtrlPClearCache<cr>\|:CtrlP app/models<cr>
   map <leader>fv  :CtrlPClearCache<cr>\|:CtrlP app/views<cr>
+  map <leader>fh  :CtrlPClearCache<cr>\|:CtrlP app/helpers<cr>
   map <leader>fs  :CtrlPClearCache<cr>\|:CtrlP app/assets/stylesheets<cr>
   map <leader>fj  :CtrlPClearCache<cr>\|:CtrlP app/assets/javascripts<cr>
   map <leader>fl  :CtrlPClearCache<cr>\|:CtrlP lib<cr>
