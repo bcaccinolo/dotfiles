@@ -30,6 +30,9 @@ au FileType make set noexpandtab
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
+" add ruby syntax highlighting to cap files
+au BufNewFile,BufRead *.cap set ft=ruby
+
 " to hide the code of method
 " function! FoldEndBlock()
 "   let spec_idx = line('.')

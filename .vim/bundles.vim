@@ -4,7 +4,7 @@ call vundle#rc()
 
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle/
 Bundle 'gmarik/vundle'
-Bundle 'ddollar/nerdcommenter'
+Bundle 'scrooloose/nerdcommenter'
   map <leader>ff :NERDTreeFind<cr>
 
 Bundle 'tpope/vim-surround'
@@ -17,12 +17,11 @@ Bundle 'vim-scripts/ack.vim'
 " Bundle 'tsaleh/vim-matchit'
 silent! runtime macros/matchit.vim
 
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
   set wildignore+=*.pyc
+  let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:50,results:30'
   let g:ctrlp_map = '<leader>t'
   map <leader>b :CtrlPBuffer<cr>
-  " Python specific
-  map <leader>fh  :CtrlPClearCache<cr>\|:CtrlP src/hoist<cr>
   " Rails specific
   map <leader>fa  :CtrlPClearCache<cr>\|:CtrlP app<cr>
   map <leader>fc  :CtrlPClearCache<cr>\|:CtrlP app/controllers<cr>
@@ -35,6 +34,7 @@ Bundle 'kien/ctrlp.vim'
   map <leader>ft  :CtrlPClearCache<cr>\|:CtrlP spec<cr>
   map <leader>fcc :CtrlPClearCache<cr>\|:CtrlP config<cr>
   map <leader>tt  :CtrlPTag<cr>
+  map <leader>.   :CtrlPTag<cr>
 
 Bundle 'msanders/snipmate.vim'
   let g:snippets_dir="~/.vim/snippets/"
@@ -62,7 +62,8 @@ Bundle 'ricardovaleriano/vim-github-theme'
 Bundle 'reedes/vim-colors-pencil'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'jonathanfilip/lucius'
-colorscheme peachpuff
+" colorscheme peachpuff
+colorscheme github
 
 " Bundle 'klen/python-mode'
 " let g:pymode_virtualenv = 1
