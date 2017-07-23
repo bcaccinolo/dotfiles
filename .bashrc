@@ -1,99 +1,124 @@
-# encoding unification
-export LC_ALL=en_US.utf-8
-export LANG="$LC_ALL"
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
 
-export SVN_EDITOR=vim
-export EDITOR=vim
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
 
-export NODE_PATH=/usr/local/lib/node_modules
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-export HISTSIZE=10000
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color) color_prompt=yes;;
+esac
 
-alias translatefr='translate {=fr} '
-alias fp='find .'
-alias notes='cd /Users/benoit/Documents; vi ~/Documents/NOTES.txt'
-alias vi='vim'
-alias f='ls -G'
-alias ls='ls -G'
-alias l='ls -1'
-alias la='ls -a'
-alias c='cd ..'
-alias cdapp='cd app'
-alias cdmodel='cd app/models'
-alias cdviews='cd app/views'
-alias cdcontroller='cd app/controllers'
-alias ll='ls -alh'
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
 
-alias tt='tree -C -L 1'
-alias tt2='tree -C -L 2'
-alias tt3='tree -C -L 3'
-
-alias g='ack '
-alias gf='ack -g ' # to search file names
-alias ss='story '
-
-alias rr='reset'
-alias imjc='cd ~/Desktop/imjc/ ; links index.html'
-
-# git aliases
-alias master='co master; pull'
-alias st='git st'
-alias br='git br'
-alias bre='git bre'
-alias lg='git lg'
-alias lgg='git log'
-alias lgo='git log --oneline --decorate'
-alias dif='git df --ignore-space-change '
-alias difw='git diff --word-diff'
-alias difc='git df --cached'
-alias pull='git pull --rebase=preserve'
-alias push='git push'
-alias ci='git ci'
-alias co='git co'
-alias git-count='git shortlog -s -n'
-alias tag='git tag -l | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n'
-alias cipm='git ci . -m '
-
-alias update_tags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
-alias update_ctags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
-
-# now my git aliases work with git-completion
-__git_complete co _git_checkout
-__git_complete br _git_checkout
-
-# stories and story to list my pivotal stories
-# Commands
-alias b='reset; bundle'
-alias be='bundle exec'
-alias bu='bundle update'
-
-__git_ps1 ()
-{
-    local b="$(git symbolic-ref HEAD 2>/dev/null)";
-    if [ -n "$b" ]; then
-        printf "(%s)" "${b##refs/heads/}";
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
+    else
+	color_prompt=
     fi
-}
+fi
 
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
 
-PS1_BASE='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
-PS1=$PS1_BASE
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
 
-[[ -s /Users/benoit/.nvm/nvm.sh ]] && . /Users/benoit/.nvm/nvm.sh # This loads NVM
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
 
-export BC_ENV_ARGS=~/.bcrc
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
 
-### rbenv shims path
-export PATH="~/.rbenv/shims:$PATH"
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# Local professional settings
-. ~/.bashrc_pro
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
-eval "$(rbenv init -)"
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+# RVM configuration
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+. ~/.bashrc_perso
 
