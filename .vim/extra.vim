@@ -16,6 +16,8 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}  set ft=
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
+au BufRead,BufNewFile *.{ex,exs} set ft=elixir
+
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
 
@@ -32,15 +34,4 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
 " add ruby syntax highlighting to cap files
 au BufNewFile,BufRead *.cap set ft=ruby
-
-" to hide the code of method
-" function! FoldEndBlock()
-"   let spec_idx = line('.')
-"   let ctx_idx  = search('end', 'n')
-"   let cmd = (spec_idx).','.(ctx_idx).'fold'
-"   exec cmd
-" endfunction
-
-" nmap ff :call FoldEndBlock()<CR>
-" nmap fo :foldopen! <CR>
 

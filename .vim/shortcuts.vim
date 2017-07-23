@@ -8,6 +8,14 @@ nnoremap ; :
 " Tired of clearing highlighted searches by searching for “ldsfhjkhgakjks”?
 nmap <silent> ,/ :nohlsearch<CR>
 
+" Avoid the <ESC> key
+inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap kk <Esc>
+inoremap jj <Esc>
+inoremap df <Esc>
+inoremap fd <Esc>
+
 " Easy window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -23,11 +31,14 @@ map <Leader>< :tabprevious<CR>
 :nnoremap <Leader>1 :bprevious<CR>
 :nnoremap <Leader>2 :bnext<CR>
 
-:nnoremap <Leader>11 :colorscheme github<CR>
-:nnoremap <Leader>22 :colorscheme darkblue<CR>
-:nnoremap <Leader>33 :colorscheme default<CR>
-:nnoremap <Leader>44 :colorscheme Tomorrow-Night-Bright<CR>
-:nnoremap <Leader>55 :colorscheme monokai<CR>
+:nnoremap <Leader>11 :colorscheme monokai<CR>
+:nnoremap <Leader>22 :colorscheme jellybeans<CR>
+:nnoremap <Leader>33 :colorscheme evening<CR>
+:nnoremap <Leader>44 :colorscheme desert<CR>
+:nnoremap <Leader>55 :colorscheme solarized<CR>
+:nnoremap <Leader>66 :colorscheme slate<CR>
+:nnoremap <Leader>77 :colorscheme railscasts<CR>
+:nnoremap <Leader>88 :colorscheme pencil<CR>
 
 " help with hash type in Ruby
 imap <C-l> <Space>=><Space>
@@ -99,8 +110,15 @@ nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
 " M to jump to the ‘m’iddle of the window
 " L to jump as ‘l’ow as possible (last line being displayed)
 "
+" zz center the screen
+"
 " COPY Registers
 "
 " to copy line in reg 1 : "1yy
+"
+" use d f y to delete until 'y' included
+" use d t y to delete until 'y' NOT included
+"
+"
 "
 "

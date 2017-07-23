@@ -1,23 +1,33 @@
-" Vundle config
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
-" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle/
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdcommenter'
-  map <leader>ff :NERDTreeFind<cr>
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'tpope/vim-surround'
-Bundle 'vim-scripts/bufexplorer.zip'
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-Bundle 'tpope/vim-endwise'
-Bundle 'gagoar/StripWhiteSpaces'
-Bundle 'vim-scripts/ack.vim'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
-" Bundle 'tsaleh/vim-matchit'
-silent! runtime macros/matchit.vim
+"##################################
+"# My plugins
+"##################################
 
-Bundle 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/bufexplorer.zip'
+
+Plugin 'tpope/vim-endwise'
+Plugin 'gagoar/StripWhiteSpaces'
+Plugin 'vim-scripts/ack.vim'
+
+Plugin 'scrooloose/nerdcommenter'
+
+Plugin 'scrooloose/nerdtree'
+  let g:NERDTreeDirArrows=0
+  let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+  map <Leader>n :NERDTreeToggle<CR>
+
+Plugin 'ctrlpvim/ctrlp.vim'
   set wildignore+=*.pyc
   let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:50,results:30'
   let g:ctrlp_map = '<leader>t'
@@ -36,45 +46,53 @@ Bundle 'ctrlpvim/ctrlp.vim'
   map <leader>tt  :CtrlPTag<cr>
   map <leader>.   :CtrlPTag<cr>
 
-Bundle 'msanders/snipmate.vim'
-  let g:snippets_dir="~/.vim/snippets/"
+Plugin 'msanders/snipmate.vim'
+let g:snippets_dir="~/.vim/snippets/"
 
-Bundle 'scrooloose/nerdtree'
-  let g:NERDTreeDirArrows=0
-  let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-  map <Leader>n :NERDTreeToggle<CR>
-
-Bundle 'bcaccinolo/bclose'
+Plugin 'bcaccinolo/bclose'
   map <Leader>bd :Bclose<CR>
 
-Bundle 'majutsushi/tagbar'
-  nmap <F12> :TagbarToggle<CR>
-  let g:tagbar_sort = 0
-  let g:tagbar_compact = 1
+Plugin 'tmhedberg/matchit'
+
+Plugin 'elixir-lang/vim-elixir'
 
 " Themes
-Bundle 'croaker/mustang-vim'
-Bundle 'sickill/vim-monokai'
-Bundle 'jpo/vim-railscasts-theme'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'ricardovaleriano/vim-github-theme'
-Bundle 'reedes/vim-colors-pencil'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'jonathanfilip/lucius'
-" colorscheme peachpuff
-colorscheme github
-
-" Bundle 'klen/python-mode'
-" let g:pymode_virtualenv = 1
-" let g:pymode_run = 0
-" let g:pymode_folding = 0
-" let g:pymode_breakpoint = 0
-" let g:pymode_lint_checkers = ['pyflakes', 'mccabe']
-" let g:pymode_rope_complete_on_dot = 0
-" let g:pymode_rope_autoimport = 0
+Plugin 'croaker/mustang-vim'
+Plugin 'sickill/vim-monokai'
+Plugin 'tomasr/molokai'
+Plugin 'jpo/vim-railscasts-theme'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'ricardovaleriano/vim-github-theme'
+Plugin 'reedes/vim-colors-pencil'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jonathanfilip/lucius'
+Plugin 'endel/vim-github-colorscheme'
+Plugin 'morhetz/gruvbox'
+Plugin 'geoffharcourt/one-dark.vim'
+Plugin 'rakr/vim-one'
+Plugin 'gosukiwi/vim-atom-dark'
 
 Bundle 'ervandew/supertab'
 let g:SuperTabNoCompleteAfter =  ['^', ',', '\s']
 
+"##################################
+"# END plugins
+"##################################
 
+" All r Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+"
