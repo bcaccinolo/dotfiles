@@ -7,13 +7,8 @@ export EDITOR=vim
 
 export NODE_PATH=/usr/local/lib/node_modules
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
-
 export HISTSIZE=10000
 
-alias translatefr='translate {=fr} '
 alias fp='find .'
 alias notes='cd /Users/benoit/Documents; vi ~/Documents/NOTES.txt'
 alias vi='vim'
@@ -61,10 +56,6 @@ alias cipm='git ci . -m '
 alias update_tags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
 alias update_ctags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
 
-# now my git aliases work with git-completion
-__git_complete co _git_checkout
-__git_complete br _git_checkout
-
 # stories and story to list my pivotal stories
 # Commands
 alias b='reset; bundle'
@@ -82,17 +73,4 @@ __git_ps1 ()
 
 PS1_BASE='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
 PS1=$PS1_BASE
-
-[[ -s /Users/benoit/.nvm/nvm.sh ]] && . /Users/benoit/.nvm/nvm.sh # This loads NVM
-
-export BC_ENV_ARGS=~/.bcrc
-
-### rbenv shims path
-export PATH="~/.rbenv/shims:$PATH"
-
-# Local professional settings
-. ~/.bashrc_pro
-
-eval "$(rbenv init -)"
-
 
