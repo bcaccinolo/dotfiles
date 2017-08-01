@@ -1,6 +1,16 @@
 /*
 !.*
 
+.Xdefaults
+.bashrc
+.gnome/
+.ipython/
+.jupyter/
+.pylint.d/
+.python_history
+.xsession-errors.old
+.zlogin
+.zshrc
 
 .vscode/
 .xinputrc
