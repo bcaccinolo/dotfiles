@@ -14,12 +14,15 @@ Plugin 'VundleVim/Vundle.vim'
 "##################################
 
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-endwise'
+
+" <leader> b e
 Plugin 'vim-scripts/bufexplorer.zip'
 
-Plugin 'tpope/vim-endwise'
 Plugin 'gagoar/StripWhiteSpaces'
 Plugin 'vim-scripts/ack.vim'
 
+" <leader> c <space>
 Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'scrooloose/nerdtree'
@@ -29,6 +32,12 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'ctrlpvim/ctrlp.vim'
   set wildignore+=*.pyc
+
+  " excluding virtual env 'venv' and node_modules directories
+  let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/](venv|node_modules)$'
+    \ }
+
   let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:50,results:30'
   let g:ctrlp_map = '<leader>t'
   map <leader>b :CtrlPBuffer<cr>
