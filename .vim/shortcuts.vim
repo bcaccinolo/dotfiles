@@ -120,5 +120,5 @@ nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
 " use d t y to delete until 'y' NOT included
 "
 "
-"
+" C-t open in new tab with nerdtree
 "
