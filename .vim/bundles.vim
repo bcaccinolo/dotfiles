@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 "# My plugins
 "##################################
 
+" in Visual Mode: press S ) to enclose with ()
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
 
@@ -81,6 +82,12 @@ Plugin 'morhetz/gruvbox'
 Plugin 'geoffharcourt/one-dark.vim'
 Plugin 'rakr/vim-one'
 Plugin 'gosukiwi/vim-atom-dark'
+
+" python specific plugins
+Plugin 'nvie/vim-flake8'
+" flake8 is run on every save
+autocmd BufWritePost *.py call Flake8()
+
 
 Bundle 'ervandew/supertab'
 let g:SuperTabNoCompleteAfter =  ['^', ',', '\s']
