@@ -1,4 +1,7 @@
 
+
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -30,6 +33,7 @@ Plugin 'scrooloose/nerdtree'
   let g:NERDTreeDirArrows=0
   let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
   map <Leader>n :NERDTreeToggle<CR>
+  map <Leader>y :NERDTreeFind<CR>
 
 Plugin 'ctrlpvim/ctrlp.vim'
   set wildignore+=*.pyc
