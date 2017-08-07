@@ -25,5 +25,8 @@
 --ignore-dir=venv # < VEO / Zola virtual env
 --ignore-dir=static-collected/CACHE
 
+--ignore-directory=is:venv
+--ignore-directory=is:node_modules
+
 # ignore tags file
 --ignore-file=is:tags

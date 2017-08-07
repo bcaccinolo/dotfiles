@@ -24,7 +24,8 @@ au BufNewFile,BufRead *.json set ft=javascript
 " au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
-au FileType python set softtabstop=4 tabstop=4 shiftwidth=4
+"au FileType python set softtabstop=4 tabstop=4 shiftwidth=4
+au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
 
 " make uses real tabs
 au FileType make set noexpandtab
