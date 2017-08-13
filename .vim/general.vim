@@ -96,5 +96,7 @@ endif
 
 "set cursorline
 
+set guifont=Inconsolata\ Medium\ 10
+
 " always start commit message at the first line
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
