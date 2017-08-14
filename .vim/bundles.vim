@@ -87,10 +87,17 @@ Plugin 'geoffharcourt/one-dark.vim'
 Plugin 'rakr/vim-one'
 Plugin 'gosukiwi/vim-atom-dark'
 
-" python specific plugins
+""""""""""""""""""""""""""""""""""
+" PYTHON plugins
+""""""""""""""""""""""""""""""""""
 Plugin 'nvie/vim-flake8'
 " flake8 is run on every save
 autocmd BufWritePost *.py call Flake8()
+
+"Plugin 'davidhalter/jedi-vim'
+Plugin 'fisadev/vim-isort'
+let g:vim_isort_map = '<C-i>'
+let g:vim_isort_python_version = 'python3'
 
 
 Bundle 'ervandew/supertab'

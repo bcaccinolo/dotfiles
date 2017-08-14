@@ -27,6 +27,8 @@ au BufNewFile,BufRead *.json set ft=javascript
 "au FileType python set softtabstop=4 tabstop=4 shiftwidth=4
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
 
+au BufNewFile,BufRead *.js set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
+
 " make uses real tabs
 au FileType make set noexpandtab
 
