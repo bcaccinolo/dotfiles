@@ -1,0 +1,329 @@
+time 1504081989
+new [description:"test" entry:"1504081989" modified:"1504081989" status:"pending" uuid:"2bdc728a-845d-4b73-9907-ae75161d2dd0"]
+---
+time 1504082312
+new [description:"probleme with le logo" entry:"1504082312" modified:"1504082312" status:"pending" uuid:"ed010d9c-1bc8-4f30-bfdd-64a42ffd7089"]
+---
+time 1504084303
+old [description:"probleme with le logo" entry:"1504082312" modified:"1504082312" status:"pending" uuid:"ed010d9c-1bc8-4f30-bfdd-64a42ffd7089"]
+new [description:"probleme with le logo" end:"1504084303" entry:"1504082312" modified:"1504084303" status:"completed" uuid:"ed010d9c-1bc8-4f30-bfdd-64a42ffd7089"]
+---
+time 1504084433
+new [description:"Update la PR zola design update" entry:"1504084433" modified:"1504084433" status:"pending" uuid:"2d097ec3-0e82-45c7-b4b7-78a8f6535eb0"]
+---
+time 1504094512
+old [description:"Update la PR zola design update" entry:"1504084433" modified:"1504084433" status:"pending" uuid:"2d097ec3-0e82-45c7-b4b7-78a8f6535eb0"]
+new [description:"Update la PR zola design update" end:"1504094512" entry:"1504084433" modified:"1504094512" status:"completed" uuid:"2d097ec3-0e82-45c7-b4b7-78a8f6535eb0"]
+---
+time 1504094548
+new [description:"merge la PR team\/teams\/matches admin page" entry:"1504094548" modified:"1504094548" status:"pending" uuid:"98091aed-209f-4448-9535-b7b6720842c8"]
+---
+time 1504094618
+new [description:"ajouter un lien Edit Match quelque part dans la partie admin" entry:"1504094618" modified:"1504094618" status:"pending" uuid:"6e27f374-54ff-4345-8851-52c9e742a01b"]
+---
+time 1504094631
+old [description:"merge la PR team\/teams\/matches admin page" entry:"1504094548" modified:"1504094548" status:"pending" uuid:"98091aed-209f-4448-9535-b7b6720842c8"]
+new [description:"merge la PR team\/teams\/matches admin page" entry:"1504094548" modified:"1504094631" start:"1504094631" status:"pending" uuid:"98091aed-209f-4448-9535-b7b6720842c8"]
+---
+time 1504095899
+old [description:"merge la PR team\/teams\/matches admin page" entry:"1504094548" modified:"1504094631" start:"1504094631" status:"pending" uuid:"98091aed-209f-4448-9535-b7b6720842c8"]
+new [description:"merge la PR team\/teams\/matches admin page" end:"1504095899" entry:"1504094548" modified:"1504095899" status:"completed" uuid:"98091aed-209f-4448-9535-b7b6720842c8"]
+---
+time 1504095912
+old [description:"test" entry:"1504081989" modified:"1504081989" status:"pending" uuid:"2bdc728a-845d-4b73-9907-ae75161d2dd0"]
+new [description:"test" end:"1504095910" entry:"1504081989" modified:"1504095912" status:"deleted" uuid:"2bdc728a-845d-4b73-9907-ae75161d2dd0"]
+---
+time 1504095999
+new [description:"la page individual team ne marche pas" entry:"1504095999" modified:"1504095999" status:"pending" uuid:"f51ca117-82d9-4d6f-bc91-8148885480dc"]
+---
+time 1504096011
+old [description:"la page individual team ne marche pas" entry:"1504095999" modified:"1504095999" status:"pending" uuid:"f51ca117-82d9-4d6f-bc91-8148885480dc"]
+new [description:"la page individual team ne marche pas" entry:"1504095999" modified:"1504096011" start:"1504096011" status:"pending" uuid:"f51ca117-82d9-4d6f-bc91-8148885480dc"]
+---
+time 1504098537
+old [description:"la page individual team ne marche pas" entry:"1504095999" modified:"1504096011" start:"1504096011" status:"pending" uuid:"f51ca117-82d9-4d6f-bc91-8148885480dc"]
+new [description:"la page individual team ne marche pas" end:"1504098537" entry:"1504095999" modified:"1504098537" status:"completed" uuid:"f51ca117-82d9-4d6f-bc91-8148885480dc"]
+---
+time 1504099201
+new [description:"ajouter un bouton create team dans le header de la page Teams" entry:"1504099201" modified:"1504099201" status:"pending" uuid:"6fab62d5-6e7f-4ac5-a935-f331cdd6a8b3"]
+---
+time 1504099214
+old [description:"ajouter un lien Edit Match quelque part dans la partie admin" entry:"1504094618" modified:"1504094618" status:"pending" uuid:"6e27f374-54ff-4345-8851-52c9e742a01b"]
+new [description:"ajouter un lien Edit Match quelque part dans la partie admin" end:"1504099213" entry:"1504094618" modified:"1504099214" status:"deleted" uuid:"6e27f374-54ff-4345-8851-52c9e742a01b"]
+---
+time 1504163599
+old [description:"ajouter un bouton create team dans le header de la page Teams" entry:"1504099201" modified:"1504099201" status:"pending" uuid:"6fab62d5-6e7f-4ac5-a935-f331cdd6a8b3"]
+new [description:"ajouter un bouton create team dans le header de la page Teams" end:"1504163599" entry:"1504099201" modified:"1504163599" status:"completed" uuid:"6fab62d5-6e7f-4ac5-a935-f331cdd6a8b3"]
+---
+time 1504163633
+new [description:"Créer une page public team" entry:"1504163633" modified:"1504163633" status:"pending" uuid:"1863d7b9-4e7d-4944-ac09-3c36ca333356"]
+---
+time 1504163649
+old [description:"Créer une page public team" entry:"1504163633" modified:"1504163633" status:"pending" uuid:"1863d7b9-4e7d-4944-ac09-3c36ca333356"]
+new [description:"Créer une page public team" entry:"1504163633" modified:"1504163649" start:"1504163649" status:"pending" uuid:"1863d7b9-4e7d-4944-ac09-3c36ca333356"]
+---
+time 1504164049
+new [description:"Avoir une fonction qui génére le lien club_team et une qui génère admin_club_team" entry:"1504164049" modified:"1504164049" status:"pending" uuid:"1b9f2217-76b4-4160-89de-2b7b95c59bbc"]
+---
+time 1504164058
+old [description:"Créer une page public team" entry:"1504163633" modified:"1504163649" start:"1504163649" status:"pending" uuid:"1863d7b9-4e7d-4944-ac09-3c36ca333356"]
+new [description:"Créer une page public team" entry:"1504163633" modified:"1504164058" status:"pending" uuid:"1863d7b9-4e7d-4944-ac09-3c36ca333356"]
+---
+time 1504164061
+old [description:"Avoir une fonction qui génére le lien club_team et une qui génère admin_club_team" entry:"1504164049" modified:"1504164049" status:"pending" uuid:"1b9f2217-76b4-4160-89de-2b7b95c59bbc"]
+new [description:"Avoir une fonction qui génére le lien club_team et une qui génère admin_club_team" entry:"1504164049" modified:"1504164061" start:"1504164061" status:"pending" uuid:"1b9f2217-76b4-4160-89de-2b7b95c59bbc"]
+---
+time 1504164935
+old [description:"Avoir une fonction qui génére le lien club_team et une qui génère admin_club_team" entry:"1504164049" modified:"1504164061" start:"1504164061" status:"pending" uuid:"1b9f2217-76b4-4160-89de-2b7b95c59bbc"]
+new [description:"Avoir une fonction qui génére le lien club_team et une qui génère admin_club_team" entry:"1504164049" modified:"1504164935" status:"pending" uuid:"1b9f2217-76b4-4160-89de-2b7b95c59bbc"]
+---
+time 1504164965
+old [description:"Avoir une fonction qui génére le lien club_team et une qui génère admin_club_team" entry:"1504164049" modified:"1504164935" status:"pending" uuid:"1b9f2217-76b4-4160-89de-2b7b95c59bbc"]
+new [description:"Avoir une fonction qui génére le lien club_team et une qui génère admin_club_team" end:"1504164965" entry:"1504164049" modified:"1504164965" status:"completed" uuid:"1b9f2217-76b4-4160-89de-2b7b95c59bbc"]
+---
+time 1504166956
+new [description:"add the new header to the team page" entry:"1504166956" modified:"1504166956" status:"pending" uuid:"5ad3ce2f-54ec-4302-ac39-d230f7ab2776"]
+---
+time 1504167020
+old [description:"Créer une page public team" entry:"1504163633" modified:"1504164058" status:"pending" uuid:"1863d7b9-4e7d-4944-ac09-3c36ca333356"]
+new [description:"Créer une page public team" end:"1504167020" entry:"1504163633" modified:"1504167020" status:"completed" uuid:"1863d7b9-4e7d-4944-ac09-3c36ca333356"]
+---
+time 1504167028
+old [description:"add the new header to the team page" entry:"1504166956" modified:"1504166956" status:"pending" uuid:"5ad3ce2f-54ec-4302-ac39-d230f7ab2776"]
+new [description:"add the new header to the team page" entry:"1504166956" modified:"1504167028" start:"1504167028" status:"pending" uuid:"5ad3ce2f-54ec-4302-ac39-d230f7ab2776"]
+---
+time 1504167709
+new [description:"la page Team creation ne marche plus" entry:"1504167709" modified:"1504167709" status:"pending" tags:"bug" uuid:"f1f3af04-86d3-43ed-90af-a5952c34b3f3"]
+---
+time 1504167783
+old [description:"la page Team creation ne marche plus" entry:"1504167709" modified:"1504167709" status:"pending" tags:"bug" uuid:"f1f3af04-86d3-43ed-90af-a5952c34b3f3"]
+new [annotation_1504167783:"placer le template dans le repertoire admin" description:"la page Team creation ne marche plus" entry:"1504167709" modified:"1504167783" status:"pending" tags:"bug" uuid:"f1f3af04-86d3-43ed-90af-a5952c34b3f3"]
+---
+time 1504167895
+new [description:"Valider que le template teams\/base est utilisé" entry:"1504167895" modified:"1504167895" status:"pending" uuid:"4bced95c-f9dd-4f1b-a1ad-8c5e5cd01ee4"]
+---
+time 1504168729
+old [description:"add the new header to the team page" entry:"1504166956" modified:"1504167028" start:"1504167028" status:"pending" uuid:"5ad3ce2f-54ec-4302-ac39-d230f7ab2776"]
+new [description:"add the new header to the team page" end:"1504168729" entry:"1504166956" modified:"1504168729" status:"completed" uuid:"5ad3ce2f-54ec-4302-ac39-d230f7ab2776"]
+---
+time 1504168768
+new [description:"ajouter les décorateur sur la view club_team" entry:"1504168768" modified:"1504168768" status:"pending" uuid:"408325dd-fe93-4fca-9ae0-06592fe5ce11"]
+---
+time 1504168777
+old [annotation_1504167783:"placer le template dans le repertoire admin" description:"la page Team creation ne marche plus" entry:"1504167709" modified:"1504167783" status:"pending" tags:"bug" uuid:"f1f3af04-86d3-43ed-90af-a5952c34b3f3"]
+new [annotation_1504167783:"placer le template dans le repertoire admin" description:"la page Team creation ne marche plus" entry:"1504167709" modified:"1504168777" start:"1504168777" status:"pending" tags:"bug" uuid:"f1f3af04-86d3-43ed-90af-a5952c34b3f3"]
+---
+time 1504168782
+old [annotation_1504167783:"placer le template dans le repertoire admin" description:"la page Team creation ne marche plus" entry:"1504167709" modified:"1504168777" start:"1504168777" status:"pending" tags:"bug" uuid:"f1f3af04-86d3-43ed-90af-a5952c34b3f3"]
+new [annotation_1504167783:"placer le template dans le repertoire admin" description:"la page Team creation ne marche plus" entry:"1504167709" modified:"1504168782" status:"pending" tags:"bug" uuid:"f1f3af04-86d3-43ed-90af-a5952c34b3f3"]
+---
+time 1504168794
+old [description:"ajouter les décorateur sur la view club_team" entry:"1504168768" modified:"1504168768" status:"pending" uuid:"408325dd-fe93-4fca-9ae0-06592fe5ce11"]
+new [description:"ajouter les décorateur sur la view club_team" entry:"1504168768" modified:"1504168794" start:"1504168794" status:"pending" uuid:"408325dd-fe93-4fca-9ae0-06592fe5ce11"]
+---
+time 1504169116
+old [description:"ajouter les décorateur sur la view club_team" entry:"1504168768" modified:"1504168794" start:"1504168794" status:"pending" uuid:"408325dd-fe93-4fca-9ae0-06592fe5ce11"]
+new [description:"ajouter les décorateur sur la view club_team" end:"1504169116" entry:"1504168768" modified:"1504169116" status:"completed" uuid:"408325dd-fe93-4fca-9ae0-06592fe5ce11"]
+---
+time 1504169144
+new [description:"ajouter du contenu sur la page Team" entry:"1504169144" modified:"1504169144" status:"pending" uuid:"8029bbef-c93f-4d9c-a4c9-a55a2b79222e"]
+---
+time 1504169149
+old [description:"ajouter du contenu sur la page Team" entry:"1504169144" modified:"1504169144" status:"pending" uuid:"8029bbef-c93f-4d9c-a4c9-a55a2b79222e"]
+new [description:"ajouter du contenu sur la page Team" entry:"1504169144" modified:"1504169149" start:"1504169149" status:"pending" uuid:"8029bbef-c93f-4d9c-a4c9-a55a2b79222e"]
+---
+time 1504169249
+new [description:"mettre en place les matchs recommended" entry:"1504169249" modified:"1504169249" status:"pending" tags:"task" uuid:"dcc43583-59eb-4dc4-8406-b1300dec2b4b"]
+---
+time 1504169278
+old [description:"mettre en place les matchs recommended" entry:"1504169249" modified:"1504169249" status:"pending" tags:"task" uuid:"dcc43583-59eb-4dc4-8406-b1300dec2b4b"]
+new [description:"Mettre en place les matchs recommended" entry:"1504169249" modified:"1504169278" status:"pending" tags:"task" uuid:"dcc43583-59eb-4dc4-8406-b1300dec2b4b"]
+---
+time 1504169977
+new [description:"change the admin url of the Django admin" entry:"1504169977" modified:"1504169977" status:"pending" tags:"task" uuid:"be0c1928-180e-4b92-97df-7d4f2b202ef9"]
+---
+time 1504170154
+new [description:"Ajouter la page \/club\/slug\/teams\/slug\/matches" entry:"1504170154" modified:"1504170154" status:"pending" tags:"task" uuid:"b07c2c8e-83d5-4967-b60d-a838cd956b19"]
+---
+time 1504170256
+old [description:"ajouter du contenu sur la page Team" entry:"1504169144" modified:"1504169149" start:"1504169149" status:"pending" uuid:"8029bbef-c93f-4d9c-a4c9-a55a2b79222e"]
+new [description:"ajouter du contenu sur la page Team" end:"1504170256" entry:"1504169144" modified:"1504170256" status:"completed" uuid:"8029bbef-c93f-4d9c-a4c9-a55a2b79222e"]
+---
+time 1504170269
+new [description:"valider la couverture de tests" entry:"1504170269" modified:"1504170269" status:"pending" uuid:"0ba6a211-9d0c-4779-adf9-5982a0eaa30d"]
+---
+time 1504170274
+old [description:"valider la couverture de tests" entry:"1504170269" modified:"1504170269" status:"pending" uuid:"0ba6a211-9d0c-4779-adf9-5982a0eaa30d"]
+new [description:"valider la couverture de tests" entry:"1504170269" modified:"1504170274" start:"1504170274" status:"pending" uuid:"0ba6a211-9d0c-4779-adf9-5982a0eaa30d"]
+---
+time 1504173753
+old [description:"valider la couverture de tests" entry:"1504170269" modified:"1504170274" start:"1504170274" status:"pending" uuid:"0ba6a211-9d0c-4779-adf9-5982a0eaa30d"]
+new [description:"valider la couverture de tests" end:"1504173753" entry:"1504170269" modified:"1504173753" status:"completed" uuid:"0ba6a211-9d0c-4779-adf9-5982a0eaa30d"]
+---
+time 1504174201
+new [description:"team a un joli logo du club" entry:"1504174201" modified:"1504174201" status:"pending" uuid:"f0af6e5a-d2f5-4a21-9ef3-d105689328f3"]
+---
+time 1504174220
+old [description:"team a un joli logo du club" entry:"1504174201" modified:"1504174201" status:"pending" uuid:"f0af6e5a-d2f5-4a21-9ef3-d105689328f3"]
+new [description:"team a un joli logo du club" entry:"1504174201" modified:"1504174220" start:"1504174220" status:"pending" uuid:"f0af6e5a-d2f5-4a21-9ef3-d105689328f3"]
+---
+time 1504181688
+old [description:"team a un joli logo du club" entry:"1504174201" modified:"1504174220" start:"1504174220" status:"pending" uuid:"f0af6e5a-d2f5-4a21-9ef3-d105689328f3"]
+new [description:"team a un joli logo du club" end:"1504181688" entry:"1504174201" modified:"1504181688" status:"completed" uuid:"f0af6e5a-d2f5-4a21-9ef3-d105689328f3"]
+---
+time 1504181718
+new [description:"refactoriser les templates admin" entry:"1504181718" modified:"1504181718" status:"pending" tags:"chore" uuid:"70c25779-86de-4457-a253-2e4a3b2c3083"]
+---
+time 1504181939
+new [description:"Déplacer le code pour la génération de test directement dans develop" entry:"1504181939" modified:"1504181939" status:"pending" uuid:"93ca5ef6-435e-41eb-b086-e9c512f7976e"]
+---
+time 1504181955
+old [description:"Déplacer le code pour la génération de test directement dans develop" entry:"1504181939" modified:"1504181939" status:"pending" uuid:"93ca5ef6-435e-41eb-b086-e9c512f7976e"]
+new [annotation_1504181955:"committer les images square" description:"Déplacer le code pour la génération de test directement dans develop" entry:"1504181939" modified:"1504181955" status:"pending" uuid:"93ca5ef6-435e-41eb-b086-e9c512f7976e"]
+---
+time 1504181959
+old [annotation_1504181955:"committer les images square" description:"Déplacer le code pour la génération de test directement dans develop" entry:"1504181939" modified:"1504181955" status:"pending" uuid:"93ca5ef6-435e-41eb-b086-e9c512f7976e"]
+new [annotation_1504181955:"committer les images square" description:"Déplacer le code pour la génération de test directement dans develop" entry:"1504181939" modified:"1504181959" start:"1504181959" status:"pending" uuid:"93ca5ef6-435e-41eb-b086-e9c512f7976e"]
+---
+time 1504182031
+new [description:"Rebase la branche Individual team page" entry:"1504182031" modified:"1504182031" status:"pending" uuid:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9"]
+---
+time 1504182107
+old [description:"refactoriser les templates admin" entry:"1504181718" modified:"1504181718" status:"pending" tags:"chore" uuid:"70c25779-86de-4457-a253-2e4a3b2c3083"]
+new [annotation_1504182107:"c'est quoi le fichier template\/clubs\/admin-base.html?" description:"refactoriser les templates admin" entry:"1504181718" modified:"1504182107" status:"pending" tags:"chore" uuid:"70c25779-86de-4457-a253-2e4a3b2c3083"]
+---
+time 1504182316
+old [annotation_1504181955:"committer les images square" description:"Déplacer le code pour la génération de test directement dans develop" entry:"1504181939" modified:"1504181959" start:"1504181959" status:"pending" uuid:"93ca5ef6-435e-41eb-b086-e9c512f7976e"]
+new [annotation_1504181955:"committer les images square" description:"Déplacer le code pour la génération de test directement dans develop" end:"1504182316" entry:"1504181939" modified:"1504182316" status:"completed" uuid:"93ca5ef6-435e-41eb-b086-e9c512f7976e"]
+---
+time 1504182324
+old [description:"Rebase la branche Individual team page" entry:"1504182031" modified:"1504182031" status:"pending" uuid:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9"]
+new [description:"Rebase la branche Individual team page" entry:"1504182031" modified:"1504182324" start:"1504182324" status:"pending" uuid:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9"]
+---
+time 1504182461
+old [description:"Valider que le template teams\/base est utilisé" entry:"1504167895" modified:"1504167895" status:"pending" uuid:"4bced95c-f9dd-4f1b-a1ad-8c5e5cd01ee4"]
+new [description:"Valider que le template teams\/base est utilisé" entry:"1504167895" modified:"1504182461" status:"pending" tags:"next" uuid:"4bced95c-f9dd-4f1b-a1ad-8c5e5cd01ee4"]
+---
+time 1504182499
+old [description:"Valider que le template teams\/base est utilisé" entry:"1504167895" modified:"1504182461" status:"pending" tags:"next" uuid:"4bced95c-f9dd-4f1b-a1ad-8c5e5cd01ee4"]
+new [depends:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9" description:"Valider que le template teams\/base est utilisé" entry:"1504167895" modified:"1504182499" status:"pending" tags:"next" uuid:"4bced95c-f9dd-4f1b-a1ad-8c5e5cd01ee4"]
+---
+time 1504182590
+new [description:"test" entry:"1504182590" modified:"1504182590" status:"pending" uuid:"253ea98e-c31e-410d-86e6-00bfc85d8563"]
+---
+time 1504183070
+old [description:"Rebase la branche Individual team page" entry:"1504182031" modified:"1504182324" start:"1504182324" status:"pending" uuid:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9"]
+new [description:"Rebase la branche Individual team page" end:"1504183070" entry:"1504182031" modified:"1504183070" status:"completed" uuid:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9"]
+---
+time 1504183110
+old [depends:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9" description:"Valider que le template teams\/base est utilisé" entry:"1504167895" modified:"1504182499" status:"pending" tags:"next" uuid:"4bced95c-f9dd-4f1b-a1ad-8c5e5cd01ee4"]
+new [depends:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9" description:"Valider que le template teams\/base est utilisé" entry:"1504167895" modified:"1504183110" start:"1504183110" status:"pending" tags:"next" uuid:"4bced95c-f9dd-4f1b-a1ad-8c5e5cd01ee4"]
+---
+time 1504183110
+old [annotation_1504182107:"c'est quoi le fichier template\/clubs\/admin-base.html?" description:"refactoriser les templates admin" entry:"1504181718" modified:"1504182107" status:"pending" tags:"chore" uuid:"70c25779-86de-4457-a253-2e4a3b2c3083"]
+new [annotation_1504182107:"c'est quoi le fichier template\/clubs\/admin-base.html?" description:"refactoriser les templates admin" entry:"1504181718" modified:"1504183110" start:"1504183110" status:"pending" tags:"chore" uuid:"70c25779-86de-4457-a253-2e4a3b2c3083"]
+---
+time 1504183158
+new [description:"Ajouter des données de test sur la branche Heroku de la PR Team page pour que Kawus puisse tester tranquillement" entry:"1504183158" modified:"1504183158" status:"pending" uuid:"5debf6ce-5f67-46c8-8a58-87922339cf97"]
+---
+time 1504184351
+new [description:"quelle url pour admin team creation" entry:"1504184351" modified:"1504184351" status:"pending" uuid:"09340d90-300f-4a2c-abf3-259c9fd4dc55"]
+---
+time 1504184370
+old [description:"quelle url pour admin team creation" entry:"1504184351" modified:"1504184351" status:"pending" uuid:"09340d90-300f-4a2c-abf3-259c9fd4dc55"]
+new [description:"quelle url pour admin team creation" entry:"1504184351" modified:"1504184370" status:"pending" tags:"task" uuid:"09340d90-300f-4a2c-abf3-259c9fd4dc55"]
+---
+time 1504184393
+old [description:"test" entry:"1504182590" modified:"1504182590" status:"pending" uuid:"253ea98e-c31e-410d-86e6-00bfc85d8563"]
+new [description:"test" end:"1504184392" entry:"1504182590" modified:"1504184393" status:"deleted" uuid:"253ea98e-c31e-410d-86e6-00bfc85d8563"]
+---
+time 1504185073
+old [annotation_1504182107:"c'est quoi le fichier template\/clubs\/admin-base.html?" description:"refactoriser les templates admin" entry:"1504181718" modified:"1504183110" start:"1504183110" status:"pending" tags:"chore" uuid:"70c25779-86de-4457-a253-2e4a3b2c3083"]
+new [annotation_1504182107:"c'est quoi le fichier template\/clubs\/admin-base.html?" description:"refactoriser les templates admin" end:"1504185073" entry:"1504181718" modified:"1504185073" status:"completed" tags:"chore" uuid:"70c25779-86de-4457-a253-2e4a3b2c3083"]
+---
+time 1504185128
+old [annotation_1504167783:"placer le template dans le repertoire admin" description:"la page Team creation ne marche plus" entry:"1504167709" modified:"1504168782" status:"pending" tags:"bug" uuid:"f1f3af04-86d3-43ed-90af-a5952c34b3f3"]
+new [annotation_1504167783:"placer le template dans le repertoire admin" description:"la page Team creation ne marche plus" end:"1504185128" entry:"1504167709" modified:"1504185128" status:"completed" tags:"bug" uuid:"f1f3af04-86d3-43ed-90af-a5952c34b3f3"]
+---
+time 1504185145
+old [depends:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9" description:"Valider que le template teams\/base est utilisé" entry:"1504167895" modified:"1504183110" start:"1504183110" status:"pending" tags:"next" uuid:"4bced95c-f9dd-4f1b-a1ad-8c5e5cd01ee4"]
+new [depends:"d6c3d729-d3e9-4571-8e43-3d3c8da310c9" description:"Valider que le template teams\/base est utilisé" end:"1504185143" entry:"1504167895" modified:"1504185145" start:"1504183110" status:"deleted" tags:"next" uuid:"4bced95c-f9dd-4f1b-a1ad-8c5e5cd01ee4"]
+---
+time 1504185215
+old [description:"Ajouter des données de test sur la branche Heroku de la PR Team page pour que Kawus puisse tester tranquillement" entry:"1504183158" modified:"1504183158" status:"pending" uuid:"5debf6ce-5f67-46c8-8a58-87922339cf97"]
+new [description:"Ajouter des données de test sur la branche Heroku de la PR Team page pour que Kawus puisse tester tranquillement" entry:"1504183158" modified:"1504185215" start:"1504185215" status:"pending" uuid:"5debf6ce-5f67-46c8-8a58-87922339cf97"]
+---
+time 1504185937
+old [description:"Ajouter des données de test sur la branche Heroku de la PR Team page pour que Kawus puisse tester tranquillement" entry:"1504183158" modified:"1504185215" start:"1504185215" status:"pending" uuid:"5debf6ce-5f67-46c8-8a58-87922339cf97"]
+new [description:"Ajouter des données de test sur la branche Heroku de la PR Team page pour que Kawus puisse tester tranquillement" end:"1504185937" entry:"1504183158" modified:"1504185937" status:"completed" uuid:"5debf6ce-5f67-46c8-8a58-87922339cf97"]
+---
+time 1504186121
+new [description:"implement the edit team" entry:"1504186121" modified:"1504186121" status:"pending" tags:"task" uuid:"deff417f-457a-4cca-993f-bbe888f2d173"]
+---
+time 1504186140
+new [description:"implement the add team member" entry:"1504186140" modified:"1504186140" status:"pending" tags:"task" uuid:"ab6033fd-efdc-4f19-9024-243130ce2f78"]
+---
+time 1504186177
+new [description:"on the admin pages, add the club name" entry:"1504186177" modified:"1504186177" status:"pending" tags:"task" uuid:"68dfade0-03c2-4b67-b805-45524d278488"]
+---
+time 1504186359
+old [description:"Mettre en place les matchs recommended" entry:"1504169249" modified:"1504169278" status:"pending" tags:"task" uuid:"dcc43583-59eb-4dc4-8406-b1300dec2b4b"]
+new [description:"Mettre en place les matchs recommended" end:"1504186355" entry:"1504169249" modified:"1504186359" status:"deleted" tags:"task" uuid:"dcc43583-59eb-4dc4-8406-b1300dec2b4b"]
+---
+time 1504186362
+old [description:"change the admin url of the Django admin" entry:"1504169977" modified:"1504169977" status:"pending" tags:"task" uuid:"be0c1928-180e-4b92-97df-7d4f2b202ef9"]
+new [description:"change the admin url of the Django admin" end:"1504186359" entry:"1504169977" modified:"1504186362" status:"deleted" tags:"task" uuid:"be0c1928-180e-4b92-97df-7d4f2b202ef9"]
+---
+time 1504186362
+old [description:"Ajouter la page \/club\/slug\/teams\/slug\/matches" entry:"1504170154" modified:"1504170154" status:"pending" tags:"task" uuid:"b07c2c8e-83d5-4967-b60d-a838cd956b19"]
+new [description:"Ajouter la page \/club\/slug\/teams\/slug\/matches" end:"1504186362" entry:"1504170154" modified:"1504186362" status:"deleted" tags:"task" uuid:"b07c2c8e-83d5-4967-b60d-a838cd956b19"]
+---
+time 1504186362
+old [description:"quelle url pour admin team creation" entry:"1504184351" modified:"1504184370" status:"pending" tags:"task" uuid:"09340d90-300f-4a2c-abf3-259c9fd4dc55"]
+new [description:"quelle url pour admin team creation" end:"1504186362" entry:"1504184351" modified:"1504186362" status:"deleted" tags:"task" uuid:"09340d90-300f-4a2c-abf3-259c9fd4dc55"]
+---
+time 1504186362
+old [description:"implement the edit team" entry:"1504186121" modified:"1504186121" status:"pending" tags:"task" uuid:"deff417f-457a-4cca-993f-bbe888f2d173"]
+new [description:"implement the edit team" end:"1504186362" entry:"1504186121" modified:"1504186362" status:"deleted" tags:"task" uuid:"deff417f-457a-4cca-993f-bbe888f2d173"]
+---
+time 1504186362
+old [description:"implement the add team member" entry:"1504186140" modified:"1504186140" status:"pending" tags:"task" uuid:"ab6033fd-efdc-4f19-9024-243130ce2f78"]
+new [description:"implement the add team member" end:"1504186362" entry:"1504186140" modified:"1504186362" status:"deleted" tags:"task" uuid:"ab6033fd-efdc-4f19-9024-243130ce2f78"]
+---
+time 1504186362
+old [description:"on the admin pages, add the club name" entry:"1504186177" modified:"1504186177" status:"pending" tags:"task" uuid:"68dfade0-03c2-4b67-b805-45524d278488"]
+new [description:"on the admin pages, add the club name" end:"1504186362" entry:"1504186177" modified:"1504186362" status:"deleted" tags:"task" uuid:"68dfade0-03c2-4b67-b805-45524d278488"]
+---
+time 1504187531
+new [description:"t comprendre <canvas>" entry:"1504187531" modified:"1504187531" status:"pending" tags:"perso" uuid:"d4ee6cc5-62bb-47ea-8934-311108b60ca6"]
+---
+time 1504187545
+old [description:"t comprendre <canvas>" entry:"1504187531" modified:"1504187531" status:"pending" tags:"perso" uuid:"d4ee6cc5-62bb-47ea-8934-311108b60ca6"]
+new [description:"t comprendre <canvas>" entry:"1504187531" modified:"1504187545" start:"1504187545" status:"pending" tags:"perso" uuid:"d4ee6cc5-62bb-47ea-8934-311108b60ca6"]
+---
+time 1504253651
+old [description:"t comprendre <canvas>" entry:"1504187531" modified:"1504187545" start:"1504187545" status:"pending" tags:"perso" uuid:"d4ee6cc5-62bb-47ea-8934-311108b60ca6"]
+new [description:"t comprendre <canvas>" entry:"1504187531" modified:"1504253651" status:"pending" tags:"perso" uuid:"d4ee6cc5-62bb-47ea-8934-311108b60ca6"]
+---
+time 1504254192
+new [description:"regarder les remarques de JH sur le code" entry:"1504254192" modified:"1504254192" status:"pending" uuid:"ebd6ac68-cce8-4d21-a4b9-8908c3ea32ef"]
+---
+time 1504254268
+old [description:"regarder les remarques de JH sur le code" entry:"1504254192" modified:"1504254192" status:"pending" uuid:"ebd6ac68-cce8-4d21-a4b9-8908c3ea32ef"]
+new [description:"regarder les remarques de JH sur le code" entry:"1504254192" modified:"1504254268" start:"1504254268" status:"pending" uuid:"ebd6ac68-cce8-4d21-a4b9-8908c3ea32ef"]
+---
+time 1504254872
+old [description:"regarder les remarques de JH sur le code" entry:"1504254192" modified:"1504254268" start:"1504254268" status:"pending" uuid:"ebd6ac68-cce8-4d21-a4b9-8908c3ea32ef"]
+new [description:"regarder les remarques de JH sur le code" end:"1504254872" entry:"1504254192" modified:"1504254872" status:"completed" uuid:"ebd6ac68-cce8-4d21-a4b9-8908c3ea32ef"]
+---
+time 1504254914
+new [description:"edit team" entry:"1504254914" modified:"1504254914" status:"pending" uuid:"3479d32a-8bf8-4f13-a39b-236f89fae5cf"]
+---
+time 1504254916
+old [description:"edit team" entry:"1504254914" modified:"1504254914" status:"pending" uuid:"3479d32a-8bf8-4f13-a39b-236f89fae5cf"]
+new [description:"edit team" entry:"1504254914" modified:"1504254916" start:"1504254916" status:"pending" uuid:"3479d32a-8bf8-4f13-a39b-236f89fae5cf"]
+---
+time 1504255012
+old [description:"edit team" entry:"1504254914" modified:"1504254916" start:"1504254916" status:"pending" uuid:"3479d32a-8bf8-4f13-a39b-236f89fae5cf"]
+new [description:"edit team" entry:"1504254914" modified:"1504255012" start:"1504254916" status:"pending" tags:"feature" uuid:"3479d32a-8bf8-4f13-a39b-236f89fae5cf"]
+---

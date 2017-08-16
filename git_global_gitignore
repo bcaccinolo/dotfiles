@@ -1,0 +1,7 @@
+
+.irbrc
+.DS_Store
+.vscode
+.vs
+node_modules/
+
