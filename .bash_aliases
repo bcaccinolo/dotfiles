@@ -7,5 +7,7 @@ alias pp='cd /home/benoit/dev/veo/veoplayer ; ls'
 alias modules='cd venv/lib/python3.6/site-packages/ ; ls'
 alias m='./manage.py '
 alias mshellplus='m shell_plus'
+alias mplus='m shell_plus'
+alias mroutes='m show_urls'
 
 
