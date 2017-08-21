@@ -8,14 +8,6 @@ nnoremap ; :
 " Tired of clearing highlighted searches by searching for “ldsfhjkhgakjks”?
 nmap <silent> ,/ :nohlsearch<CR>
 
-" Avoid the <ESC> key
-inoremap jk <Esc>
-inoremap kj <Esc>
-inoremap kk <Esc>
-inoremap jj <Esc>
-inoremap df <Esc>
-inoremap fd <Esc>
-
 " Easy window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
