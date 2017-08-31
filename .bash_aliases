@@ -1,6 +1,8 @@
 
 alias veo='cd /home/benoit/dev/veo/zola ; ls'
 alias zz='cd /home/benoit/dev/veo/zola ; ls'
+alias zz2='cd /home/benoit/dev/veo/zola2 ; ls'
+
 alias gg='cd /home/benoit/dev/veo/gullit ; ls'
 alias pp='cd /home/benoit/dev/veo/veoplayer ; ls'
 
@@ -9,5 +11,10 @@ alias m='./manage.py '
 alias mshellplus='m shell_plus'
 alias mplus='m shell_plus'
 alias mroutes='m show_urls'
+alias mrunserver='m runserver'
+
+alias pt='pytest -s --spec '
+
+alias t='task '
 
 
