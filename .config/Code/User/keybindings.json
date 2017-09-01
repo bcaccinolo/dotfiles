@@ -1,0 +1,15 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+k ctrl+y",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "ctrl+[BracketLeft]",
+        "command": "editor.action.outdentLines"
+    },
+    {
+        "key": "ctrl+[BracketRight]",
+        "command": "editor.action.indentLines"
+    }
+]

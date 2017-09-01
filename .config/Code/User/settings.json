@@ -1,0 +1,32 @@
+// Place your settings in this file to overwrite the default settings
+{
+     "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/venv": true,
+        "**/tmp": true,
+        "**/static-collected/": true
+    },
+
+    "workbench.iconTheme": "ayu",
+    "window.zoomLevel": 0,
+
+    "python.pythonPath": "${workspaceRoot}/venv/bin/python",
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintEnabled": true,
+
+    "editor.minimap.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Visual Studio Light",
+    "git.confirmSync": false,
+    "workbench.activityBar.visible": true,
+    "[scss]": {
+        "editor.tabSize": 4
+    },
+    "files.associations": {
+        "*.scss": "scss"
+    },
+    "editor.tabSize": 4,
+    "diffEditor.renderSideBySide": false
+}
