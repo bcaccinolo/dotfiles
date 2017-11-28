@@ -1,14 +1,17 @@
+
+# . ~/.bashrc_perso
+
 # encoding unification
 export LC_ALL=en_US.utf-8
 export LANG="$LC_ALL"
 
-export SVN_EDITOR=vim
-export EDITOR=vim
+export SVN_EDITOR=code
+export EDITOR=code
 
 export HISTSIZE=10000
 
-alias update_tags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
-alias update_ctags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
+# alias update_tags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
+# alias update_ctags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
 
 __git_ps1 ()
 {

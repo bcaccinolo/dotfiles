@@ -1,4 +1,5 @@
 
+# . ~/.bash_aliases
 
 # commons
 alias fp='find .'
@@ -7,7 +8,7 @@ alias ls='ls -G'
 alias l='ls -1'
 alias ll='ls -alh'
 alias la='ls -a'
-alias c='cd ..'
+alias c='cd .. ; ls'
 alias rr='reset'
 
 # rails
