@@ -26,6 +26,13 @@ Alternatively, they can be cloned to the User folder of the VSCode installation 
 - Linux: `~/.config/Code/User/settings.json`
 
 
+# .zshrc
+
+```bash
+cp ~/.zshrc ~/dev/dotfiles/
+```
+
+
 # Logitech Marble Mouse config
 
 file: /usr/share/X11/xorg.conf.d/40-libinput.conf
