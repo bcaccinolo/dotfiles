@@ -1,32 +1,37 @@
-// Place your settings in this file to overwrite the default settings
 {
-     "search.exclude": {
-        "**/.git": true,
-        "**/node_modules": true,
-        "**/venv": true,
-        "**/tmp": true,
-        "**/static-collected/": true
-    },
-
-    "workbench.iconTheme": "ayu",
-    "window.zoomLevel": 0,
-
-    "python.pythonPath": "${workspaceRoot}/venv/bin/python",
-    "python.linting.pep8Enabled": true,
-    "python.linting.pylintEnabled": true,
-
     "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
     "workbench.editor.enablePreview": false,
-    "files.trimTrailingWhitespace": true,
-    "workbench.colorTheme": "Visual Studio Light",
-    "git.confirmSync": false,
     "workbench.activityBar.visible": true,
-    "[scss]": {
-        "editor.tabSize": 4
+    "git.confirmSync": false,
+    "workbench.statusBar.visible": true,
+    "python.linting.pep8Enabled": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.folding": false,
+    "keyboard.dispatch": "keyCode",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.lineNumbers": "on",
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "SC Soft 90th",
+    "python.pythonPath": "python2.7",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/*.pyc": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
     },
-    "files.associations": {
-        "*.scss": "scss"
+    "diffEditor.renderSideBySide": false,
+    "workbench.panel.location": "right",
+    "ruby.lint": {
+        "rubocop": {
+            "lint": true,
+            "rails": true
+        }
     },
-    "editor.tabSize": 4,
-    "diffEditor.renderSideBySide": false
+    "explorer.openEditors.visible": 0,
+    "editor.cursorBlinking": "solid"
 }
