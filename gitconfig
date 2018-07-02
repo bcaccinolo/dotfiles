@@ -11,6 +11,12 @@
 
 [core]
   pager = less -r
+  editor = code --wait
+  excludesfile = /Users/benoit/.gitignore
+
+[branch]
+  # prefer rebase when pulling modifications from remote
+  autosetuprebase = always
 
 [color]
   branch = auto
@@ -40,4 +46,10 @@
 [tig]
  show-date = short
  author-width = 10
+
+# Be careful when committing this section of the file.
+# Do not commit your own email !
+[user]
+	name = John Doe
+  email = john.doe@nypd.com
 

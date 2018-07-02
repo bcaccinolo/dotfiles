@@ -41,3 +41,32 @@ alias difc='git df --cached'
 alias git-count='git shortlog -s -n'
 alias tags='git tag -l | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n'
 
+
+# valipat
+alias puma-command="echo 'rm -f /tmp/pid && bundle exec puma -C config/puma.rb ; reset'"
+alias pp="echo 'rm -f /tmp/pid && bundle exec puma -C config/puma.rb ' | pbcopy"
+
+alias localenv='eval $(docker-machine env valipat)'
+alias f1env='eval $(docker-machine env feature1.valipat.com)'
+alias f2env='eval $(docker-machine env feature2.valipat.com)'
+alias f3env='eval $(docker-machine env feature3.valipat.com)'
+
+alias dif='git diff'
+alias st='git status'
+
+# docker
+alias d='docker '
+alias dm='docker-machine '
+alias dcont='docker container '
+alias dei='docker exec -t -i '
+alias dps='docker ps --format "{{.Names}} - {{.ID}} " | sort '
+alias dc='docker-compose'
+alias dcc='./ops/dev/compose'
+
+alias routing='sudo ifconfig bridge100 -hostfilter en4 && sudo /sbin/route -n add -net 172.17.0.0/12 -gateway $(docker-machine ip valipat)'
+
+# Perso
+alias jj='cd /Users/benoit/dev/jobboard'
+alias bb='cd /Users/benoit/dev/blockchain/javascript'
+alias gg='cd /Users/benoit/dev/gmail-fetcher ; pipenv shell'
+alias connect='ssh root@137.74.43.108'

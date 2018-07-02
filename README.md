@@ -2,8 +2,41 @@ dotfiles
 ========
 
 
-config files
+# Todo
 
+- [ ] vscode settings << this would be a nice project in TypeScript
+
+- [ ] zsh config
+
+- [ ] tig config
+
+- [X] global gitignore
+
+
+# Config files
+
+## Git
+
+### Git config (.gitconfig)
+
+This file is sensible cause it contains your email. So this file is not symlinked.
+
+```
+cp ~/dotfiles/gitconfig ~/.gitconfig
+```
+
+You will have to edit the user section:
+```
+[user]
+	name = John Doe
+	email = john.doe@nypd.com
+```
+
+### Install global git ignore
+
+```
+ln -s ~/dotfiles/git_global_gitignore ~/.gitignore
+```
 
 installation: git clone URL .
 
