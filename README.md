@@ -10,10 +10,18 @@ dotfiles
 
 - [ ] tig config
 
+- [X] global rubocop
 - [X] global gitignore
 
 
 # Config files
+
+## Rubocop global
+
+
+```
+ln -s ~/dotfiles/rubocop.yml ~/.rubocop.yml
+```
 
 ## Git
 
@@ -32,7 +40,7 @@ You will have to edit the user section:
 	email = john.doe@nypd.com
 ```
 
-### Install global git ignore
+### Install global gitignore
 
 ```
 ln -s ~/dotfiles/git_global_gitignore ~/.gitignore
