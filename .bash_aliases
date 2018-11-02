@@ -3,7 +3,7 @@
 
 # Emacs config
 alias emacsserver="emacs --daemon"
-alias ec="emacs --c"
+alias ec="emacsclient --c"
 
 # commons
 alias c='cd .. ; ls'

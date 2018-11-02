@@ -9,6 +9,7 @@ export ZSH=/Users/benoit/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robb yrussell"
 ZSH_THEME="agnoster-perso"
+#ZSH_THEME="avit"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -18,7 +19,7 @@ ZSH_THEME="agnoster-perso"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -68,9 +69,13 @@ plugins=(
   docker-compose
   composer
   laravel5
+  mix
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# for ..[Tab] gives the ../
+zstyle ':completion:*' special-dirs true
 
 # User configuration
 
@@ -101,35 +106,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Emacs config
-alias emacs server="emacs --daemon"
-alias ec="emacs --c"
 
-# Valipat config
-alias puma-command="echo 'rm -f /tmp/pid && bundle exec puma -C config/puma.rb ; reset'"
-alias pp="echo 'rm -f /tmp/pid && bundle exec puma -C config/puma.rb ' | pbcopy"
-
-alias localenv='eval $(docker-machine env valipat)'
-alias f1env='eval $(docker-machine env feature1.valipat.com)'
-alias f2env='eval $(docker-machine env feature2.valipat.com)'
-alias f3env='eval $(docker-machine env feature3.valipat.com)'
-
-
-# docker
-alias d='docker '
-alias dcont='docker container '
-alias dei='docker exec -t -i '
-alias dps='docker ps --format "{{.Names}} - {{.ID}} " | sort '
-alias dc='docker-compose'
-alias dcc='./ops/dev/compose'
-
-# add a container name to get its IP
-alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}' "
-alias c='cd ..'
-
-alias singleapp='cd /Users/benoit/dev/code-examples/php/singleapp'
-alias connect='ssh root@137.74.43.108'
+if [[ -f ~/.bash_aliases ]]; then
+  . ~/.bash_aliases
+fi
 
 localenv
 
 export PATH=~/.rbenv/shims:/Users/benoit/.composer/vendor/bin:$PATH
+export PATH="/usr/local/sbin:$PATH"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# For the geminabox
+export BUNDLE_GEMS__SYNBIOZ__COM=synbioz:ozgjuQRwKhxT3URPiQR
+export DISABLE_SPRING=true
+
