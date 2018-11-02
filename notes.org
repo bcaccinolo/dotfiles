@@ -1,8 +1,10 @@
 
 * Handle Emacs
 ** DONE versionized .emacs file 
-** TODO remove .emacs.d from git
-** add a dark theme
+   CLOSED: [2018-11-02 Fri 08:45]
+** DONE remove .emacs.d from git
+   CLOSED: [2018-11-02 Fri 08:45]
+** TODO add a dark theme
 
 
 

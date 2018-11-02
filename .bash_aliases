@@ -1,6 +1,10 @@
 
 # . ~/.bash_aliases
 
+# Emacs config
+alias emacsserver="emacs --daemon"
+alias ec="emacs --c"
+
 # commons
 alias fp='find .'
 alias f='ls -G'

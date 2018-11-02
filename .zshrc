@@ -101,9 +101,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# valipat
-alias vd='cd /Users/benoit/valipat/app-doc; ls'
+# Emacs config
+alias emacs server="emacs --daemon"
+alias ec="emacs --c"
 
+# Valipat config
 alias puma-command="echo 'rm -f /tmp/pid && bundle exec puma -C config/puma.rb ; reset'"
 alias pp="echo 'rm -f /tmp/pid && bundle exec puma -C config/puma.rb ' | pbcopy"
 
@@ -112,10 +114,6 @@ alias f1env='eval $(docker-machine env feature1.valipat.com)'
 alias f2env='eval $(docker-machine env feature2.valipat.com)'
 alias f3env='eval $(docker-machine env feature3.valipat.com)'
 
-
-alias rec_bash='docker exec -it recdev_recapp_1 bash'
-alias rec_attach='dc attach recdev_recapp_1'
-alias auth_bash='docker exec -ti dev_authapp_1 bash'
 
 # docker
 alias d='docker '
