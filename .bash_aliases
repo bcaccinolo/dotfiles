@@ -2,28 +2,25 @@
 # . ~/.bash_aliases
 
 # commons
+alias c='cd .. ; ls'
+alias cs='cd '
+
 alias fp='find .'
 alias f='ls -G'
-alias ls='ls -G'
+
+alias ls='exa'
+# alias ls='ls -G'
 alias l='ls -1'
 alias ll='ls -alh'
 alias la='ls -a'
-alias c='cd .. ; ls'
 alias rr='reset'
-
-# rails
-alias cdapp='cd app'
-alias cdmodel='cd app/models'
-alias cdviews='cd app/views'
-alias cdcontroller='cd app/controllers'
-alias b='reset; bundle'
-alias be='bundle exec'
 
 # ack
 alias g='ack '
 alias gf='ack -g ' # to search file names
 
 # git aliases
+alias gg='git '
 alias master='co master; pull'
 alias st='git st'
 alias br='git br'
@@ -55,6 +52,7 @@ alias dif='git diff'
 alias st='git status'
 
 # docker
+alias dclean='docker container prune -f ;   docker volume prune -f '
 alias d='docker '
 alias dm='docker-machine '
 alias dcont='docker container '
@@ -63,10 +61,10 @@ alias dps='docker ps --format "{{.Names}} - {{.ID}} " | sort '
 alias dc='docker-compose'
 alias dcc='./ops/dev/compose'
 
-alias routing='sudo ifconfig bridge100 -hostfilter en4 && sudo /sbin/route -n add -net 172.17.0.0/12 -gateway $(docker-machine ip valipat)'
+alias routing='sudo ifconfig bridge100 -hostfilter en4 && sudo /sbin/route -n add -net 172.16.0.0/12 -gateway $(docker-machine ip valipat)'
 
 # Perso
 alias jj='cd /Users/benoit/dev/jobboard'
 alias bb='cd /Users/benoit/dev/blockchain/javascript'
-alias gg='cd /Users/benoit/dev/gmail-fetcher ; pipenv shell'
+# alias gg='cd /Users/benoit/dev/gmail-fetcher ; pipenv shell'
 alias connect='ssh root@137.74.43.108'

@@ -16,16 +16,23 @@ Metrics/ClassLength:
 # Enforcing double quotes reduces the times where you need to change them
 # when introducing an interpolation. Use single quotes only if their semantics
 # are needed.
-# Style/StringLiterals:
-#   EnforcedStyle: double_quotes
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
 
 # We do not need to support Ruby 1.9, so this is good to use.
 Style/SymbolArray:
   Enabled: true
 
+# Top-level documentation of classes and modules
+Style/Documentation:
+  Enabled: true
+
 # Public methods should always be documented
 Style/DocumentationMethod:
   Enabled: true
+
+Style/AsciiComments:
+  Enabled: false
 
 # Multi-line method calls should use trailing dot
 Layout/DotPosition:
@@ -38,15 +45,6 @@ Layout/MultilineMethodCallIndentation:
 # Enforce usage of alias_method over alias since it's more flexible and predictable
 Style/Alias:
   EnforcedStyle: prefer_alias_method
-
-# Enforce usage of %i() to create array of symbols
-Style/SymbolArray:
-  Enabled: true
-
-# # Most readable form.
-# Style/AlignHash:
-#   EnforcedHashRocketStyle: table
-#   EnforcedColonStyle: table
 
 # Mixing the styles looks just silly.
 Style/HashSyntax:
@@ -75,6 +73,12 @@ Style/MethodCalledOnDoEndBlock:
 Style/SingleLineBlockParams:
   Enabled: false
 
+Style/FormatString:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
 # Shadowing outer local variables with block parameters is often useful
 # to not reinvent a new name for the same thing, it highlights the relation
 # between the outer variable and the parameter. The cases where it's actually
@@ -84,5 +88,13 @@ Lint/ShadowingOuterLocalVariable:
   Enabled: false
 
 # Calling the argument `other` in all cases makes no sense.
-# Naming/BinaryOperatorParameter:
-#   Enabled: false
+Naming/BinaryOperatorParameterName:
+  Enabled: false
+
+# Use of redundant self allow for clearer code
+Style/RedundantSelf:
+  Enabled: false
+
+# We don't wanna try to be Ruby 3+ compatible for now
+Style/FrozenStringLiteralComment:
+  Enabled: false

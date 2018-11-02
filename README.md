@@ -18,7 +18,6 @@ dotfiles
 
 ## Rubocop global
 
-
 ```
 ln -s ~/dotfiles/rubocop.yml ~/.rubocop.yml
 ```
@@ -40,13 +39,11 @@ You will have to edit the user section:
 	email = john.doe@nypd.com
 ```
 
-### Install global gitignore
+### Global gitignore
 
 ```
 ln -s ~/dotfiles/git_global_gitignore ~/.gitignore
 ```
-
-installation: git clone URL .
 
 # install VSCode settings on Mac
 
