@@ -13,13 +13,31 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (which-key telephone-line monokai-theme org magit))))
+    (ivy neotree projectile which-key telephone-line monokai-theme org magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+)
+
+;; GUI config
+(tool-bar-mode -1)
+
+;; Projectile
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+(setq projectile-completion-system 'ivy)
+
+;; Neotree config
+(global-set-key (kbd "C-x nn") 'neotree-toggle)
+(setq neo-theme 'arrow)
+
+;;Which-key config
+(which-key-mode)
+
+;; Magit config
+(global-set-key (kbd "C-x g") 'magit-status)
 
 ;; Org Mode config
 ;; The following lines are always needed.  Choose your own keys.
@@ -34,3 +52,7 @@
 ;; Telephone line config
 (require 'telephone-line)
 (telephone-line-mode 1)
+
+;; Switch window
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
