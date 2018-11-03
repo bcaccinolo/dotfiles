@@ -21,13 +21,15 @@
  ;; If there is more than one, they won't work right.
 )
 
-;; GUI config
+;; GUI cognfig
 (tool-bar-mode -1)
 
 ;; Projectile
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 (setq projectile-completion-system 'ivy)
+(setq projectile-switch-project-action 'neotree-projectile-action)
+
 
 ;; Neotree config
 (global-set-key (kbd "C-x nn") 'neotree-toggle)
