@@ -1,3 +1,7 @@
+;; Access file with C-x r j e
+(set-register ?e (cons 'file "~/dev/dotfiles/.emacs"))
+(set-register ?n (cons 'file "~/dev/dotfiles/notes.org"))
+
 ;; Melpa config
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
