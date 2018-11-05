@@ -1,9 +1,9 @@
-
 # . ~/.bash_aliases
 
 # Emacs config
 alias emacsserver="emacs --daemon"
 alias ec="emacsclient --c"
+alias ect="emacs -nw"
 
 # commons
 alias c='cd .. ; ls'
