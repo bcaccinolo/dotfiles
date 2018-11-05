@@ -6,7 +6,8 @@
 ** DONE move temp files (~...) in /tmp 
 ** DONE Yasnippets
 ** DONE remove scrollbars
-** TODO ruby integration
+** DONE ruby integration
+
 
 
 * Look at the regeneration of the ML cache 
