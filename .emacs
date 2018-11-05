@@ -1,6 +1,7 @@
 ;; Access file with C-x r j e
 (set-register ?e (cons 'file "~/dev/dotfiles/.emacs"))
 (set-register ?n (cons 'file "~/dev/dotfiles/notes.org"))
+(set-register ?l (cons 'file "~/dev/pad/logs.201811.org"))
 
 ;; Melpa config
 (require 'package)
@@ -27,12 +28,15 @@
 
 ;; GUI cognfig
 (tool-bar-mode -1)
+(toggle-scroll-bar -1) 
+(setq-default indent-tabs-mode nil)
 
 ;; Projectile
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 (setq projectile-completion-system 'ivy)
 (setq projectile-switch-project-action 'neotree-projectile-action)
+(setq projectile-project-search-path '("~/dev/" "~/valipat/"))
 
 
 ;; Neotree config
@@ -62,3 +66,7 @@
 ;; Switch window
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
+
+;; Yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)

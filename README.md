@@ -4,8 +4,6 @@ dotfiles
 
 # Todo
 
-- [ ] vscode settings << this would be a nice project in TypeScript
-
 - [ ] zsh config
 
 - [ ] tig config
