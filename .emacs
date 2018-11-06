@@ -17,7 +17,6 @@
 (setq backup-directory-alist  `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 
-
 ;; Melpa config
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
