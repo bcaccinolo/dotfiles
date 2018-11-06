@@ -12,6 +12,7 @@
 (set-face-attribute 'default nil :height 140)
 (electric-pair-mode 1)
 (show-paren-mode 1)
+(global-set-key (kbd "C-z") nil) ;; no suspend-frame here :)
 
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist  `((".*" . ,temporary-file-directory)))
@@ -36,13 +37,23 @@
     ("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(package-selected-packages
    (quote
-    (org-bullets perspective yaml-mode solarized-theme markdown-mode company inf-ruby json-mode ivy neotree projectile which-key telephone-line monokai-theme org magit))))
+    (helm-projectile god-mode org-bullets perspective yaml-mode solarized-theme markdown-mode company inf-ruby json-mode ivy neotree projectile which-key telephone-line monokai-theme org magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; god-mode
+;; (god-mode-all)
+(global-set-key (kbd "<escape>") 'god-mode-all)
+(setq god-exempt-major-modes nil)
+(setq god-exempt-predicates nil)
+(defun my-update-cursor ()
+  (setq cursor-type (if (or god-local-mode buffer-read-only) 'box 'bar)))
+(add-hook 'god-mode-enabled-hook 'my-update-cursor)
+(add-hook 'god-mode-disabled-hook 'my-update-cursor)
 
 ;; Perspective config
 (persp-mode +1)
@@ -61,6 +72,7 @@
 
 ;;Which-key config
 (which-key-mode)
+(which-key-enable-god-mode-support)
 
 ;; Magit config
 (global-set-key (kbd "C-x g") 'magit-status)
@@ -95,7 +107,8 @@
 
 
 ;; To find what it does a shortcut to
-;;(lookup-key (current-global-map) (kbd "C-x o"))
+;; (lookup-key (current-global-map) (kbd "C-z"))
 
 ;; Binding C-x to <ESC> 
-(global-set-key (kbd "<ESC>") 'Control-X-prefix)
+;; (global-set-key (kbd "<ESC>") 'Control-X-prefix)
+
