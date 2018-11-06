@@ -67,10 +67,6 @@
 
 ;; Org Mode config
 ;; The following lines are always needed.  Choose your own keys.
-(global-set-key "\C-cl" 'org-store-link)
-(global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-cc" 'org-capture)
-(global-set-key "\C-cb" 'org-switchb)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ;; Theme config
@@ -93,4 +89,13 @@
   (setq dired-use-ls-dired nil))
 
 ;; Insert current date
-(defun insert-current-date () (interactive) (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d)")))
+(defun insert-current-date ()
+  (interactive)
+  (insert (shell-command-to-string "echo -n $(date +'%a %d %b %Y')")))
+
+
+;; To find what it does a shortcut to
+;;(lookup-key (current-global-map) (kbd "C-x o"))
+
+;; Binding C-x to <ESC> 
+(global-set-key (kbd "<ESC>") 'Control-X-prefix)
