@@ -71,6 +71,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cb" 'org-switchb)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ;; Theme config
 ;; (load-theme 'monokai t)
@@ -86,6 +87,10 @@
 ;; Yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
+
+;; Dired config
+(when (string= system-type "darwin")       
+  (setq dired-use-ls-dired nil))
 
 ;; Insert current date
 (defun insert-current-date () (interactive) (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d)")))
