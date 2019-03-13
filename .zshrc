@@ -123,3 +123,26 @@ export LANG=en_US.UTF-8
 export BUNDLE_GEMS__SYNBIOZ__COM=synbioz:ozgjuQRwKhxT3URPiQR
 export DISABLE_SPRING=true
 
+# z command install
+. ~/dev/dotfiles/z.sh
+
+#
+# Docker methods for local dev
+#
+
+# Exec a bash command in a running container
+dex () { docker exec -ti $1 bash }
+
+dextest () { dex "test_core_1" }
+
+dexval () { pp; dex "val00dev_app_1" }
+
+dexreclegacy () { pp; dex "rec00dev_app_1" }
+dexrec () { pp; dex "recapi00dev_app_1" }
+
+dexauth () { pp; dex "auth00dev_app_1" }
+dexauthtest () { pp; dex "auth00test_app_1" }
+
+dexdoc () { pp; dex "doc00dev_app_1" }
+dexdoctest () { pp; dex "doc00test_app_1" }
+
