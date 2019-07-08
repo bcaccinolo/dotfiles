@@ -117,6 +117,8 @@ localenv
 export PATH=~/.rbenv/shims:/Users/benoit/.composer/vendor/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/benoit/.cargo/bin:$PATH"
+# for pgcli
+export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -124,6 +126,8 @@ export LANG=en_US.UTF-8
 # For the geminabox
 export BUNDLE_GEMS__SYNBIOZ__COM=synbioz:ozgjuQRwKhxT3URPiQR
 export DISABLE_SPRING=true
+
+export EDITOR=code
 
 # z command install
 . ~/dev/dotfiles/z.sh
@@ -148,5 +152,3 @@ dexauthtest () { pp; dex "auth00test_app_1" }
 dexdoc () { pp; dex "doc00dev_app_1" }
 dexdoctest () { pp; dex "doc00test_app_1" }
 
-# for pgcli
-export PATH="/usr/local/opt/libpq/bin:$PATH"
