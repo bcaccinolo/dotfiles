@@ -4,33 +4,22 @@
 alias c='cd .. ; ls'
 alias fp='find .'
 
-alias ls='ls -G'
-alias l='ls -1'
-alias ll='ls -alh'
+# alias ls='ls -G'
+# alias l='ls -1'
+# alias ll='ls -alh'
+# alias la='ls -a'
+
+# Using LSD https://github.com/Peltoche/lsd
+alias ls='lsd'
+alias l='ls -l'
 alias la='ls -a'
-alias rr='reset'
+alias lla='ls -la'
+alias lt='ls --tree'
 
 # ack
-alias g='ack '
-alias gf='ack -g ' # to search file names
+alias a='ack '
 
-# git aliases
-alias dif='git diff'
-alias st='git status'
-alias gg='git '
-alias st='git st'
-alias br='git br'
-alias pull='git pull --rebase=preserve'
-alias push='git push'
-alias co='git co'
-alias lg='git lg'
-alias lgg='git log'
-alias lgo='git log --oneline --decorate'
-alias dif='git df --ignore-space-change '
-alias difw='git diff --word-diff'
-alias difc='git df --cached'
-alias git-count='git shortlog -s -n'
-alias tags='git tag -l | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n'
+# GIT aliases : check Zsh git plugin - https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
 
 # valipat
 alias puma-command="echo 'rm -f /tmp/pid && bundle exec puma -C config/puma.rb ; reset'"
