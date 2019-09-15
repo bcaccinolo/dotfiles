@@ -2,14 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/benoit/.oh-my-zsh
+
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robb yrussell"
-ZSH_THEME="agnoster-perso"
-#ZSH_THEME="avit"
+ZSH_THEME="avit"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -63,13 +63,10 @@ CASE_SENSITIVE="true"
 plugins=(
   git
   bundler
-  rails
+#  rails
   ruby
   docker
   docker-compose
-  composer
-  laravel5
-  mix
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -109,16 +106,12 @@ zstyle ':completion:*' special-dirs true
 
 if [[ -f ~/.bash_aliases ]]; then
   . ~/.bash_aliases
-  echo "loading aliases"
 fi
 
-localenv
+# localenv
 
 export PATH=~/.rbenv/shims:/Users/benoit/.composer/vendor/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/benoit/.cargo/bin:$PATH"
-# for pgcli
-export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -126,8 +119,6 @@ export LANG=en_US.UTF-8
 # For the geminabox
 export BUNDLE_GEMS__SYNBIOZ__COM=synbioz:ozgjuQRwKhxT3URPiQR
 export DISABLE_SPRING=true
-
-export EDITOR=code
 
 # z command install
 . ~/dev/dotfiles/z.sh

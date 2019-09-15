@@ -1,0 +1,9 @@
+
+* Handle Emacs
+** DONE versionized .emacs file
+** DONE remove .emacs.d from git
+** DONE add a dark theme
+** TODO move temp files (~...) in /tmp
+
+* Look at the regeneration of the ML cache
+
