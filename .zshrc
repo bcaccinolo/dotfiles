@@ -61,15 +61,13 @@ CASE_SENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  mix-fast
   git
   bundler
   rails
   ruby
   docker
   docker-compose
-  composer
-  laravel5
-  mix
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,7 +112,7 @@ fi
 
 localenv
 
-export PATH=~/.rbenv/shims:/Users/benoit/.composer/vendor/bin:$PATH
+export PATH=~/bin:~/.rbenv/shims:/Users/benoit/.composer/vendor/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/benoit/.cargo/bin:$PATH"
 # for pgcli
