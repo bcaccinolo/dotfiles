@@ -104,49 +104,32 @@ zstyle ':completion:*' special-dirs true
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-if [[ -f ~/.bash_aliases ]]; then
-  . ~/.bash_aliases
-  echo "loading aliases"
-fi
-
-localenv
-
 export PATH=~/bin:~/.rbenv/shims:/Users/benoit/.composer/vendor/bin:$PATH
+export PATH="/usr/local/opt/libpq/bin:$PATH" # for pgcli
+export PATH="/usr/local/opt/node@10/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/benoit/.cargo/bin:$PATH"
-# for pgcli
-export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# For the geminabox
-export BUNDLE_GEMS__SYNBIOZ__COM=synbioz:ozgjuQRwKhxT3URPiQR
-export DISABLE_SPRING=true
-
 export EDITOR=code
+
+export DISABLE_SPRING=true
 
 # z command install
 . ~/dev/dotfiles/z.sh
 
-#
-# Docker methods for local dev
-#
+if [[ -f ~/.bash_aliases ]]; then
+  . ~/.bash_aliases
+fi
 
-# Exec a bash command in a running container
-dex () { docker exec -ti $1 bash }
+# Synbioz env
+if [[ -f ~/.synbioz_env.sh ]]; then
+  . ~/.synbioz_env.sh
+fi
 
-dextest () { dex "test_core_1" }
-
-dexval () { pp; dex "val00dev_app_1" }
-
-dexreclegacy () { pp; dex "rec00dev_app_1" }
-dexrec () { pp; dex "recapi00dev_app_1" }
-
-dexauth () { pp; dex "auth00dev_app_1" }
-dexauthtest () { pp; dex "auth00test_app_1" }
-
-dexdoc () { pp; dex "doc00dev_app_1" }
-dexdoctest () { pp; dex "doc00test_app_1" }
-
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# utilsé pour installer java chez colisweb
+export SDKMAN_DIR="/Users/benoit/.sdkman"
+[[ -s "/Users/benoit/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/benoit/.sdkman/bin/sdkman-init.sh"
