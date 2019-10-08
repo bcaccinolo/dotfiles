@@ -1,4 +1,3 @@
-
 # . ~/.bashrc_perso
 
 # encoding unification
@@ -9,9 +8,6 @@ export SVN_EDITOR=code
 export EDITOR=code
 
 export HISTSIZE=10000
-
-# alias update_tags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
-# alias update_ctags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
 
 __git_ps1 ()
 {
@@ -24,4 +20,3 @@ __git_ps1 ()
 
 PS1_BASE='======================================================\n[LOCAL $(__git_ps1 "(%s)")]> \w  \n→ '
 PS1=$PS1_BASE
-

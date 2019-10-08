@@ -2,14 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-
-export ZSH=~/.oh-my-zsh
+export ZSH=/Users/benoit/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robb yrussell"
-ZSH_THEME="avit"
+ZSH_THEME="agnoster-perso"
+#ZSH_THEME="avit"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -61,9 +61,10 @@ CASE_SENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  mix-fast
   git
   bundler
-#  rails
+  rails
   ruby
   docker
   docker-compose
@@ -103,43 +104,32 @@ zstyle ':completion:*' special-dirs true
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-if [[ -f ~/.bash_aliases ]]; then
-  . ~/.bash_aliases
-fi
-
-# localenv
-
-export PATH=~/.rbenv/shims:/Users/benoit/.composer/vendor/bin:$PATH
-export PATH="/usr/local/sbin:$PATH"
+export PATH="~/bin:$PATH" # exe perso
+export PATH="~/.rbenv/shims:$PATH" # rbenv bin path for rub versions
+export PATH="/usr/local/opt/libpq/bin:$PATH" # for pgcli
+export PATH="/usr/local/opt/node@10/bin:$PATH" # node LTS
+export PATH="/usr/local/sbin:$PATH" # brew bin location
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# For the geminabox
-export BUNDLE_GEMS__SYNBIOZ__COM=synbioz:ozgjuQRwKhxT3URPiQR
+export EDITOR=code
+
 export DISABLE_SPRING=true
 
 # z command install
 . ~/dev/dotfiles/z.sh
 
-#
-# Docker methods for local dev
-#
+if [[ -f ~/.shell_aliases ]]; then
+  . ~/.shell_aliases
+fi
 
-# Exec a bash command in a running container
-dex () { docker exec -ti $1 bash }
+# Synbioz env
+if [[ -f ~/.synbioz_env.sh ]]; then
+  . ~/.synbioz_env.sh
+fi
 
-dextest () { dex "test_core_1" }
-
-dexval () { pp; dex "val00dev_app_1" }
-
-dexreclegacy () { pp; dex "rec00dev_app_1" }
-dexrec () { pp; dex "recapi00dev_app_1" }
-
-dexauth () { pp; dex "auth00dev_app_1" }
-dexauthtest () { pp; dex "auth00test_app_1" }
-
-dexdoc () { pp; dex "doc00dev_app_1" }
-dexdoctest () { pp; dex "doc00test_app_1" }
-
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# utilsé pour installer java
+export SDKMAN_DIR="/Users/benoit/.sdkman"
+[[ -s "/Users/benoit/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/benoit/.sdkman/bin/sdkman-init.sh"

@@ -104,11 +104,11 @@ zstyle ':completion:*' special-dirs true
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=~/bin:~/.rbenv/shims:/Users/benoit/.composer/vendor/bin:$PATH
+export PATH="~/bin:$PATH" # exe perso
+export PATH="~/.rbenv/shims:$PATH" # rbenv bin path for rub versions
 export PATH="/usr/local/opt/libpq/bin:$PATH" # for pgcli
-export PATH="/usr/local/opt/node@10/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/benoit/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/node@10/bin:$PATH" # node LTS
+export PATH="/usr/local/sbin:$PATH" # brew bin location
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -120,8 +120,8 @@ export DISABLE_SPRING=true
 # z command install
 . ~/dev/dotfiles/z.sh
 
-if [[ -f ~/.bash_aliases ]]; then
-  . ~/.bash_aliases
+if [[ -f ~/.shell_aliases ]]; then
+  . ~/.shell_aliases
 fi
 
 # Synbioz env
@@ -130,6 +130,6 @@ if [[ -f ~/.synbioz_env.sh ]]; then
 fi
 
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-# utilsé pour installer java chez colisweb
+# utilsé pour installer java
 export SDKMAN_DIR="/Users/benoit/.sdkman"
 [[ -s "/Users/benoit/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/benoit/.sdkman/bin/sdkman-init.sh"

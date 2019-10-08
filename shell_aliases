@@ -1,4 +1,4 @@
-# . ~/.bash_aliases
+# . ~/.shell_aliases
 
 echo "loading aliases"
 
