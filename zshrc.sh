@@ -104,11 +104,10 @@ zstyle ':completion:*' special-dirs true
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="~/bin:$PATH" # exe perso
-export PATH="~/.rbenv/shims:$PATH" # rbenv bin path for rub versions
 export PATH="/usr/local/opt/libpq/bin:$PATH" # for pgcli
 export PATH="/usr/local/opt/node@10/bin:$PATH" # node LTS
-export PATH="/usr/local/sbin:$PATH" # brew bin location
+export PATH="/Users/benoit/bin:$PATH" # exe perso
+export PATH="/Users/benoit/.rbenv/shims:$PATH" # rbenv bin path for rub versions
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
