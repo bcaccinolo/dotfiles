@@ -68,6 +68,8 @@ plugins=(
   ruby
   docker
   docker-compose
+  dotenv
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -75,34 +77,7 @@ source $ZSH/oh-my-zsh.sh
 # for ..[Tab] gives the ../
 zstyle ':completion:*' special-dirs true
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# User configuration ------------------------------------------------
 
 export PATH="/usr/local/opt/libpq/bin:$PATH" # for pgcli
 export PATH="/usr/local/opt/node@10/bin:$PATH" # node LTS
@@ -114,10 +89,7 @@ export LANG=en_US.UTF-8
 
 export EDITOR=code
 
-export DISABLE_SPRING=true
-
-# z command install
-. ~/dev/dotfiles/z.sh
+export DISABLE_SPRING=true # disable rails spring command
 
 if [[ -f ~/.shell_aliases ]]; then
   . ~/.shell_aliases
