@@ -3,14 +3,9 @@ dotfiles
 
 
 # Todo
-
-- [ ] zsh config
-
-- [ ] tig config
-
+- [X] zsh config
 - [X] global rubocop
 - [X] global gitignore
-
 
 # Config files
 

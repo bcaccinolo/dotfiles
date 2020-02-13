@@ -10,6 +10,8 @@ require 'pp'
 IRB.conf[:AUTO_INDENT]=true
 
 require 'factory_bot' ;  include FactoryBot::Syntax::Methods
+#
+require 'faker'
 
 ###############################################################################
 # requires and stuff go here
@@ -27,3 +29,4 @@ end
 # other ruby code in your .irbrc
 load_irbrc Dir.pwd # probably should stay at the bottom
 
+FactoryBot.find_definitions

@@ -7,7 +7,7 @@ alias c='cd .. ; ls'
 alias a='ack '
 
 # Using LSD https://github.com/Peltoche/lsd
-alias ls='lsd'
+# alias ls='lsd' # colors are not super 2019/12
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
