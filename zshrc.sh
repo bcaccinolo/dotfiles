@@ -68,8 +68,8 @@ plugins=(
   ruby
   docker
   docker-compose
-  dotenv
   z
+  # dotenv # ! this can conflict with gem dotenv-rails
 )
 
 source $ZSH/oh-my-zsh.sh
