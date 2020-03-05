@@ -1,12 +1,6 @@
 dotfiles
 ========
 
-
-# Todo
-- [X] zsh config
-- [X] global rubocop
-- [X] global gitignore
-
 # Config files
 
 ## Rubocop global
@@ -50,7 +44,6 @@ cp ~/Library/Application\ Support/Code/User/settings.json ~/dev/dotfiles/.config
  cp ~/Library/Application\ Support/Code/User/vsicons.settings.json ~/dev/dotfiles/.config/Code/User/vsicons.settings.json
 ```
 
-
 Alternatively, they can be cloned to the User folder of the VSCode installation on your platform:
 
 - Mac: `~/Library/Application Support/Code/User/`
@@ -62,7 +55,6 @@ Alternatively, they can be cloned to the User folder of the VSCode installation 
 ```bash
 cp ~/.zshrc ~/dev/dotfiles/
 ```
-
 
 # Logitech Marble Mouse config
 
