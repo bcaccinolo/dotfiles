@@ -44,7 +44,6 @@ cp ~/Library/Application\ Support/Code/User/settings.json ~/dev/dotfiles/.config
  cp ~/Library/Application\ Support/Code/User/vsicons.settings.json ~/dev/dotfiles/.config/Code/User/vsicons.settings.json
 ```
 
-
 Alternatively, they can be cloned to the User folder of the VSCode installation on your platform:
 
 - Mac: `~/Library/Application Support/Code/User/`
