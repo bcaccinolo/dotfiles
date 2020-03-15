@@ -1,17 +1,6 @@
 dotfiles
 ========
 
-
-# Todo
-
-- [ ] zsh config
-
-- [ ] tig config
-
-- [X] global rubocop
-- [X] global gitignore
-
-
 # Config files
 
 ## Rubocop global
@@ -65,9 +54,9 @@ Alternatively, they can be cloned to the User folder of the VSCode installation 
 # .zshrc
 
 ```bash
-cp ~/.zshrc ~/dev/dotfiles/
+rm ~/.zshrc
+ln -s ~/dev/dotfiles/zshrc.sh ~/.zshrc
 ```
-
 
 # Logitech Marble Mouse config
 

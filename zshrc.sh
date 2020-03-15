@@ -2,14 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/benoit/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robb yrussell"
-ZSH_THEME="agnoster-perso"
-#ZSH_THEME="avit"
+ZSH_THEME="junkfood"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -61,11 +59,9 @@ CASE_SENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  mix-fast
   git
-  bundler
-  rails
-  ruby
+  dnf
+  z
   docker
   docker-compose
 )
@@ -82,13 +78,6 @@ zstyle ':completion:*' special-dirs true
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -104,31 +93,14 @@ zstyle ':completion:*' special-dirs true
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="/usr/local/opt/libpq/bin:$PATH" # for pgcli
-export PATH="/usr/local/opt/node@10/bin:$PATH" # node LTS
-export PATH="/Users/benoit/bin:$PATH" # exe perso
-export PATH="/Users/benoit/.rbenv/shims:$PATH" # rbenv bin path for rub versions
-
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 export EDITOR=code
 
-export DISABLE_SPRING=true
-
-# z command install
-. ~/dev/dotfiles/z.sh
-
-if [[ -f ~/.shell_aliases ]]; then
-  . ~/.shell_aliases
+if [[ -f ~/dev/dotfiles/shell_aliases ]]; then
+  . ~/dev/dotfiles/shell_aliases
 fi
 
-# Synbioz env
-if [[ -f ~/.synbioz_env.sh ]]; then
-  . ~/.synbioz_env.sh
-fi
-
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-# utilsé pour installer java
-export SDKMAN_DIR="/Users/benoit/.sdkman"
-[[ -s "/Users/benoit/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/benoit/.sdkman/bin/sdkman-init.sh"
+# Sdkman
+source "$HOME/.sdkman/bin/sdkman-init.sh"
