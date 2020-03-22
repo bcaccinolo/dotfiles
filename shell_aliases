@@ -17,5 +17,9 @@ alias lt='ls --tree'
 # docker
 # alias dc='docker-compose'
 # alias dclean='docker container prune -f ;   docker volume prune -f '
-# alias d='docker '
-# alias dps='docker ps --format "{{.Names}} - {{.ID}} " | sort '
+alias d='docker'
+alias dps='docker ps --format "{{.Names}} - {{.ID}} " | sort '
+alias dct='docker container'
+alias dexec='docker container exec -ti'
+
+
