@@ -63,6 +63,7 @@ plugins=(
   docker
   docker-compose
   z
+  mvn
   # dotenv # ! this can conflict with gem dotenv-rails
 )
 

@@ -5,6 +5,7 @@ echo "loading aliases"
 # commons
 alias c='cd .. ; ls'
 alias a='ack '
+alias xx='exit'
 
 # Using LSD https://github.com/Peltoche/lsd
 alias l='ls -l'
