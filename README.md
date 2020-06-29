@@ -1,5 +1,4 @@
 dotfiles
-========
 
 # Config files
 
@@ -16,7 +15,7 @@ ln -s ~/dotfiles/rubocop.yml ~/.rubocop.yml
 This file is sensible cause it contains your email. So this file is not symlinked.
 
 ```
-cp ~/dotfiles/gitconfig ~/.gitconfig
+cp ~/dev/dotfiles/gitconfig ~/.gitconfig
 ```
 
 You will have to edit the user section:
@@ -30,6 +29,20 @@ You will have to edit the user section:
 
 ```
 ln -s ~/dotfiles/git_global_gitignore ~/.gitignore
+```
+
+## .zshrc
+
+```bash
+rm ~/.zshrc
+ln -s ~/dev/dotfiles/zshrc.sh ~/.zshrc
+```
+
+## Emacs 
+
+```shell
+rm -rf ~/.spacemacs 
+ln -s ~/dev/dotfiles/spacemacs ~/.spacemacs
 ```
 
 # install VSCode settings on Mac
@@ -50,16 +63,9 @@ Alternatively, they can be cloned to the User folder of the VSCode installation 
 - Linux: `~/.config/Code/User/settings.json`
 
 
-# .zshrc
-
-```bash
-rm ~/.zshrc
-ln -s ~/dev/dotfiles/zshrc.sh ~/.zshrc
-```
-
 # Logitech Marble Mouse config
 
-file: /usr/share/X11/xorg.conf.d/40-libinput.conf
+file: /etc/X11/xorg.conf.d/10-libinput.conf
 
 ```
 # Section added for scroll with Marble Mouse
@@ -72,5 +78,19 @@ Section "InputClass"
   Option          "ScrollButton" "8"
   Option          "MiddleEmulation" "on"
 EndSection
+```
+
+```
+# Left Hand - Section added for scroll with Marble Mouse
+Section "InputClass"
+  Identifier      "Marble Mouse"
+  MatchProduct    "Logitech USB Trackball"
+  Driver          "libinput"
+  Option          "ButtonMapping" "3 2 1 4 5 6 7 0 0"
+  Option          "ScrollMethod" "button"
+  Option          "ScrollButton" "9"
+  Option          "MiddleEmulation" "on"
+EndSection
+
 ```
 
