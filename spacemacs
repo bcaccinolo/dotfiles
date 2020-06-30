@@ -306,28 +306,32 @@ you should place your code here."
 
   (setq magit-repository-directories '("~/dev"))
 
-  (global-unset-key (kbd "C-e"))
-   (global-set-key (kbd "C-e") 'previous-line)
+  ;; Spacemacs command do Meta-Space
+  (global-set-key (kbd "M-SPC") 'spacemacs-cmds)
 
-   (global-unset-key (kbd "C-h"))
-   (global-set-key (kbd "C-h") 'backward-char)
+  ;; Cursor movement updated
+  (global-unset-key (kbd "C-e"))
+  (global-set-key (kbd "C-e") 'previous-line)
+
+  (global-unset-key (kbd "C-h"))
+  (global-set-key (kbd "C-h") 'backward-char)
 
   ;; (global-unset-key (kbd "C-i"))
   ;; (global-set-key (kbd "C-i") 'forward-char)
 
-   ;; Translate the problematic keys to the function key Hyper, 
-   ;; then bind this to the desired ctrl-i behavior
-   (keyboard-translate ?\C-i ?\H-i)
-   (global-set-key [?\H-i] 'forward-char)
+  ;; Translate the problematic keys to the function key Hyper,
+  ;; then bind this to the desired ctrl-i behavior
+  (keyboard-translate ?\C-i ?\H-i)
+  (global-set-key [?\H-i] 'forward-char)
 
 
-   ;; Move cursor to end of current line
-   ;; Insert new line below current line
-   ;; it will also indent newline
-   (global-set-key (kbd "<C-return>") (lambda ()
-                                        (interactive)
-                                        (end-of-line)
-                                        (newline-and-indent)));; Move cursor to end of current line
+  ;; Move cursor to end of current line
+  ;; Insert new line below current line
+  ;; it will also indent newline
+  (global-set-key (kbd "<C-return>") (lambda ()
+                                       (interactive)
+                                       (end-of-line)
+                                       (newline-and-indent)));; Move cursor to end of current line
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
