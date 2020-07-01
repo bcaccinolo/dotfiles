@@ -14,8 +14,7 @@ alias lla='ls -la'
 alias lt='ls --tree'
 
 # Emacs
-alias em
-='emacsclient -cn'
+alias em='emacsclient -cn'
 
 # GIT aliases : check Zsh git plugin - https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
 
