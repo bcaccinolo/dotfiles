@@ -356,12 +356,29 @@ you should place your code here."
   )
 
 (defun hello ()
-  "method inserting hello"
+  "2020-07 - method inserting hello"
   (interactive)
   (newline)
   (insert "hello")
   )
 
+(defun select-fruit ()
+  "2020/07 - Interactively select a fruit and display it"
+  (interactive)
+  (let (
+        (selected (funcall 'completing-read "Select fruit " '("apple" "ananas" "peach")))
+        )
+    (message "Selected fruit: %s" selected)))
+
+(defun show-ls ()
+  "2020/07 - Display 'ls' result in a dedicated buffer."
+  (interactive)
+  (let ((command "ls")
+        (buffer "ls result buffer"))
+
+    (shell-command command buffer)
+    (pop-to-buffer buffer)
+    (message buffer)))
 
 ;; DO not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
