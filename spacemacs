@@ -315,10 +315,23 @@ you should place your code here."
 
   (setq magit-repository-directories '("~/dev"))
 
-  ;; Spacemacs command do Meta-Space
-  ;; (global-set-key (kbd "M-SPC") 'spacemacs-cmds)
+  ;; word wrapping
+  (setq visual-line-mode t)
 
-  ;; Cursor movement updated
+  ;; do not ask when opening a symlink
+  (setq vc-follow-symlinks t)
+
+  ;; ######################################################################
+  ;; Projectile ###########################################################
+
+  (setq projectile-project-search-path '("~/dev/" "~/dev/benefiz"))
+
+
+  ;; End Projectile #######################################################
+  ;; ######################################################################
+
+  ;; ######################################################################
+  ;; Cursor movement
   (global-unset-key (kbd "C-e"))
   (global-set-key (kbd "C-e") 'previous-line)
 
@@ -341,23 +354,43 @@ you should place your code here."
                                        (interactive)
                                        (end-of-line)
                                        (newline-and-indent)));; Move cursor to end of current line
+  ;; End Cursor movements #################################################
+  ;; ######################################################################
 
-  ;; do not ask when opening a symlink
-  (setq vc-follow-symlinks t)
+  ;; ######################################################################
+  ;; Org-mode
 
-  ;; Org-mode no Done timestamp
-  (setq org-log-done nil)
-  (setq org-todo-keywords
-        '((sequence "TODO" "DOING" "DONE")))
-  )
+  (setq org-log-done nil) ; no todo timestamp
+  (setq org-todo-keywords '((sequence "TODO" "DOING" "DONE")))
+
+  ;; `with-eval-after-load' macro was introduced in Emacs 24.x
+  ;; In older Emacsen, you can do the same thing with `eval-after-load'
+  ;; and '(progn ..) form.
+  (with-eval-after-load 'org
+    ; (setq org-startup-indented t) ; Enable `org-indent-mode' by default
+    (add-hook 'org-mode-hook #'visual-line-mode))
+
+  ;; End Org-mode #########################################################
+  ;; ######################################################################
+
+  ) ;; end user settings
 
 (defun hello ()
   "method inserting hello"
   (interactive)
   (newline)
   (insert "hello")
+  (message "hello")
   )
 
+(defun select-fruit ()
+  "select a fruit"
+  (interactive)
+  (let (
+        (selected (completing-read "select a fruit" '("apple" "ananas" "peach")))
+        )
+    (message "Selected fruit: %s" selected))
+  )
 
 ;; DO not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
@@ -368,7 +401,7 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (clojure-snippets clj-refactor inflections paredit cider-eval-sexp-fu cider sesman queue parseedn clojure-mode parseclj a rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv rake minitest chruby bundler inf-ruby web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc coffee-mode yaml-mode flycheck-pos-tip pos-tip web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data tide typescript-mode flycheck org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize gnuplot rainbow-mode rainbow-identifiers color-identifiers-mode smeargle orgit magit-gitflow magit-popup helm-gitignore gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit git-commit with-editor transient mmm-mode markdown-toc markdown-mode gh-md helm-company helm-c-yasnippet fuzzy company-statistics company auto-yasnippet yasnippet ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired f evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))))
+    (tern clojure-snippets clj-refactor inflections paredit cider-eval-sexp-fu cider sesman queue parseedn clojure-mode parseclj a rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv rake minitest chruby bundler inf-ruby web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc coffee-mode yaml-mode flycheck-pos-tip pos-tip web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data tide typescript-mode flycheck org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize gnuplot rainbow-mode rainbow-identifiers color-identifiers-mode smeargle orgit magit-gitflow magit-popup helm-gitignore gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit git-commit with-editor transient mmm-mode markdown-toc markdown-mode gh-md helm-company helm-c-yasnippet fuzzy company-statistics company auto-yasnippet yasnippet ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired f evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

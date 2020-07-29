@@ -77,7 +77,7 @@ zstyle ':completion:*' special-dirs true
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export EDITOR=code
+export EDITOR=emacs
 
 if [[ -f ~/dev/dotfiles/shell_aliases ]]; then
   . ~/dev/dotfiles/shell_aliases
