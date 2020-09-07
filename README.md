@@ -36,7 +36,7 @@ You will have to edit the user section:
 file: /etc/X11/xorg.conf.d/10-libinput.conf
 
 ```
-# Section added for scroll with Marble Mouse
+# Right hand - section added for scroll with Marble Mouse
 Section "InputClass"
   Identifier      "Marble Mouse"
   MatchProduct    "Logitech USB Trackball"
@@ -49,15 +49,14 @@ EndSection
 ```
 
 ```
-# Left Hand - Section added for scroll with Marble Mouse
+# Left hand - section added for scroll with Marble Mouse
 Section "InputClass"
   Identifier      "Marble Mouse"
   MatchProduct    "Logitech USB Trackball"
   Driver          "libinput"
-  Option          "ButtonMapping" "3 2 1 4 5 6 7 0 0"
+  Option          "ButtonMapping" "3 8 1 4 5 6 7 2 0"
   Option          "ScrollMethod" "button"
   Option          "ScrollButton" "9"
   Option          "MiddleEmulation" "on"
 EndSection
-
 ```
