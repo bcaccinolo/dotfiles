@@ -79,8 +79,8 @@ export LANG=en_US.UTF-8
 
 export EDITOR=emacs
 
-if [[ -f ~/dev/dotfiles/shell_aliases ]]; then
-  . ~/dev/dotfiles/shell_aliases
+if [[ -f ~/.shell_aliases ]]; then
+  . ~/.shell_aliases
 fi
 
 # Sdkman

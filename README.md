@@ -2,11 +2,15 @@ dotfiles
 
 # Config files
 
-## Rubocop global
+## Using GNU Stow
 
-```
-ln -s ~/dotfiles/rubocop.yml ~/.rubocop.yml
-```
+stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles tig
+stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles ack
+stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles spacemacs
+stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles zsh
+stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles ruby
+stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles xmodmap
+stow -v 2 -d ~/dev/dotfiles -t ~/.config --dotfiles i3wm
 
 ## Git
 
@@ -15,7 +19,7 @@ ln -s ~/dotfiles/rubocop.yml ~/.rubocop.yml
 This file is sensible cause it contains your email. So this file is not symlinked.
 
 ```
-cp ~/dev/dotfiles/gitconfig ~/.gitconfig
+stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles git
 ```
 
 You will have to edit the user section:
@@ -24,44 +28,6 @@ You will have to edit the user section:
 	name = John Doe
 	email = john.doe@nypd.com
 ```
-
-### Global gitignore
-
-```
-ln -s ~/dotfiles/git_global_gitignore ~/.gitignore
-```
-
-## .zshrc
-
-```bash
-rm ~/.zshrc
-ln -s ~/dev/dotfiles/zshrc.sh ~/.zshrc
-```
-
-## Emacs 
-
-```shell
-rm -rf ~/.spacemacs 
-ln -s ~/dev/dotfiles/spacemacs ~/.spacemacs
-```
-
-# install VSCode settings on Mac
-
-```bash
-cp ~/Library/Application\ Support/Code/User/snippets/* ~/dev/dotfiles/.config/Code/User/snippets
-
-cp ~/Library/Application\ Support/Code/User/keybindings.json ~/dev/dotfiles/.config/Code/User/keybindings.json
-
-cp ~/Library/Application\ Support/Code/User/settings.json ~/dev/dotfiles/.config/Code/User/settings.json
-
- cp ~/Library/Application\ Support/Code/User/vsicons.settings.json ~/dev/dotfiles/.config/Code/User/vsicons.settings.json
-```
-
-Alternatively, they can be cloned to the User folder of the VSCode installation on your platform:
-
-- Mac: `~/Library/Application Support/Code/User/`
-- Linux: `~/.config/Code/User/settings.json`
-
 
 # Logitech Marble Mouse config
 
@@ -93,4 +59,3 @@ Section "InputClass"
 EndSection
 
 ```
-

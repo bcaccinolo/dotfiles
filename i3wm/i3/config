@@ -181,4 +181,4 @@ bar {
        status_command i3status
 }
 
-exec feh --bg-scale  ~/Pictures/bg/benefiz-fond-ecran.png
+exec feh --bg-scale ~/Pictures/bg/wood2.jpg

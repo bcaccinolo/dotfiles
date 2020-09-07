@@ -1,0 +1,10 @@
+! xmodmap ~/.Xmodmap
+
+keycode  38 = a A a A agrave Aacute
+keycode  39 = r R s S egrave asciitilde
+
+! caps_lock is now Control_L
+clear lock
+clear control
+add control = Caps_Lock Control_L Control_R
+keycode 66 = Control_L

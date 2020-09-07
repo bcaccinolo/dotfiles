@@ -50,6 +50,6 @@
 # Be careful when committing this section of the file.
 # Do not commit your own email !
 [user]
-	name = John Doe
+  name = John Doe
   email = john.doe@nypd.com
 
