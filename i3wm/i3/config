@@ -30,7 +30,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork -i ~/.con
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
@@ -149,6 +148,12 @@ bindsym $mod+Shift+P restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+F exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+# Assign Workspaces:
+assign [class="Google-chrome"] $ws1
+assign [class="vlc"] $ws8
+assign [class="Thunderbird"] $ws9
+assign [class="Slack"] $ws10
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -182,4 +187,18 @@ bar {
        status_command i3status
 }
 
-exec feh --bg-scale ~/.config/i3/wood1.png
+
+# Set Background
+exec --no-startup-id feh --bg-scale ~/.config/i3/wood1.png
+
+# Applications at startup
+exec --no-startup-id google-chrome-stable
+exec --no-startup-id vlc
+exec --no-startup-id slack
+exec --no-startup-id thunderbird
+
+exec --no-startup-id setxkbmap -layout us -variant colemak -option ctrl:nocaps
+exec --no-startup-id xmodmap ~/.Xmodmap
+
+
+
