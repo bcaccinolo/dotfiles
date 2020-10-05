@@ -152,7 +152,7 @@ bindsym $mod+Shift+F exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 assign [class="Google-chrome"] $ws1
 assign [class="vlc"] $ws8
 assign [class="Thunderbird"] $ws9
-assign [class="Slack"] $ws10
+assign [class="Slack"] $ws2
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -198,7 +198,6 @@ exec --no-startup-id slack
 exec --no-startup-id thunderbird
 
 exec --no-startup-id setxkbmap -layout us -variant colemak -option ctrl:nocaps
-exec --no-startup-id xmodmap ~/.Xmodmap
+exec --no-startup-id xmodmap ~/dev/dotfiles/xmodmap/dot-Xmodmap
 
-
-
+exec --no-startup-id /home/benoit/.config/i3/i3-battery-popup

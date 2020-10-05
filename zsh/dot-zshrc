@@ -79,6 +79,8 @@ export LANG=en_US.UTF-8
 
 export EDITOR=emacs
 
+export BAT_THEME="GitHub"
+
 if [[ -f ~/.shell_aliases ]]; then
   . ~/.shell_aliases
 fi

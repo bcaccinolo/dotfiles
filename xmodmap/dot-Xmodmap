@@ -1,5 +1,7 @@
 ! xmodmap ~/.Xmodmap
 
+! xmodmap -pke
+keycode  31 = u U u U ugrave Ugrave
 keycode  38 = a A a A agrave Aacute
 keycode  39 = r R s S egrave asciitilde
 
