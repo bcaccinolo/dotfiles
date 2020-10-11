@@ -6,6 +6,7 @@ echo "loading aliases"
 alias c='cd .. ; ls'
 alias a='ack '
 alias xx='exit'
+alias aa='setxkbmap -layout us -variant colemak -option ctrl:nocaps ; xmodmap ~/dev/dotfiles/xmodmap/dot-Xmodmap'
 
 # Using LSD https://github.com/Peltoche/lsd
 alias l='ls -l'
@@ -25,5 +26,3 @@ alias d='docker'
 alias dps='docker ps --format "{{.Names}} - {{.ID}} " | sort '
 alias dct='docker container'
 alias dexec='docker container exec -ti'
-
-
