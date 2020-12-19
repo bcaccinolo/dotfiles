@@ -7,6 +7,7 @@ dotfiles
 ```
 stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles tig
 stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles ack
+stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles emacs-from-scratch
 stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles spacemacs
 stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles zsh
 stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles ruby
