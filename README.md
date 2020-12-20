@@ -1,4 +1,4 @@
-dotfiles
+Dotfiles
 
 # Config files
 
