@@ -7,7 +7,6 @@
 (add-to-list 'package-archives
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
             
-
 (package-initialize)
 
 (custom-set-variables
@@ -15,7 +14,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (treemacs markdown-mode magit))))
+ '(package-selected-packages (quote (cider treemacs markdown-mode magit))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -32,16 +31,8 @@
 ;; (powerline-default-theme)
 ;; (load-theme 'monokai t)
 
-;; GUI config
-(blink-cursor-mode -1)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(toggle-scroll-bar -1) 
-(setq-default indent-tabs-mode nil)
-(set-face-attribute 'default nil :height 100)
-(electric-pair-mode 1)
-(show-paren-mode 1)
-(global-set-key (kbd "C-z") nil) ;; no suspend-frame here :)
+(setq defaults-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/defaults.el"))
+(load-file defaults-file)
 
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist  `((".*" . ,temporary-file-directory)))
@@ -57,4 +48,51 @@
 
 ;; Binding C-x to <ESC> 
 ;; (global-set-key (kbd "<ESC>") 'Control-X-prefix)
+
+
+(defun org/select-insert-code-block ()
+  "2020/07 - Interactively select the language for the code block to insert"
+  (interactive)
+  (let (
+        (selected (funcall 'completing-read "Select language " '("clojure" "sql" "json")))
+        )
+    (org/insert-block selected)
+    ))
+
+(defun org/insert-block-sql ()
+  "insert an org code block for sql"
+  (interactive)
+  (org/insert-block "sql")
+  )
+
+(defun org/insert-block (language)
+  "insert an org code block of the given language"
+  (insert "#+BEGIN_SRC " language "\n<body>\n#+END_SRC")
+  )
+
+(defun hello ()
+  "2020-07 - method inserting hello"
+  (interactive)
+  (newline)
+  (insert "hello")
+  (message "hello")
+  )
+
+(defun select-fruit ()
+  "2020/07 - Interactively select a fruit and display it"
+  (interactive)
+  (let (
+        (selected (funcall 'completing-read "Select fruit " '("apple" "ananas" "peach")))
+        )
+    (message "Selected fruit: %s" selected)))
+
+(defun show-ls ()
+  "2020/07 - Display 'ls' result in a dedicated buffer."
+  (interactive)
+  (let ((command "ls")
+        (buffer "ls result buffer"))
+
+    (shell-command command buffer)
+    (pop-to-buffer buffer)
+    (message buffer)))
 
