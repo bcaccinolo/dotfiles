@@ -85,6 +85,10 @@ if [[ -f ~/.shell_aliases ]]; then
   . ~/.shell_aliases
 fi
 
+if [[ -d ~/bin ]]; then
+  export PATH=$HOME/bin:$PATH
+fi
+
 # Sdkman
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
