@@ -1,6 +1,6 @@
-Dotfiles
+Config
 
-# Config files
+# Dotfiles files
 
 ## Using GNU Stow
 
