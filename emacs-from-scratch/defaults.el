@@ -5,6 +5,7 @@
 (message "### Loading defaults")
 
 (global-set-key (kbd "C-e") 'previous-line)
+(global-set-key (kbd "C-i") 'end-of-line)
 
 ;; word wrapping
 (setq visual-line-mode t)

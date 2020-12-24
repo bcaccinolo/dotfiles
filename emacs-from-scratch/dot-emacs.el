@@ -2,7 +2,6 @@
 (setq melpa-config-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/melpa-config.el"))
 (load-file melpa-config-file)
 
-
 (cond ((locate-library "projectile")
       (require 'projectile)
       (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)

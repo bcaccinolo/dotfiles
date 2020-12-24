@@ -59,7 +59,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (lsp-ui lsp-java projectile counsel ivy cider treemacs markdown-mode magit))))
+    (company lsp-ui lsp-java projectile counsel ivy cider treemacs markdown-mode magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
