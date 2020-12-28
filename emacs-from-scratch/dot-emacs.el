@@ -24,5 +24,8 @@
 (setq defaults-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/defaults.el"))
 (load-file defaults-file)
 
+(setq my-code-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/my-code.el"))
+(load-file my-code-file)
+
 (setq custom-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/custom.el"))
 (load-file custom-file)
