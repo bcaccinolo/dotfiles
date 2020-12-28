@@ -33,7 +33,17 @@
 
 (cond ((locate-library "solarized-theme")
        (load-theme 'solarized-dark t)
-      ))
+       ))
+
+(cond ((locate-library "evil")
+       (require 'evil)
+       (evil-mode 1)
+       ))
+
+(cond ((locate-library "evil-colemak-basics")
+       (require 'evil-colemak-basics)
+       (global-evil-colemak-basics-mode)
+       ))
 
 (setq defaults-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/defaults.el"))
 (load-file defaults-file)
