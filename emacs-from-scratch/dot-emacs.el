@@ -21,6 +21,13 @@
        (add-hook 'java-mode-hook #'lsp)
        ))
 
+(cond ((locate-library "doom-modeline")
+       (require 'doom-modeline)
+       (doom-modeline-mode 1)
+       ))
+
+(load-theme 'solarized-dark t)
+
 (setq defaults-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/defaults.el"))
 (load-file defaults-file)
 
