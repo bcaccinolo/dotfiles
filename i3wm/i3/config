@@ -152,12 +152,6 @@ bindsym $mod+Shift+P restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+F exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# Assign Workspaces:
-assign [class="Google-chrome"] $ws1
-assign [class="Slack"] $ws2
-assign [class="vlc"] $ws9
-assign [class="Thunderbird"] $ws10
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -194,12 +188,20 @@ bar {
 # Set Background
 exec --no-startup-id feh --bg-scale ~/.config/i3/wood1.png
 
+# Assign Workspaces:
+# Get class by launching `xprop` and click on application window
+assign [class="Google-chrome"] $ws1
+assign [class="discord"] $ws2
+assign [class="vlc"] $ws9
+assign [class="Thunderbird"] $ws10
+
 # Applications at startup
 exec --no-startup-id google-chrome-stable
+exec --no-startup-id discord
 exec --no-startup-id vlc
-exec --no-startup-id slack
 exec --no-startup-id thunderbird
 
+# Colemak settings
 exec --no-startup-id setxkbmap -layout us -variant colemak -option ctrl:nocaps
 exec --no-startup-id xmodmap ~/dev/dotfiles/xmodmap/dot-Xmodmap
 
