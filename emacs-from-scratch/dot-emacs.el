@@ -2,6 +2,15 @@
 (setq melpa-config-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/melpa-config.el"))
 (load-file melpa-config-file)
 
+(cond ((locate-library "solarized")
+       (load-theme 'solarized-light t)
+       ;; (load-theme 'solarized-dark t)
+      ))
+
+(cond ((locate-library "magit")
+       (global-set-key (kbd "C-x g") 'magit-status)
+       ))
+
 (cond ((locate-library "projectile")
       (require 'projectile)
       (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
