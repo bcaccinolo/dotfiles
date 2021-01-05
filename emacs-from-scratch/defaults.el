@@ -1,11 +1,7 @@
 
-
 ;; Defaults settings
 
 (message "### Loading defaults")
-
-(global-set-key (kbd "C-e") 'previous-line)
-(global-set-key (kbd "C-i") 'end-of-line)
 
 ;; word wrapping
 (setq visual-line-mode t)
@@ -20,6 +16,7 @@
 (setq-default indent-tabs-mode nil)
 (set-face-attribute 'default nil :height 100)
 
+;; Parenthese config
 (electric-pair-mode 1)
 (show-paren-mode 1)
 
@@ -32,3 +29,9 @@
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist  `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
+
+;; yes or no ?
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;; Confirm before quit
+(setq confirm-kill-emacs 'y-or-n-p)

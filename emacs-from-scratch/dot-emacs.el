@@ -35,11 +35,6 @@
        (which-key-mode)
        ))
 
-(cond ((locate-library "doom-modeline")
-       (require 'doom-modeline)
-       (doom-modeline-mode 1)
-       ))
-
 (cond ((locate-library "evil")
        (require 'evil)
        (evil-mode 1)
@@ -48,6 +43,11 @@
 (cond ((locate-library "evil-colemak-basics")
        (require 'evil-colemak-basics)
        (global-evil-colemak-basics-mode)
+       ))
+
+(cond ((locate-library "doom-modeline")
+       (require 'doom-modeline)
+       (doom-modeline-mode 1)
        ))
 
 (setq defaults-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/defaults.el"))
