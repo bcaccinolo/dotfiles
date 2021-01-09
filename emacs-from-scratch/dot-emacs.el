@@ -9,6 +9,7 @@
 
 (cond ((locate-library "magit")
        (global-set-key (kbd "C-x g") 'magit-status)
+       (setq ediff-window-setup-function 'ediff-setup-windows-plain)
        ))
 
 (cond ((locate-library "projectile")
