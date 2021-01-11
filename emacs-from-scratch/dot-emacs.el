@@ -7,14 +7,14 @@
        ;; (load-theme 'solarized-dark t)
       ))
 
-(cond ((locate-library "magit")
-       (global-set-key (kbd "C-x g") 'magit-status)
-       ))
+(use-package magit
+  :bind (("C-x g" . magit-status))
+  :config
+  (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1))
 
 (use-package ediff
   :config
-  (setq ediff-window-setup-function 'ediff-setup-windows-plain
-        ))
+  (setq ediff-window-setup-function 'ediff-setup-windows-plain))
 
 (cond ((locate-library "projectile")
       (require 'projectile)
