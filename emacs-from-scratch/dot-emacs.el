@@ -2,10 +2,9 @@
 (setq melpa-config-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/melpa-config.el"))
 (load-file melpa-config-file)
 
-(cond ((locate-library "solarized")
-       (load-theme 'solarized-light t)
-       ;; (load-theme 'solarized-dark t)
-      ))
+(use-package solarized
+  :init
+  (load-theme 'solarized-light t))
 
 (use-package magit
   :bind (("C-x g" . magit-status))
