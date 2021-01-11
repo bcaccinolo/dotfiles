@@ -11,6 +11,11 @@
        (global-set-key (kbd "C-x g") 'magit-status)
        ))
 
+(use-package ediff
+  :config
+  (setq ediff-window-setup-function 'ediff-setup-windows-plain
+        ))
+
 (cond ((locate-library "projectile")
       (require 'projectile)
       (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
@@ -49,6 +54,18 @@
        (require 'doom-modeline)
        (doom-modeline-mode 1)
        ))
+
+;; use ibuffer rather than list-buffer
+(use-package ibuffer
+  :bind (("C-x C-b" . ibuffer)
+         ("s-b" . mode-line-other-buffer)))
+
+;; Ag Silver Search - https://agel.readthedocs.io/en/latest/index.html
+(use-package ag
+  :ensure t)
+
+(use-package dired
+  :bind ("C-x d" . dired-jump))
 
 (setq defaults-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/defaults.el"))
 (load-file defaults-file)
