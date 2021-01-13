@@ -12,22 +12,22 @@
   (let ((selected (funcall 'completing-read
                            "Select theme "
                            '("solarized-ligth" "solarized-dark"))))
-    (org/insert-block selected)))
+    (load-theme (intern selected) t)))
 
-(defun org/select-insert-code-block ()
+(defun ben/org/select-insert-code-block ()
   "2020/07 - Interactively select the language for the code block to insert"
   (interactive)
   (let ((selected (funcall 'completing-read
                            "Select language "
                            '("clojure" "sql" "json"))))
-    (org/insert-block selected)))
+    (ben/org/insert-block selected)))
 
-(defun org/insert-block-sql ()
+(defun ben/org/insert-block-sql ()
   "insert an org code block for sql"
   (interactive)
-  (org/insert-block "sql"))
+  (ben/org/insert-block "sql"))
 
-(defun org/insert-block (language)
+(defun ben/org/insert-block (language)
   "insert an org code block of the given language"
   (insert "#+BEGIN_SRC " language "\n<body>\n#+END_SRC"))
 

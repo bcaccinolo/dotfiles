@@ -1,4 +1,3 @@
-
 (setq melpa-config-file (expand-file-name "~/dev/dotfiles/emacs-from-scratch/melpa-config.el"))
 (load-file melpa-config-file)
 
