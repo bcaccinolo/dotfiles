@@ -3,12 +3,13 @@
 echo "loading aliases"
 
 # commons
+alias open='xdg-open '
 alias c='cd .. ; ls'
 alias a='ack '
 alias xx='exit'
 alias aa='setxkbmap -layout us -variant colemak -option ctrl:nocaps ; xmodmap ~/dev/dotfiles/xmodmap/dot-Xmodmap ; exit'
 
-# Using LSD https://github.com/Peltoche/lsd
+# ls aliases
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'

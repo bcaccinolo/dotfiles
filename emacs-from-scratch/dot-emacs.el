@@ -7,7 +7,8 @@
   (load-theme 'solarized-light t))
 
 (use-package magit
-  :bind (("C-x g" . magit-status))
+  :bind (("C-x g" . magit-status)
+         ([f5] . magit-status))
   :config
   (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1))
 
@@ -18,6 +19,7 @@
 (cond ((locate-library "projectile")
       (require 'projectile)
       (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+      (global-set-key [f4] 'projectile-switch-project)
       (projectile-mode +1)
       (setq projectile-completion-system 'ivy)
       ))

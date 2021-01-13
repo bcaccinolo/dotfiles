@@ -6,6 +6,14 @@
   (interactive)
   (insert (shell-command-to-string "echo -n $(date +'%a %d %b %Y')")))
 
+(defun ben/select-solarized ()
+  "2021/01 - Select solarized theme"
+  (interactive)
+  (let ((selected (funcall 'completing-read
+                           "Select theme "
+                           '("solarized-ligth" "solarized-dark"))))
+    (org/insert-block selected)))
+
 (defun org/select-insert-code-block ()
   "2020/07 - Interactively select the language for the code block to insert"
   (interactive)

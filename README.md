@@ -13,6 +13,7 @@ stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles zsh
 stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles ruby
 stow -v 2 -d ~/dev/dotfiles -t ~ --dotfiles xmodmap
 stow -v 2 -d ~/dev/dotfiles -t ~/.config --dotfiles i3wm
+stow -v 2 -d ~/dev/dotfiles -t ~/.config --dotfiles dunst
 ```
 
 ## Git
