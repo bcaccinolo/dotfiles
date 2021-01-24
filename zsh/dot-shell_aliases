@@ -3,6 +3,8 @@
 echo "loading aliases"
 
 # commons
+# alias bat='batcat --theme "Sublime Snazzy" '  
+alias bat='batcat --theme "GitHub" '  
 alias open='xdg-open '
 alias c='cd .. ; ls'
 alias a='ack '

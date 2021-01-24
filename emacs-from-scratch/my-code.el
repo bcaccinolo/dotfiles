@@ -11,7 +11,7 @@
   (interactive)
   (let ((selected (funcall 'completing-read
                            "Select theme "
-                           '("solarized-ligth" "solarized-dark"))))
+                           '("solarized-light" "solarized-dark"))))
     (load-theme (intern selected) t)))
 
 (defun ben/org/select-insert-code-block ()
