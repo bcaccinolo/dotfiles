@@ -3,7 +3,7 @@
 
 (use-package solarized
   :init
-  (load-theme 'solarized-dark t))
+  (load-theme 'solarized-light t))
 
 (use-package magit
   :bind (("C-x g" . magit-status)
