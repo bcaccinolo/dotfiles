@@ -60,7 +60,7 @@
     # The width can be negative. In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
     # geometry = "300x5-30+20"
-    geometry = "400x10-30+20"
+    geometry = "400x10-1+3"
 
     # The transparency of the window. range: [0; 100]
     # This option will only work if a compositing windowmanager is present (e.g. xcompmgr, compiz, etc..)
@@ -124,6 +124,22 @@
     # browser for opening urls in context menu
     browser = /usr/bin/firefox -new-tab
 
+    ### Icons ###
+
+    # Align icons left/right/off
+    icon_position = left
+
+    # Scale small icons up to this size, set to 0 to disable. Helpful
+    # for e.g. small files or high-dpi screens. In case of conflict,
+    # max_icon_size takes precedence over this.
+    min_icon_size = 0
+
+    # Scale larger icons down to this size, set to 0 to disable
+    max_icon_size = 32
+
+    # Paths to default icons.
+    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+
 [frame]
     width = 0
     color = "#000000"
@@ -154,6 +170,9 @@
     background = "#285577"
     foreground = "#ffffff"
     timeout = 5
+    # Icon for notifications with normal urgency, uncomment to enable
+    # icon = user-available.png
+    icon = /usr/share/icons/gnome/16x16/status/user-available.png
 
 [urgency_critical]
     background = "#900000"
