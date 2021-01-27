@@ -177,10 +177,6 @@ bindsym $mod+p mode "resize"
 # finds out, if available)
 bar {
     status_command i3status
-    mode hide
-    hidden_state hide
-    modifier Mod1
-   # font pango:DejaVu Sans Mono 10
 }
 
 # Set Background
@@ -207,3 +203,6 @@ exec --no-startup-id /home/benoit/.config/i3/i3-battery-popup
 
 # Switch the screen on and off
 bindsym $mod+Shift+h exec /home/benoit/scripts/toggle-screen
+
+bindsym XF86MonBrightnessUp exec light -A 1
+bindsym XF86MonBrightnessDown exec light -U 1
