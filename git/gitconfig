@@ -43,6 +43,9 @@
 [push]
   default = simple
 
+[pull]
+  rebase = true
+
 [tig]
  show-date = short
  author-width = 10
@@ -52,4 +55,3 @@
 [user]
   name = John Doe
   email = john.doe@nypd.com
-
