@@ -71,6 +71,7 @@ plugins=(
   docker-compose
   z
   mvn
+  brew
   lein # leiningen / clojure plugin
 )
 
@@ -84,7 +85,7 @@ zstyle ':completion:*' special-dirs true
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export EDITOR=emacs
+export EDITOR=code
 
 export BAT_THEME="GitHub"
 
@@ -108,3 +109,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@14/bin:$PATH"

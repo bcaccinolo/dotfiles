@@ -1,10 +1,8 @@
 # . ~/.shell_aliases
 
-echo "loading aliases"
-
 # commons
-# alias bat='batcat --theme "Sublime Snazzy" '  
-alias bat='batcat --theme "GitHub" '  
+alias bat='batcat --theme "Sublime Snazzy" '
+alias batt='batcat --theme "GitHub" '
 alias open='xdg-open '
 alias c='cd .. ; ls'
 alias a='ack '
@@ -29,3 +27,5 @@ alias d='docker'
 alias dps='docker ps --format "{{.Names}} - {{.ID}} " | sort '
 alias dct='docker container'
 alias dexec='docker container exec -ti'
+
+export BABASHKA_PRELOADS='(load-file "/home/benoit/dev/clj-scripts/src/preloads.clj")'

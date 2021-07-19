@@ -35,30 +35,4 @@ You will have to edit the user section:
 
 # Logitech Marble Mouse config
 
-file: /etc/X11/xorg.conf.d/10-libinput.conf
-
-```
-# Right hand - section added for scroll with Marble Mouse
-Section "InputClass"
-  Identifier      "Marble Mouse"
-  MatchProduct    "Logitech USB Trackball"
-  Driver          "libinput"
-  Option          "ButtonMapping" "1 2 3 4 5 6 7 0 9"
-  Option          "ScrollMethod" "button"
-  Option          "ScrollButton" "8"
-  Option          "MiddleEmulation" "on"
-EndSection
-```
-
-```
-# Left hand - section added for scroll with Marble Mouse
-Section "InputClass"
-  Identifier      "Marble Mouse"
-  MatchProduct    "Logitech USB Trackball"
-  Driver          "libinput"
-  Option          "ButtonMapping" "3 8 1 4 5 6 7 2 0"
-  Option          "ScrollMethod" "button"
-  Option          "ScrollButton" "9"
-  Option          "MiddleEmulation" "on"
-EndSection
-```
+La documentation pour la config est sur Drive dans Notes
